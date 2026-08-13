@@ -1,0 +1,36 @@
+name: 📡 PROXAID Weekly Radar
+
+on:
+  schedule:
+    # Runs at 08:00 UTC every Sunday (10:00 CEST / 09:00 CET depending on daylight saving)
+    - cron: '0 8 * * 0'
+  workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
+
+jobs:
+  ping-topics:
+    name: Ping and Aggregate Topics
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write # Required permission to create an Issue in your repository
+    
+    steps:
+      - name: 🔍 Search GitHub & Generate Report
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Initiating search across PROXAID topics..."
+          
+          # 1. Search GitHub using CLI for the latest updated repos matching your topics
+          gh search repos "topic:off-grid OR topic:mesh-networking OR topic:survival-toolkit OR topic:stealth-sos OR topic:disaster-recovery" --sort updated --limit 15 --json nameWithOwner,url,description,updatedAt > results.json
+          
+          # 2. Build the Markdown report structure
+          echo "# 🛡️⛑️ PROXAID Weekly Radar" > report.md
+          echo "Automated ping for off-grid, mesh-networking, and disaster recovery repositories. (Generated: $(date +'%Y-%m-%d'))" >> report.md
+          echo "---" >> report.md
+          echo "" >> report.md
+          
+          # 3. Process the JSON output into a readable markdown list
+          jq -r '.[] | "### [\(.nameWithOwner)](\(.url))\n* **Last Updated:** \(.updatedAt | fromdate | strftime("%Y-%m-%d %H:%M"))\n* **Description:** \(.description)\n---"' results.json >> report.md
+          
+          # 4. Create a new Issue in your repo with the aggregated data (Triggers an email notification to you)
+          gh issue create --title "📡 Weekly PROXAID Radar: $(date +'%Y-%m-%d')" --body-file report.md --label "automated-ping"
