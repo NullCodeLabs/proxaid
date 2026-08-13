@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛡️⛑️ PROXAID // Off-Grid Terminal</title>
+    <!-- Leaflet.js CSS a térképhez -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        body { font-family: monospace; background: #121212; color: #00ff66; margin: 0; padding: 15px; box-sizing: border-box; }
+        header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #00ff66; padding-bottom: 8px; margin-bottom: 10px; }
+        h1 { margin: 0; font-size: 1.2rem; }
+        .lang-btn { background: #00ff66; color: #000; border: none; padding: 5px 10px; font-weight: bold; cursor: pointer; border-radius: 3px; font-family: monospace; }
+        .status { color: yellow; margin-bottom: 15px; font-size: 0.85rem; }
+        
+        .search-box { background: #1e1e1e; border: 1px solid #333; padding: 12px; border-radius: 5px; margin-bottom: 15px; }
+        .search-box input { width: 100%; padding: 10px; background: #000; color: #00ff66; border: 1px solid #00ff66; font-family: monospace; font-size: 0.95rem; box-sizing: border-box; outline: none; }
+        .search-comment { font-size: 0.75rem; color: #888; margin-top: 4px; }
+
+        .tabs-container { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 15px; }
+        .tab-btn { background: #1e1e1e; color: #00ff66; border: 1px solid #00ff66; padding: 8px 12px; font-weight: bold; cursor: pointer; border-radius: 3px; font-family: monospace; flex: 1; text-align: center; min-width: 70px; font-size: 0.85rem; }
+        .tab-btn:hover, .tab-btn.active { background: #00ff66; color: #000; }
+
+        #map { width: 100%; height: 260px; background: #222; border: 1px solid #00ff66; border-radius: 5px; margin-bottom: 15px; }
+
+        .card { background: #1e1e1e; border: 1px solid #333; padding: 12px; margin-bottom: 15px; border-radius: 5px; max-height: 200px; overflow-y: auto; }
+        .result-item { padding: 8px 0; border-bottom: 1px dashed #333; cursor: pointer; }
+        .result-item:hover { background: #252525; }
+        .action-link { display: inline-block; margin-top: 4px; padding: 4px 8px; background: #00ff66; color: #000; text-decoration: none; font-weight: bold; border-radius: 3px; font-size: 0.75rem; }
+        
+        footer { margin-top: 20px; border-top: 1px solid #333; padding-top: 10px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 0.8rem; color: #aaa; }
+        .toggles { display: flex; gap: 10px; }
+        .toggle-label { cursor: pointer; color: #00ff66; border: 1px dashed #00ff66; padding: 4px 8px; border-radius: 3px; }
+        .toggle-label.off { color: #ff0055; border-color: #ff0055; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 id="ui-title">🛡️⛑️ PROXAID // Off-Grid</h1>
+        <button class="lang-btn" onclick="toggleLanguage()">EN / HU</button>
+    </header>
+    
+    <div class="status" id="ui-status">Status: Initializing Monolith PWA...</div>
+    
+    <!-- SZABAD SZAVAS KERESŐ -->
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search (pharmacy, water, shelter, sos)..." oninput="filterData()">
+        <div class="search-comment" id="ui-search-comment">Offline database & map active.</div>
+    </div>
+
+    <!-- INTUITÍV FÜLEK -->
+    <div class="tabs-container">
+        <button class="tab-btn" onclick="setTab('all')">ALL</button>
+        <button class="tab-btn" onclick="setTab('sos')">SOS</button>
+        <button class="tab-btn" onclick="setTab('water')">WATER</button>
+        <button class="tab-btn" onclick="setTab('shelter')">SHELTER</button>
+        <button class="tab-btn" onclick="setTab('thermal')">THERMAL</button>
+        <button class="tab-btn" onclick="setTab('med')">MED</button>
+        <button class="tab-btn" onclick="setTab('comms')">COMMS</button>
+    </div>
+
+    <!-- TÉRKÉP -->
+    <div id="map"></div>
+
+    <!-- LISTA -->
+    <div class="card" id="content-card">
+        <h3 id="active-tab-title" style="margin-top:0; font-size:1rem;">Core Database</h3>
+        <div id="results-list">Loading nodes...</div>
+    </div>
+
+    <!-- LÁBLÉC -->
+    <footer>
+        <div id="ui-footer">PROXAID Monolith PWA // Single-File Core</div>
+        <div class="toggles">
+            <span class="toggle-label off" id="nfcToggle" onclick="toggleRadio('nfc')">NFC: OFF</span>
+            <span class="toggle-label off" id="meshToggle" onclick="toggleRadio('mesh')">MESH: OFF</span>
+        </div>
+    </footer>
+
+    <!-- Leaflet.js -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Beágyazott Offline PWA Service Worker regisztráció Blob-ból, hogy külön sw.js fájl se kelljen!
+        if ('serviceWorker' in navigator) {
+            const swCode = `self.addEventListener('install', e => e.waitUntil(caches.open('proxaid-mono').then(c => c.addAll([location.href])))); self.addEventListener('fetch', e => e.respondWith(caches.match(e.request).then(r => r || fetch(e.request))));`;
+            const blob = new Blob([swCode], {type: 'application/javascript'});
+            const swUrl = URL.createObjectURL(blob);
+            navigator.serviceWorker.register(swUrl).catch(err => console.log('PWA SW error:', err));
+        }
+
+        let currentLang = 'EN';
+        const dict = {
+            'EN': {
+                title: "🛡️⛑️ PROXAID // Off-Grid",
+                statusGPS: "Status: GPS Position Locked.",
+                statusFallback: "Status: Offline Mode (Cached/Default Coords).",
+                searchPh: "Search (pharmacy, water, shelter, sos)...",
+                searchComment: "Offline database & map active.",
+                allNodes: "Core Database (All Nodes)",
+                footer: "PROXAID Monolith PWA // Single-File Core"
+            },
+            'HU': {
+                title: "🛡️⛑️ PROXAID // Vészhelyzeti",
+                statusGPS: "Állapot: GPS pozíció rögzítve.",
+                statusFallback: "Állapot: Offline Mód (Mentett koordináták).",
+                searchPh: "Keresés (patika, víz, menedék, sos)...",
+                searchComment: "Offline adatbázis és térkép aktív.",
+                allNodes: "Központi Adatbázis (Összes pont)",
+                footer: "PROXAID Monolith PWA // Egyfájlos Rendszer"
+            }
+        };
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'EN' ? 'HU' : 'EN';
+            document.getElementById('ui-title').innerText = dict[currentLang].title;
+            document.getElementById('searchInput').placeholder = dict[currentLang].searchPh;
+            document.getElementById('ui-search-comment').innerText = dict[currentLang].searchComment;
+            document.getElementById('ui-footer').innerText = dict[currentLang].footer;
+            renderList(embeddedJSON.destinations);
+        }
+
+        const embeddedJSON = {
+            "destinations": [
+                { "id": 1, "category": "sos", "name": "General Emergency SOS Hub", "type": "Direct Call", "info": "Universal emergency response.", "phone": "112", "lat": 47.4979, "lng": 19.0402 },
+                { "id": 2, "category": "med", "name": "24h Pharmacy & Public AED", "type": "Medical Point", "info": "Non-stop pharmacy with defibrillator.", "phone": "+361234567", "lat": 47.5000, "lng": 19.0500 },
+                { "id": 3, "category": "water", "name": "Verified Wilderness Spring", "type": "Natural Water", "info": "Drinkable mountain spring source.", "phone": null, "lat": 47.5100, "lng": 18.9800 },
+                { "id": 4, "category": "shelter", "name": "Open Forest Bunker", "type": "Emergency Hut", "info": "Rain shelter and windproof cabin.", "phone": null, "lat": 47.5200, "lng": 18.9500 },
+                { "id": 5, "category": "thermal", "name": "Cooling & Heating Crisis Point", "type": "Shelter Hub", "info": "AC zone and winter heating shelter.", "phone": null, "lat": 47.4900, "lng": 19.0600 },
+                { "id": 6, "category": "comms", "name": "Analog Emergency Pillar", "type": "Payphone / Pillar", "info": "Offline analog communication point.", "phone": null, "lat": 47.4950, "lng": 19.0450 }
+            ]
+        };
+
+        let defaultLat = 47.5000;
+        let defaultLng = 19.0000;
+        let cachedPos = localStorage.getItem('proxaid_last_pos');
+        if (cachedPos) {
+            let parsed = JSON.parse(cachedPos);
+            defaultLat = parsed.lat;
+            defaultLng = parsed.lng;
+        }
+
+        const map = L.map('map').setView([defaultLat, defaultLng], 12);
+        L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', { maxZoom: 17 }).addTo(map);
+        let markersLayer = L.layerGroup().addTo(map);
+
+        if ("geolocation" in navigator) {
+            navigator.geolocation.watchPosition(
+                (pos) => {
+                    let lat = pos.coords.latitude;
+                    let lng = pos.coords.longitude;
+                    map.setView([lat, lng], 14);
+                    document.getElementById('ui-status').innerText = dict[currentLang].statusGPS;
+                    localStorage.setItem('proxaid_last_pos', JSON.stringify({lat: lat, lng: lng}));
+                },
+                () => { document.getElementById('ui-status').innerText = dict[currentLang].statusFallback; },
+                { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }
+            );
+        } else {
+            document.getElementById('ui-status').innerText = dict[currentLang].statusFallback;
+        }
+
+        function showMarkers(items) {
+            markersLayer.clearLayers();
+            items.forEach(item => {
+                if (item.lat && item.lng) {
+                    let marker = L.marker([item.lat, item.lng]).bindPopup(`<b>${item.name}</b><br>${item.type}<br>${item.info}`);
+                    markersLayer.addLayer(marker);
+                }
+            });
+        }
+
+        function renderList(items) {
+            let container = document.getElementById('results-list');
+            if (items.length === 0) {
+                container.innerHTML = "<p>No matching nodes found.</p>";
+                markersLayer.clearLayers();
+                return;
+            }
+            let html = "";
+            items.forEach(item => {
+                html += `<div class="result-item" onclick="panToNode(${item.lat}, ${item.lng})">
+                    <strong style="color:#00ff66;">${item.name}</strong> <span style="color:#888;">[${item.type}]</span><br>
+                    <small style="color:#ccc;">${item.info}</small><br>`;
+                if (item.phone) {
+                    html += `<a href="tel:${item.phone}" class="action-link">CALL / HÍVÁS: ${item.phone}</a> `;
+                }
+                html += `</div>`;
+            });
+            container.innerHTML = html;
+            showMarkers(items);
+        }
+
+        function panToNode(lat, lng) { map.setView([lat, lng], 15); }
+
+        function setTab(tabId) {
+            document.getElementById('searchInput').value = ""; 
+            if (tabId === 'all') {
+                document.getElementById('active-tab-title').innerText = dict[currentLang].allNodes;
+                renderList(embeddedJSON.destinations);
+                return;
+            }
+            document.getElementById('active-tab-title').innerText = "Filter: " + tabId.toUpperCase();
+            let filtered = embeddedJSON.destinations.filter(item => item.category === tabId);
+            renderList(filtered);
+        }
+
+        function filterData() {
+            let query = document.getElementById('searchInput').value.toLowerCase().trim();
+            if (query === "") { renderList(embeddedJSON.destinations); return; }
+            let filtered = embeddedJSON.destinations.filter(item => 
+                item.name.toLowerCase().includes(query) || item.type.toLowerCase().includes(query) || item.info.toLowerCase().includes(query)
+            );
+            renderList(filtered);
+        }
+
+        let nfcState = false, meshState = false;
+        function toggleRadio(type) {
+            if (type === 'nfc') {
+                nfcState = !nfcState;
+                let el = document.getElementById('nfcToggle');
+                el.innerText = nfcState ? "NFC: ACTIVE" : "NFC: OFF";
+                el.className = nfcState ? "toggle-label" : "toggle-label off";
+            } else if (type === 'mesh') {
+                meshState = !meshState;
+                let el = document.getElementById('meshToggle');
+                el.innerText = meshState ? "BLE/MESH: SCANNING" : "MESH: OFF";
+                el.className = meshState ? "toggle-label" : "toggle-label off";
+            }
+        }
+
+        renderList(embeddedJSON.destinations);
+    </script>
+</body>
+</html>
