@@ -13,7 +13,6 @@ jobs:
       issues: write
     
     steps:
-      # ÚJ LÉPÉS: Ez letölti a repódat a szerverre, így a CLI tudja, hol dolgozik
       - name: 📥 Checkout Repository
         uses: actions/checkout@v4
 
@@ -23,17 +22,15 @@ jobs:
         run: |
           echo "Initiating search across PROXAID topics..."
           
-          # 1. Keresés
-          gh search repos "topic:off-grid OR topic:mesh-networking OR topic:survival-toolkit OR topic:stealth-sos OR topic:disaster-recovery" --sort updated --limit 15 --json nameWithOwner,url,description,updatedAt > results.json
+          # Javítva: 'fullName' használata a 'nameWithOwner' helyett
+          gh search repos "topic:off-grid OR topic:mesh-networking OR topic:survival-toolkit OR topic:stealth-sos OR topic:disaster-recovery" --sort updated --limit 15 --json fullName,url,description,updatedAt > results.json
           
-          # 2. Markdown fájl generálása
           echo "# 🛡️⛑️ PROXAID Weekly Radar" > report.md
           echo "Automated ping for off-grid, mesh-networking, and disaster recovery repositories. (Generated: $(date +'%Y-%m-%d'))" >> report.md
           echo "---" >> report.md
           echo "" >> report.md
           
-          # 3. JSON formázása
-          jq -r '.[] | "### [\(.nameWithOwner)](\(.url))\n* **Last Updated:** \(.updatedAt | fromdate | strftime("%Y-%m-%d %H:%M"))\n* **Description:** \(.description)\n---"' results.json >> report.md
+          # Javítva: .fullName hivatkozás a jq feldolgozóban
+          jq -r '.[] | "### [\(.fullName)](\(.url))\n* **Last Updated:** \(.updatedAt | fromdate | strftime("%Y-%m-%d %H:%M"))\n* **Description:** \(.description)\n---"' results.json >> report.md
           
-          # 4. Issue létrehozása (javítva: explicit repo megadás, label eltávolítva)
           gh issue create --repo ${{ github.repository }} --title "📡 Weekly PROXAID Radar: $(date +'%Y-%m-%d')" --body-file report.md
