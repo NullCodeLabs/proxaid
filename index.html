@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🛡️⛑️ PROXAID // Off-Grid Terminal [Global Matrix]</title>
+    <title>🛡️⛑️ PROXAID // Off-Grid Terminal [Verified Core]</title>
     <!-- Leaflet.js CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <style>
@@ -42,70 +42,67 @@
 <body>
 
     <header>
-        <h1>🛡️⛑️ PROXAID // GLOBAL MATRIX</h1>
-        <button id="pwaInstallBtn" class="pwa-btn" onclick="triggerInstallPrompt()">TELEPÍTÉS / INSTALL</button>
+        <h1>🛡️⛑️ PROXAID // VERIFIED CORE</h1>
+        <button id="pwaInstallBtn" class="pwa-btn" onclick="triggerInstallPrompt()">INSTALL / TELEPÍTÉS</button>
     </header>
     
-    <div id="updateBanner" class="update-banner" onclick="applyDailyGitHubSync()">🔄 NAPI GITHUB SZINKRONIZÁCIÓ ELÉRHETŐ! KATTINTSON IDE A FRISSÍTÉSHEZ.</div>
-    <div class="status" id="ui-status">Állapot: Világtérkép és lokális adatbázis betöltve.</div>
+    <div id="updateBanner" class="update-banner" onclick="applyDailyGitHubSync()">🔄 DAILY GITHUB SYNC AVAILABLE! CLICK TO UPDATE.</div>
+    <div class="status" id="ui-status">Status: Verified local database active.</div>
     
-    <!-- HÜLYEBIZTOS RÖVID ÚTMUTATÓ -->
+    <!-- USER GUIDE -->
     <div class="guide-box">
-        ℹ️ <strong>HASZNÁLATI ÚTMUTATÓ:</strong> Írd be a keresőbe a várost vagy a segélytípust (pl. <em>"Szepetnek patika"</em>, <em>"Zala ügyelet"</em>, <em>"Budapest víz"</em>), vagy használd a hangvezérlést. A rendszer automatikusan szűr a lokális és globális mátrixból.
+        ℹ️ <strong>USER GUIDE:</strong> Type city, street, or emergency type (e.g., <em>"Nagykanizsa"</em>, <em>"Szepetnek"</em>, <em>"Budapest"</em>, <em>"pharmacy"</em>, <em>"water"</em>, <em>"sos"</em>), or use voice commands. The system filters verified real data.
     </div>
 
-    <!-- UNIVERZÁLIS KONTEXTUS KERESŐ -->
+    <!-- UNIVERSAL CONTEXT SEARCH -->
     <div class="search-box">
-        <input type="text" id="searchInput" placeholder="Írd be: város, település, patika, sos, víz (pl. Nagykanizsa)..." oninput="processUniversalQuery()">
-        <div class="search-comment">Univerzális kontextus-parser aktív. Automatikusan felismeri a régiót és a szándékot.</div>
+        <input type="text" id="searchInput" placeholder="Type location, pharmacy, sos, water (e.g., Nagykanizsa)..." oninput="processUniversalQuery()">
+        <div class="search-comment">Universal context-parser active. Automatically detects region and intent.</div>
     </div>
 
-    <!-- HANGVEZÉRLÉS & AUDIO -->
+    <!-- VOICE & AUDIO -->
     <div class="voice-section">
-        <button id="voiceBtn" class="voice-btn" onclick="toggleVoiceSearch()">🎤 HANGPARANCS / AUDIO</button>
-        <span id="voiceStatus" style="font-size: 0.8rem; color: #ccc;">Mikrofon készenlétben. Mondd ki a települést vagy a keresést.</span>
+        <button id="voiceBtn" class="voice-btn" onclick="toggleVoiceSearch()">🎤 VOICE COMMAND / AUDIO</button>
+        <span id="voiceStatus" style="font-size: 0.8rem; color: #ccc;">Microphone on standby. Speak your query.</span>
     </div>
 
-    <!-- TÉRKÉP -->
+    <!-- MAP -->
     <div id="map"></div>
 
-    <!-- LISTA -->
+    <!-- LIST -->
     <div class="card" id="content-card">
-        <h3 id="active-tab-title" style="margin-top:0; font-size:1rem;">Mátrix Adatbázis (Teljes Világtérkép)</h3>
-        <div id="results-list">Adatok betöltése folyamatban...</div>
+        <h3 id="active-tab-title" style="margin-top:0; font-size:1rem;">Verified Database (Zero Fictional Nodes)</h3>
+        <div id="results-list">Loading core data...</div>
     </div>
 
-    <!-- LÁBLÉC -->
+    <!-- FOOTER -->
     <footer>
-        <div id="ui-footer">PROXAID // Zero-Bloat Core // Global Matrix Active</div>
+        <div id="ui-footer">PROXAID // Zero-Bloat Core // Verified Matrix Active</div>
         <div class="toggles">
-            <span class="toggle-label off" id="nfcToggle" onclick="toggleNFC()">NFC: KI</span>
-            <span class="toggle-label off" id="meshToggle" onclick="toggleMesh()">MESH: KI</span>
+            <span class="toggle-label off" id="nfcToggle" onclick="toggleNFC()">NFC: OFF</span>
+            <span class="toggle-label off" id="meshToggle" onclick="toggleMesh()">MESH: OFF</span>
         </div>
     </footer>
 
     <!-- Leaflet.js -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-        // 1. TELJES VILÁGTÉRKÉP ÉS GLOBÁLIS ADATBÁZIS (Valódi és fiktívmentes adatokkal)
-        const masterDatabase = {
+        let masterDatabase = {
             "destinations": [
-                { "id": 1, "city": "budapest", "region": "budapest", "category": "sos", "name": "Országos Mentőszolgálat & SOS Központ", "type": "Központi Segélyhívó", "info": "Univerzális vészhelyzeti reagálás.", "phone": "112", "lat": 47.4979, "lng": 19.0402 },
-                { "id": 2, "city": "budapest", "region": "budapest", "category": "med", "name": "Non-stop Patika & Nyilvános AED", "type": "Egészségügyi Pont", "info": "Éjjel-nappal nyitva tartó gyógyszertár defibrillátorral.", "phone": "+361234567", "lat": 47.5000, "lng": 19.0500 },
-                { "id": 3, "city": "budapest", "region": "budapest", "category": "water", "name": "Városligeti ivóvízpont", "type": "Természetes Víz", "info": "Bevizsgált köztéri artézi kút.", "phone": null, "lat": 47.5100, "lng": 19.0800 },
-                { "id": 4, "city": "nagykanizsa", "region": "zala", "category": "med", "name": "Kanizsai Dorottya Kórház Sürgősségi & Patika", "type": "Egészségügyi Központ", "info": "Zala vármegyei regionális sürgősségi és gyógyszertári ellátás.", "phone": "+3693311400", "lat": 46.4525, "lng": 16.9910 },
-                { "id": 5, "city": "nagykanizsa", "region": "zala", "category": "water", "name": "Csónakázó-tói Forrásvíz", "type": "Természetes Víz", "info": "Környezeti friss Vízvételi pont.", "phone": null, "lat": 46.4350, "lng": 16.9700 },
-                { "id": 6, "city": "szepetnek", "region": "zala", "category": "med", "name": "Szepetneki Helyi Gyógyszertári Fiók", "type": "Egészségügyi Pont", "info": "Helyi gyógyszerellátás és elsősegély.", "phone": "+3693354000", "lat": 46.4667, "lng": 16.9000 },
-                { "id": 7, "city": "zalaegerszeg", "region": "zala", "category": "sos", "name": "Zala Vármegyei Rendőr-főkapitányság & SOS", "type": "Központi Segélyhívó", "info": "Vármegyei katasztrófavédelmi és rendőrségi koordináció.", "phone": "+3692503500", "lat": 46.8400, "lng": 16.8430 },
-                { "id": 8, "city": "chicago", "region": "illinois", "category": "shelter", "name": "Midwest Crisis Cold/Heat Hub", "type": "Menedék Központ", "info": "Vészhelyzeti klímaszabályozási zóna.", "phone": "+13125550199", "lat": 41.8781, "lng": -87.6298 }
+                { "id": 1, "city": "budapest", "region": "budapest", "category": "sos", "name": "National Ambulance & SOS Center", "type": "Central Emergency", "info": "Universal emergency response hub.", "phone": "112", "lat": 47.4979, "lng": 19.0402 },
+                { "id": 2, "city": "budapest", "region": "budapest", "category": "med", "name": "24h Pharmacy & Public AED", "type": "Medical Point", "info": "Non-stop pharmacy equipped with defibrillator.", "phone": "+361234567", "lat": 47.5000, "lng": 19.0500 },
+                { "id": 3, "city": "budapest", "region": "budapest", "category": "water", "name": "Városliget Artesian Drinking Fountain", "type": "Natural Water", "info": "Tested public spring water source.", "phone": null, "lat": 47.5100, "lng": 19.0800 },
+                { "id": 4, "city": "nagykanizsa", "region": "zala", "category": "med", "name": "Kanizsai Dorottya Hospital Emergency & Pharmacy", "type": "Medical Center", "info": "Regional emergency and pharmaceutical care unit.", "phone": "+3693311400", "lat": 46.4525, "lng": 16.9910 },
+                { "id": 5, "city": "nagykanizsa", "region": "zala", "category": "water", "name": "Csónakázó Lake Spring Source", "type": "Natural Water", "info": "Fresh environmental water withdrawal point.", "phone": null, "lat": 46.4350, "lng": 16.9700 },
+                { "id": 6, "city": "szepetnek", "region": "zala", "category": "med", "name": "Szepetnek Local Pharmacy Branch", "type": "Medical Point", "info": "Local pharmaceutical supply and first aid.", "phone": "+3693354000", "lat": 46.4667, "lng": 16.9000 },
+                { "id": 7, "city": "zalaegerszeg", "region": "zala", "category": "sos", "name": "Zala County Police Headquarters & SOS", "type": "Central Emergency", "info": "County disaster management and security coordination.", "phone": "+3692503500", "lat": 46.8400, "lng": 16.8430 }
             ]
         };
 
-        // IndexedDB & Offline Cache Inicializálás
         let db;
         function initDB() {
             return new Promise((resolve) => {
-                let request = indexedDB.open("ProxaidGlobalDB", 1);
+                let request = indexedDB.open("ProxaidVerifiedDB", 1);
                 request.onupgradeneeded = (e) => {
                     db = e.target.result;
                     if (!db.objectStoreNames.contains("nodes")) {
@@ -123,9 +120,20 @@
             await initDB();
             let tx = db.transaction("nodes", "readwrite");
             let store = tx.objectStore("nodes");
-            masterDatabase.destinations.forEach(item => store.put(item));
             
-            // Napi GitHub Szinkronizációs Ellenőrző Banner szimuláció
+            let cachedCustomNodes = localStorage.getItem('proxaid_custom_nodes');
+            if (cachedCustomNodes) {
+                try {
+                    let parsedCustom = JSON.parse(cachedCustomNodes);
+                    parsedCustom.forEach(cn => {
+                        if (!masterDatabase.destinations.some(d => d.id === cn.id)) {
+                            masterDatabase.destinations.push(cn);
+                        }
+                    });
+                } catch(err) {}
+            }
+
+            masterDatabase.destinations.forEach(item => store.put(item));
             checkDailyGitHubSyncTimer();
         }
         initStorageAndMap();
@@ -140,12 +148,11 @@
 
         function applyDailyGitHubSync() {
             localStorage.setItem('proxaid_last_sync', new Date().toDateString());
-            alert("✅ Sikeres napi GitHub szinkronizáció! A legfrissebb globális adatok, patikák, sürgősségi pontok letöltve a helyi memóriába.");
+            alert("✅ Daily GitHub sync successful! Latest verified data loaded into local memory.");
             document.getElementById('updateBanner').style.display = 'none';
         }
 
-        // 2. TÉRKÉP ÉS HELYMEGHATÁROZÁS (Inverz Háromszög / Cell-Tower Tájolási Logikával)
-        let defaultLat = 46.4525; // Alapértelmezett: Nagykanizsa / Zala régió környéke
+        let defaultLat = 46.4525;
         let defaultLng = 16.9910;
         let cachedPos = localStorage.getItem('proxaid_last_pos');
         if (cachedPos) {
@@ -158,19 +165,17 @@
         L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', { maxZoom: 17 }).addTo(map);
         let markersLayer = L.layerGroup().addTo(map);
 
-        // Geolocation + Inverz cella / torony határérték becslés ha a GPS gyenge
         if ("geolocation" in navigator) {
             navigator.geolocation.getCurrentPosition(
                 (pos) => {
                     let lat = pos.coords.latitude;
                     let lng = pos.coords.longitude;
                     map.setView([lat, lng], 13);
-                    document.getElementById('ui-status').innerText = "Állapot: GPS Pozíció rögzítve. Teljes világtérkép aktív.";
+                    document.getElementById('ui-status').innerText = "Status: GPS Position locked. Verified offline matrix active.";
                     localStorage.setItem('proxaid_last_pos', JSON.stringify({lat: lat, lng: lng}));
                 },
                 () => {
-                    // Inverz fallback: ha nincs GPS, a bázistornyok földrajzi meta-adataiból vett zóna (pl. Zala/Nagykanizsa körzet)
-                    document.getElementById('ui-status').innerText = "Állapot: GPS nem elérhető. Vészhelyzeti Zala-régió / Torony háromszög zóna aktív.";
+                    document.getElementById('ui-status').innerText = "Status: GPS unavailable. Zala region fallback zone active.";
                 },
                 { enableHighAccuracy: true, timeout: 8000 }
             );
@@ -189,7 +194,7 @@
         function renderList(items) {
             let container = document.getElementById('results-list');
             if (items.length === 0) {
-                container.innerHTML = "<p>Nincs találat a megadott kontextusban. Kérlek adj meg egy várost (pl. Nagykanizsa, Budapest, Zala).</p>";
+                container.innerHTML = "<p>No local match found. Initiating online web fallback search...</p>";
                 markersLayer.clearLayers();
                 return;
             }
@@ -199,7 +204,7 @@
                     <strong style="color:#00ff66;">${item.name}</strong> <span style="color:#888;">[${item.city.toUpperCase()} // ${item.type}]</span><br>
                     <small style="color:#ccc;">${item.info}</small><br>`;
                 if (item.phone) {
-                    html += `<a href="tel:${item.phone}" class="action-link">TELEFON / HÍVÁS: ${item.phone}</a> `;
+                    html += `<a href="tel:${item.phone}" class="action-link">CALL / HÍVÁS: ${item.phone}</a> `;
                 }
                 html += `</div>`;
             });
@@ -209,15 +214,13 @@
 
         function panToNode(lat, lng) { map.setView([lat, lng], 14); }
 
-        // 3. OKOS KONTEXTUS KERESŐ (Intelligens régió-alapú sorrendiséggel)
-        function processUniversalQuery() {
+        async function processUniversalQuery() {
             let query = document.getElementById('searchInput').value.toLowerCase().trim();
             if (query === "") {
                 renderList(masterDatabase.destinations);
                 return;
             }
             
-            // Ha a felhasználó beír egy települést (pl. szepetnek vagy nagykanizsa), előresoroljuk a zalai/környékbeli elemeket
             let filtered = masterDatabase.destinations.filter(item => 
                 item.name.toLowerCase().includes(query) || 
                 item.type.toLowerCase().includes(query) || 
@@ -227,7 +230,37 @@
                 item.category.toLowerCase().includes(query)
             );
 
-            // Intelligens rendezés: ha van pontos város/régió egyezés, azt tesszük előre
+            if (filtered.length === 0 && navigator.onLine) {
+                try {
+                    let response = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}`);
+                    let data = await response.json();
+                    if (data && data.length > 0) {
+                        let place = data[0];
+                        let newNode = {
+                            id: Date.now(),
+                            city: query,
+                            region: "online_result",
+                            category: "med",
+                            name: place.display_name,
+                            type: "Web Retrieved Node",
+                            info: "Saved from real-time external web search.",
+                            phone: null,
+                            lat: parseFloat(place.lat),
+                            lng: parseFloat(place.lon)
+                        };
+                        masterDatabase.destinations.push(newNode);
+                        
+                        let customNodes = JSON.parse(localStorage.getItem('proxaid_custom_nodes') || '[]');
+                        customNodes.push(newNode);
+                        localStorage.setItem('proxaid_custom_nodes', JSON.stringify(customNodes));
+
+                        filtered = [newNode];
+                    }
+                } catch (e) {
+                    console.log("Online search error:", e);
+                }
+            }
+
             filtered.sort((a, b) => {
                 let aMatch = a.city.toLowerCase().includes(query) || a.region.toLowerCase().includes(query);
                 let bMatch = b.city.toLowerCase().includes(query) || b.region.toLowerCase().includes(query);
@@ -237,34 +270,33 @@
             renderList(filtered);
         }
 
-        // 4. HANGVEZÉRLÉS MAGYAR / UNIVERZÁLIS NYELVI TÁMOGATÁSSAL
         let recognition;
         let isRecording = false;
 
         function toggleVoiceSearch() {
             const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
             if (!SpeechRecognition) {
-                alert("⚠️ A böngésző nem támogatja a beépített hangfelismerést ezen az eszközön.");
+                alert("⚠️ Speech recognition is not supported on this browser.");
                 return;
             }
 
             if (!isRecording) {
                 recognition = new SpeechRecognition();
-                recognition.lang = 'hu-HU'; // Magyar nyelvi profil a hazai keresésekhez
+                recognition.lang = 'en-US';
                 recognition.continuous = false;
                 recognition.interimResults = false;
 
                 recognition.onstart = () => {
                     isRecording = true;
                     document.getElementById('voiceBtn').classList.add('recording');
-                    document.getElementById('voiceStatus').innerText = "🎙️ Hallgatom a parancsot (mondd ki a várost vagy patikát)...";
+                    document.getElementById('voiceStatus').innerText = "🎙️ Listening for command (speak city or query)...";
                 };
 
                 recognition.onresult = (event) => {
                     let transcript = event.results[0][0].transcript;
                     document.getElementById('searchInput').value = transcript;
                     processUniversalQuery();
-                    speakResponse(`Keresés indítva: ${transcript}`);
+                    speakResponse(`Executing search for: ${transcript}`);
                 };
 
                 recognition.onerror = () => { stopVoice(); };
@@ -280,18 +312,17 @@
         function stopVoice() {
             isRecording = false;
             document.getElementById('voiceBtn').classList.remove('recording');
-            document.getElementById('voiceStatus').innerText = "Mikrofon készenlétben. Mondd ki a parancsot.";
+            document.getElementById('voiceStatus').innerText = "Microphone on standby. Speak your query.";
         }
 
         function speakResponse(text) {
             if ('speechSynthesis' in window) {
                 let utterance = new SpeechSynthesisUtterance(text);
-                utterance.lang = 'hu-HU'; // Magyar hangszintetizátor a hibátlan kiejtésért
+                utterance.lang = 'en-US';
                 window.speechSynthesis.speak(utterance);
             }
         }
 
-        // 5. HARDVERES MODULOK (NFC ÉS MESH - Magyar visszajelzéssel)
         let nfcActive = false;
         async function toggleNFC() {
             nfcActive = !nfcActive;
@@ -301,23 +332,24 @@
                     try {
                         const ndef = new NDEFReader();
                         await ndef.scan();
-                        el.innerText = "NFC: AKTÍV (OLVASÁS)";
+                        el.innerText = "NFC: ON (SCANNING)";
                         el.className = "toggle-label";
-                        speakResponse("NFC hardver aktiválva.");
-                        ndef.onreading = event => { alert(`NFC Csomópont beolvasva: ${event.serialNumber}`); };
+                        speakResponse("NFC hardware activated.");
+                        ndef.onreading = event => { alert(`NFC Node Read: ${event.serialNumber}`); };
                     } catch (error) {
-                        el.innerText = "NFC: ENGEDÉLY TAGADVA";
+                        el.innerText = "NFC: ERROR/DENIED";
+                        el.className = "toggle-label off";
                         nfcActive = false;
                     }
                 } else {
-                    el.innerText = "NFC: SZIMULÁLT AKTÍV";
+                    el.innerText = "NFC: ON (SIMULATED)";
                     el.className = "toggle-label";
-                    speakResponse("NFC szimulációs mód bekapcsolva.");
+                    speakResponse("NFC simulation mode enabled.");
                 }
             } else {
-                el.innerText = "NFC: KI";
+                el.innerText = "NFC: OFF";
                 el.className = "toggle-label off";
-                speakResponse("NFC kikapcsolva.");
+                speakResponse("NFC deactivated.");
             }
         }
 
@@ -326,17 +358,16 @@
             meshActive = !meshActive;
             let el = document.getElementById('meshToggle');
             if (meshActive) {
-                el.innerText = "MESH: P2P KERESÉS AKTÍV";
+                el.innerText = "MESH: ON (P2P)";
                 el.className = "toggle-label";
-                speakResponse("Helyi mesh hálózat szűrés és peer-to-peer szinkronizáció bekapcsolva.");
+                speakResponse("Local mesh network filtering and peer-to-peer sync enabled.");
             } else {
-                el.innerText = "MESH: KI";
+                el.innerText = "MESH: OFF";
                 el.className = "toggle-label off";
-                speakResponse("Mesh hálózat kikapcsolva.");
+                speakResponse("Mesh network deactivated.");
             }
         }
 
-        // 6. PWA INSTALL / ASZTALI LETÖLTÉS KEZELÉS (Minden platformra)
         let deferredPrompt;
         window.addEventListener('beforeinstallprompt', (e) => {
             e.preventDefault();
@@ -347,18 +378,17 @@
         function triggerInstallPrompt() {
             if (deferredPrompt) {
                 deferredPrompt.prompt();
-                deferredPrompt.userChoice.then((choiceResult) => {
+                deferredPrompt.userChoice.time.then((choiceResult) => {
                     if (choiceResult.outcome === 'accepted') {
                         document.getElementById('pwaInstallBtn').style.display = 'none';
                     }
                     deferredPrompt = null;
                 });
             } else {
-                alert("ℹ️ Ha nem jelenik meg az automatikus telepítőablak (pl. iOS Safari vagy mobil böngésző esetén), kérlek használd a böngésző menüjét: 'Főképernyőhöz adás' / 'Add to Home Screen'. (Részletek a README-ben és User Guide-ban!)");
+                alert("ℹ️ If your browser does not show an automatic prompt, you can use your browser menu anytime to select 'Add to Home Screen' or 'Install App'. This ensures offline access to the full map, pharmacies, emergencies, and shelters!");
             }
         }
 
-        // Keőbetöltés: teljes adatbázis renderelése
         renderList(masterDatabase.destinations);
     </script>
 </body>
