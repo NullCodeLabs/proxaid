@@ -1,0 +1,12 @@
+{
+  "name": "proxaid-offline",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "npm run validate",
+    "validate": "node tools/validate.mjs",
+    "update:data": "node tools/update-packs.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

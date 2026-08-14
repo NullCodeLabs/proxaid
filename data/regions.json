@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "regions": [
+    {
+      "id": "hu-west-osm",
+      "name": "Nyugat-Magyarország",
+      "enabled": true,
+      "bbox": [45.6, 15.8, 47.4, 18.5],
+      "maximumRecords": 25000
+    }
+  ]
+}

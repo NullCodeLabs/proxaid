@@ -1,212 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROXAID // True Offline Air-Gapped Terminal</title>
-    <style>
-        body { font-family: monospace; background: #050505; color: #00ff66; margin: 0; padding: 12px; box-sizing: border-box; }
-        header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #00ff66; padding-bottom: 8px; margin-bottom: 10px; }
-        h1 { margin: 0; font-size: 1.1rem; }
-        .status { color: #ff0055; font-size: 0.75rem; border: 1px solid #ff0055; padding: 3px 6px; }
-        
-        .guide-box { background: #111; border: 1px dashed #00ff66; padding: 8px 10px; border-radius: 4px; margin-bottom: 12px; font-size: 0.78rem; color: #ccc; line-height: 1.35; }
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <meta name="theme-color" content="#061410" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="referrer" content="no-referrer" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests" />
+    <meta name="description" content="PROXAID: eszközön tárolt, offline is kereshető sürgősségi és túlélési pontok." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="PROXAID" />
+    <title>PROXAID Offline</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./assets/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./assets/icon-180.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#results">Ugrás a találatokhoz</a>
 
-        .search-box { background: #111; border: 1px solid #333; padding: 10px; border-radius: 4px; margin-bottom: 12px; }
-        .search-box input { width: 100%; padding: 10px; background: #000; color: #00ff66; border: 1px solid #00ff66; font-family: monospace; font-size: 0.95rem; box-sizing: border-box; outline: none; }
-        .search-comment { font-size: 0.72rem; color: #888; margin-top: 4px; }
-
-        /* ABSOLUTE OFFLINE EMBEDDED VECTOR RADAR MAP */
-        #offline-vector-map { width: 100%; height: 260px; background: #0a0a0a; border: 1px solid #00ff66; border-radius: 4px; margin-bottom: 12px; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
-        .map-grid { position: absolute; width: 200%; height: 200%; background-image: linear-gradient(#151515 1px, transparent 1px), linear-gradient(90deg, #151515 1px, transparent 1px); background-size: 30px 30px; }
-        .map-node { position: absolute; width: 14px; height: 14px; background: #ff0055; border: 2px solid #fff; border-radius: 50%; cursor: pointer; transform: translate(-50%, -50%); z-index: 10; }
-        .map-node:hover { background: #00ff66; }
-        .map-label { position: absolute; bottom: 8px; left: 8px; background: rgba(0,0,0,0.9); padding: 4px 8px; font-size: 0.75rem; border: 1px solid #333; z-index: 20; color: #00ff66; }
-
-        .card { background: #111; border: 1px solid #333; padding: 10px; margin-bottom: 12px; border-radius: 4px; max-height: 260px; overflow-y: auto; }
-        .result-item { padding: 8px 0; border-bottom: 1px dashed #333; }
-        .action-links { display: flex; gap: 8px; margin-top: 6px; flex-wrap: wrap; }
-        .action-link { display: inline-block; padding: 4px 8px; background: #00ff66; color: #000; text-decoration: none; font-weight: bold; border-radius: 3px; font-size: 0.75rem; }
-        .web-link { background: #00ccff; }
-        
-        footer { margin-top: 15px; border-top: 1px solid #333; padding-top: 8px; display: flex; justify-content: space-between; align-items: center; font-size: 0.75rem; color: #aaa; }
-    </style>
-</head>
-<body>
-
-    <header>
-        <h1>🛡️⛑️ PROXAID // TRUE AIR-GAPPED CORE</h1>
-        <span class="status">0 BYTES OUTBOUND TRAFFIC</span>
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="PROXAID kezdőlap">
+        <span class="brand-mark" aria-hidden="true">+</span>
+        <span><strong>PROXAID</strong><small>OFFLINE FIELD TERMINAL</small></span>
+      </a>
+      <div class="top-actions">
+        <button id="themeButton" class="icon-button" type="button" aria-label="Téma váltása">◐</button>
+        <span id="networkBadge" class="status-badge" role="status">ELLENŐRZÉS…</span>
+      </div>
     </header>
-    
-    <div class="guide-box">
-        ℹ️ <strong>AIR-GAPPED OFFLINE TERMINAL:</strong> Nincsenek külső térkép-szerverek vagy CDN függőségek. A beágyazott vektoros lokális radar és az adatbázis 100%-ban helyben fut mobilokon, laptokon és asztali gépeken is offline állapotban.
-    </div>
 
-    <div class="search-box">
-        <input type="text" id="searchInput" placeholder="Keresés lokális adatbázisban (pl. Budapest, Nagykanizsa, Szepetnek, kórház)..." oninput="processLocalQuery()">
-        <div class="search-comment">Azonnali helyi szűrés hálózati csatlakozás nélkül.</div>
-    </div>
+    <main>
+      <section class="emergency-strip" aria-label="Vészhelyzeti műveletek">
+        <div>
+          <p class="eyebrow">AZONNALI ÉLETVESZÉLY</p>
+          <h1>Ne az adatbázist keresd. Hívd a helyi segélyhívót.</h1>
+        </div>
+        <a id="emergencyCall" class="sos-button" href="tel:112">EU / HU HÍVÁS <strong>112</strong></a>
+      </section>
 
-    <!-- BEÁGYAZOTT OFFLINE RADAR TÉRKÉP -->
-    <div id="offline-vector-map">
-        <div class="map-grid"></div>
-        <div class="map-label" id="mapLabel">RADAR NÉZET: VÁLASSZ EGY CSOMÓPONTOT VAGY KERESS</div>
-    </div>
+      <section class="command-panel" aria-labelledby="searchTitle">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">HELYI ADATBÁZIS</p>
+            <h2 id="searchTitle">Mi kell most?</h2>
+          </div>
+          <button id="locateButton" class="secondary-button" type="button">⌖ HELYZETEM</button>
+        </div>
 
-    <div class="card" id="content-card">
-        <h3 id="active-tab-title" style="margin-top:0; font-size:0.9rem;">Hiteles Lokális Rekordok (Fiktív Adatok Nélkül)</h3>
-        <div id="results-list">Memória betöltése...</div>
-    </div>
+        <label class="search-field" for="searchInput">
+          <span class="sr-only">Keresés</span>
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" autocomplete="off" enterkeyhint="search"
+            placeholder="Kórház, AED, ivóvíz, menedék, település…" />
+          <button id="clearSearch" type="button" aria-label="Keresés törlése">×</button>
+        </label>
+
+        <div id="categoryFilters" class="filter-row" aria-label="Kategóriaszűrők"></div>
+      </section>
+
+      <section class="workspace">
+        <div class="map-panel">
+          <div class="panel-toolbar">
+            <div>
+              <p class="eyebrow">OFFLINE VEKTORNÉZET</p>
+              <p id="mapStatus" class="muted" role="status">Térképmag betöltése…</p>
+            </div>
+            <div class="map-controls" aria-label="Térképvezérlők">
+              <button id="zoomOut" type="button" aria-label="Kicsinyítés">−</button>
+              <button id="resetMap" type="button" aria-label="Világnézet">◎</button>
+              <button id="zoomIn" type="button" aria-label="Nagyítás">+</button>
+            </div>
+          </div>
+          <div id="mapFrame" class="map-frame">
+            <canvas id="mapCanvas" aria-label="Offline világtérkép és találati pontok"></canvas>
+            <div class="map-legend"><span></span> helyi rekord <i></i> saját helyzet</div>
+          </div>
+          <p class="map-note">A térkép tájékoztató nézet, nem útvonaltervező. Offline állapotban mindig az eszközön tárolt adatokból dolgozik.</p>
+        </div>
+
+        <aside id="dataPanel" class="data-panel" aria-labelledby="dataTitle">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">OFFLINE KÉSZENLÉT</p>
+              <h2 id="dataTitle">Adatcsomagok</h2>
+            </div>
+            <span id="readyScore" class="score">—</span>
+          </div>
+          <dl class="data-stats">
+            <div><dt>Helyi rekord</dt><dd id="recordCount">0</dd></div>
+            <div><dt>Utolsó frissítés</dt><dd id="lastSync">még nem történt</dd></div>
+            <div><dt>Helyi tárhely</dt><dd id="storageUse">ellenőrzés…</dd></div>
+            <div><dt>Adatmegőrzés</dt><dd id="storagePolicy">ellenőrzés…</dd></div>
+          </dl>
+          <div class="button-stack">
+            <button id="syncButton" class="primary-button" type="button">↻ FRISSÍTÉS MOST</button>
+            <button id="packButton" class="secondary-button file-button" type="button">＋ ADATCSOMAG IMPORTÁLÁSA</button>
+            <input id="packInput" type="file" accept="application/json,.json" hidden />
+            <button id="installButton" class="secondary-button" type="button" hidden>⇩ TELEPÍTÉS</button>
+          </div>
+          <p id="syncMessage" class="inline-message" role="status"></p>
+          <details>
+            <summary>Mit tud a frissítés?</summary>
+            <p>Megnyitáskor és visszatérő hálózati kapcsolatnál ellenőrzi a napi adatcsomagot. Támogatott böngészőben napi háttérfrissítést is kér. iOS-en a biztos út az app megnyitása vagy a „Frissítés most”.</p>
+          </details>
+        </aside>
+      </section>
+
+      <section id="results" class="results-panel" aria-labelledby="resultsTitle">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">TALÁLATOK</p>
+            <h2 id="resultsTitle">Legközelebbi használható pontok</h2>
+          </div>
+          <span id="resultCount" class="muted">0 találat</span>
+        </div>
+        <div id="resultsList" class="results-list" aria-live="polite"></div>
+      </section>
+
+      <section class="trust-grid" aria-label="Biztonsági és működési információk">
+        <article><span>01</span><h3>Offline-first</h3><p>Az alkalmazásmag, a világnézet és a telepített rekordok hálózat nélkül is elérhetők.</p></article>
+        <article><span>02</span><h3>Forrásjelölt</h3><p>Minden rekordnál látható a forrás és a frissesség. A közösségi adat nem minősül hatósági ellenőrzésnek.</p></article>
+        <article><span>03</span><h3>Nincs követés</h3><p>A helyzeted az eszközön marad. Külső térképcsempét, analitikát és reklámkövetőt nem töltünk.</p></article>
+      </section>
+    </main>
 
     <footer>
-        <div>PROXAID // Standalone Monolith</div>
-        <div>OFFLINE READY: 100%</div>
+      <p>PROXAID // lokális készenléti réteg</p>
+      <p>Vészhelyzetben a hivatalos segélyhívó az első.</p>
+      <p>Adatok: <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a> · <a href="https://www.naturalearthdata.com/about/terms-of-use/" target="_blank" rel="noopener noreferrer">Natural Earth</a></p>
     </footer>
 
-    <script>
-        // SZIGORÚAN HITELES, VALÓS HIVATALOS ADATOK (Zéró fiktív elem)
-        const trueOfflineDatabase = {
-            "destinations": [
-                { 
-                    "id": 1, 
-                    "city": "budapest", 
-                    "region": "budapest", 
-                    "category": "sos", 
-                    "name": "Országos Mentőszolgálat (Központi Irányítás)", 
-                    "type": "Központi Segélyhívó", 
-                    "info": "Országos vészhelyzeti mentésirányítás.", 
-                    "phone": "112", 
-                    "url": "https://www.mentok.hu",
-                    "x": 50, "y": 50 
-                },
-                { 
-                    "id": 2, 
-                    "city": "budapest", 
-                    "region": "budapest", 
-                    "category": "med", 
-                    "name": "Semmelweis Egyetem Sürgősségi Betegellátó (SBO)", 
-                    "type": "Orvosi Központ", 
-                    "info": "Központi klinikai sürgősségi és trauma ellátás.", 
-                    "phone": "+3614591500", 
-                    "url": "https://semmelweis.hu",
-                    "x": 58, "y": 45 
-                },
-                { 
-                    "id": 3, 
-                    "city": "nagykanizsa", 
-                    "region": "zala", 
-                    "category": "med", 
-                    "name": "Kanizsai Dorottya Kórház Sürgősségi Osztály", 
-                    "type": "Orvosi Központ", 
-                    "info": "Zala vármegyei területi kórház és ügyeleti központ.", 
-                    "phone": "+3693311400", 
-                    "url": "https://www.kdkorhaz.hu",
-                    "x": 25, "y": 75 
-                },
-                { 
-                    "id": 4, 
-                    "city": "nagykanizsa", 
-                    "region": "zala", 
-                    "category": "sos", 
-                    "name": "Nagykanizsai Rendőrkapitányság", 
-                    "type": "Rendőrség / SOS", 
-                    "info": "Helyi rendészeti és hatósági egység.", 
-                    "phone": "+3693312190", 
-                    "url": "https://www.police.hu",
-                    "x": 28, "y": 72 
-                },
-                { 
-                    "id": 5, 
-                    "city": "szepetnek", 
-                    "region": "zala", 
-                    "category": "med", 
-                    "name": "Szepetneki Helyi Orvosi Rendelő", 
-                    "type": "Egészségügyi Pont", 
-                    "info": "Helyi alapellátási egészségügyi egység.", 
-                    "phone": null, 
-                    "url": "https://www.szepetnek.hu",
-                    "x": 18, "y": 82 
-                },
-                { 
-                    "id": 6, 
-                    "city": "zalaegerszeg", 
-                    "region": "zala", 
-                    "category": "med", 
-                    "name": "Zala Vármegyei Szent Rafael Kórház", 
-                    "type": "Orvosi Központ", 
-                    "info": "Vármegyei szintű traumatológia és sürgősségi ellátás.", 
-                    "phone": "+3692507500", 
-                    "url": "https://www.zmkorhaz.hu",
-                    "x": 32, "y": 58 
-                }
-            ]
-        };
+    <dialog id="installDialog" aria-labelledby="installDialogTitle">
+      <div>
+        <h2 id="installDialogTitle">Telepítés iPhone / iPad készüléken</h2>
+        <ol><li>Nyisd meg Safari böngészőben.</li><li>Koppints a Megosztás gombra.</li><li>Válaszd a „Főképernyőhöz adás” lehetőséget.</li><li>Nyisd meg egyszer online, majd próbáld ki repülő módban.</li></ol>
+        <button id="closeInstallDialog" class="primary-button" type="button">ÉRTETTEM</button>
+      </div>
+    </dialog>
 
-        function renderOfflineMapNodes(items) {
-            const mapContainer = document.getElementById('offline-vector-map');
-            let existingNodes = mapContainer.querySelectorAll('.map-node');
-            existingNodes.forEach(n => n.remove());
-
-            items.forEach((item) => {
-                let node = document.createElement('div');
-                node.className = 'map-node';
-                node.style.left = (item.x || 50) + '%';
-                node.style.top = (item.y || 50) + '%';
-                node.title = `${item.name} ${item.phone ? '(' + item.phone + ')' : ''}`;
-                
-                node.onclick = () => {
-                    document.getElementById('mapLabel').innerText = `CSOMÓPONT: ${item.name} | TEL: ${item.phone || 'Nincs közvetlen'}`;
-                };
-                mapContainer.appendChild(node);
-            });
-        }
-
-        function renderList(items) {
-            let container = document.getElementById('results-list');
-            if (items.length === 0) {
-                container.innerHTML = "<p>Nincs találat a lokális memóriában.</p>";
-                renderOfflineMapNodes([]);
-                return;
-            }
-            let html = "";
-            items.forEach(item => {
-                html += `<div class="result-item">
-                    <strong style="color:#00ff66;">${item.name}</strong> <span style="color:#888;">[${item.city.toUpperCase()} // ${item.type}]</span><br>
-                    <small style="color:#ccc;">${item.info}</small>
-                    <div class="action-links">`;
-                if (item.phone) {
-                    html += `<a href="tel:${item.phone}" class="action-link">HÍVÁS: ${item.phone}</a>`;
-                } else {
-                    html += `<a href="tel:112" class="action-link" style="background:#ff0055; color:#fff;">SEGÉLYHÍVÓ: 112</a>`;
-                }
-                if (item.url) {
-                    html += `<a href="${item.url}" target="_blank" class="action-link web-link">HIVATALOS OLDAL</a>`;
-                }
-                html += `</div></div>`;
-            });
-            container.innerHTML = html;
-            renderOfflineMapNodes(items);
-        }
-
-        function processLocalQuery() {
-            let query = document.getElementById('searchInput').value.toLowerCase().trim();
-            if (query === "") {
-                renderList(trueOfflineDatabase.destinations);
-                return;
-            }
-            let filtered = trueOfflineDatabase.destinations.filter(item => 
-                item.name.toLowerCase().includes(query) || 
-                item.type.toLowerCase().includes(query) || 
-                item.info.toLowerCase().includes(query) || 
-                item.city.toLowerCase().includes(query) ||
-                item.region.toLowerCase().includes(query) ||
-                item.category.toLowerCase().includes(query)
-            );
-            renderList(filtered);
-        }
-
-        renderList(trueOfflineDatabase.destinations);
-    </script>
-</body>
+    <noscript><p class="noscript">A PROXAID működéséhez JavaScript szükséges. Vészhelyzetben hívd a 112-t.</p></noscript>
+    <script type="module" src="./app.js"></script>
+  </body>
 </html>

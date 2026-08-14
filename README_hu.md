@@ -1,60 +1,117 @@
-# 🛡️ PROXAID // A Mátrix Sötét Oldala Túlélő Készlet | Nem csak adrenalin vadászok számára!
+# 🛡️⛑️ PROXAID // Offline vészhelyzeti és túlélési pontterminál
 
-⚠️ **KRITIKUS BIZTONSÁGI FIGYELMEZTETÉS:** Ez nem egy sima weboldal vagy online kényelmi applikáció. Ez egy offline-first vészhelyzeti terminál. Amikor a digitális infrastruktúra darabjaira hullik, a felhőalapú rendszerek pedig cserbenhagynak, nem lesz időd bűvölni a térerőt. Itt nincsenek fiktív adatok, nincs üres ígérgetés, és nincs internetfüggőség. Csak a tiszta, keserű valóság, a globális koordináta-mátrix és a lokális cache, ami életben tart.
+> **Ha eltűnik a hálózat, a lényeges információ ne tűnjön el vele.**
 
----
+[![GitHub Pages közzététel](https://github.com/NullCodeLabs/proxaid/actions/workflows/pages.yml/badge.svg)](https://github.com/NullCodeLabs/proxaid/actions/workflows/pages.yml)
+[![Offline adatok frissítése](https://github.com/NullCodeLabs/proxaid/actions/workflows/update-data.yml/badge.svg)](https://github.com/NullCodeLabs/proxaid/actions/workflows/update-data.yml)
 
-## 1. 📲 A Digitális Szuverenitás Megszerzése (Asztali és Mobil Telepítési Protokoll)
+A PROXAID telepíthető, offline-first webalkalmazás az eszközön tárolt sürgősségi és túlélési pontok kereséséhez. GitHub Pages-ről fut, a kereshető adatbázist helyben tárolja, és nem használ külső térképcsempét, CDN-t, analitikát, reklámot vagy helyzetkövetést.
 
-Amikor a hálózat összeomlik, a digitális köldökzsinórod azonnal elszakad. Ha nincs nálad lokálisan mentett eszköz, halott vagy. Így rögzítheted a rendszer magját örökre a saját hardveredbe, teljesen díjmentesen, közvetítők és külső függőségek nélkül:
+> [!CAUTION]
+> **A PROXAID segédeszköz, nem segélyszolgálat, orvostechnikai eszköz vagy navigációs rendszer.** Közvetlen veszélyben hívd a hivatalos helyi segélyhívót, és kövesd a diszpécser utasításait. A híváshoz továbbra is működő telefonhálózat kell. A közösségi adatok hiányosak, pontatlanok vagy elavultak lehetnek.
 
-### 🔴 iOS / iPhone / iPad (Safari & Chrome böngészők)
-* **A helyzet:** Az Apple ökoszisztéma szándékosan korlátozza a külső webalkalmazások automatikus telepítését, hogy a saját zárt rendszerükben tartsanak. A Chrome iOS-en ráadásul nem engedi közvetlenül a mentést.
-* **A protokoll (lépésről lépésre):**
-  1. Nyisd meg a PROXAID linket a natív Safari böngésződben.
-  2. Nézz le a képernyő aljára (vagy a címsor sarkába), és kattints a **Megosztás (Share)** ikonra (a négyzet, amiből felfelé mutat egy nyíl).
-  3. Görgess le az opciók között a lenyíló listában, amíg meg nem találod a **"Főképernyőhöz adás" (Add to Home Screen)** gombot.
-  4. Erősítsd meg a műveletet. Ezzel a mozdulattal a terminál kikerül a készüléked főképernyőjére, és független, teljes képernyős, offline natív alkalmazásként üzemel tovább.
+## Ami most valóban működik
 
-### 🟢 Android (Chrome, Firefox, Edge)
-* Nyisd meg a terminál linkjét a mobil böngésződben.
-* Ha a rendszer érzékeli a hardveres kompatibilitást, a jobb felső sarokban azonnal megjelenik a piros **"TELEPÍTÉS"** gomb – kattints rá azonnal.
-* Amennyiben a böngésző ezt nem dobja fel automatikusan, nyisd meg a jobb felső sarokbeli főmenüt (a három pontot), és válaszd kézzel az **"Alkalmazás telepítése"** vagy **"Főképernyőhöz adás"** opciót.
+- **Offline alkalmazásmag:** egy sikeres online megnyitás után a kezelőfelület, a helyi világnézet és a telepített adatcsomagok hálózat nélkül is elérhetők.
+- **Eszközön tárolt pontadatbázis:** IndexedDB-alapú tárolás, helyi szöveges és kategória szerinti keresés, engedélyezett helymeghatározásnál távolság szerinti rendezés.
+- **Nincs külső térképfüggőség:** a csomagolt Natural Earth vektoros világnézetet helyi canvas rajzolja ki; nem kell térképcsempe-szerver, WebGL SDK, CDN vagy követőkód.
+- **Rétegezett adatcsomagok:** kis globális vészmag, kézzel gondozott területi csomag és ettől elkülönített, OpenStreetMap-alapú generált területi csomag.
+- **Biztonságos csomagcsere:** az új csomag teljesen lecseréli a saját korábbi rekordjait, így a forrásból törölt pontok nem maradnak bent.
+- **Forrás- és frissességjelölés:** minden rekord tartalmaz forrást, lekérési dátumot és ellenőrzési állapotot.
+- **Rugalmas frissítés:** ellenőrzés indul megnyitáskor, visszatérő internetnél, az app folytatásakor, jelentős helyváltozás után és kézi kérésre. Napi háttérfrissítést csak a támogató böngészőben kér.
+- **Kézi JSON-csomagimport:** előre elkészített régiós csomag telepíthető az alkalmazáskód módosítása nélkül.
+- **Helyi adatkezelés:** a helyzetet ez a kiadás a böngészőn belül használja, és nem küldi PROXAID-szerverre.
 
-### 💻 Asztali Gép (Windows 11 / macOS - Chrome, Edge, Firefox)
-* Nyisd meg a felületet asztali gépen vagy laptopon.
-* A böngésző címsorának jobb szélén megjelenik egy dedikált monitor+nyíl ikon (vagy alternatívaként a böngésző beállításai menüből lehívható a **"PROXAID telepítése..."** parancs).
-* A telepítési folyamat után a program egy teljesen önálló, független ablakban, asztali appként fut, és a teljes világtérkép, valamint az összes kritikus adat azonnal rendelkezésedre áll offline módban is.
+## Telepítés telefonra, tabletre és számítógépre
 
----
+A PROXAID a jelenleg támogatott böngészőkiadásokat célozza, közben funkcióellenőrzéses fallbacket tart fenn régebbi eszközökhöz, köztük iOS 15 Safarira is. Minden eszközön egyszer online meg kell nyitni az oldalt, mielőtt az alkalmazásmag és a kiválasztott csomagok offline használhatók.
 
-## 2. 🗺️ Az Adatbázis, a Tájolás és a Célzott Navigáció Architektúrája
+| Platform | Ajánlott telepítés | Megbízható tartalékút |
+|---|---|---|
+| **iPhone / iPad** | Safari → **Megosztás** → **Főképernyőhöz adás** → ha megjelenik, **Megnyitás webalkalmazásként** bekapcsolása. | A PROXAID saját telepítési súgója a régebbi iOS 15 folyamatot is lefedi. Nyisd meg egyszer online, majd próbáld ki Repülőgép módban. |
+| **Android** | Aktuális Chrome, Edge vagy Firefox → **Alkalmazás telepítése** / **Hozzáadás a kezdőképernyőhöz** a menüből vagy a telepítési felugróból. | Használd böngészőben; az offline gyorsítótár és a helyi keresés nem függ az önálló ablakos telepítéstől. |
+| **Windows** | Aktuális Chrome vagy Edge → telepítés ikon a címsorban. | Aktuális Chrome, Edge vagy Firefox normál böngészőlapon. |
+| **macOS** | Safari macOS Sonoma 14+-on → **Fájl → Hozzáadás a Dockhoz**, vagy aktuális Chrome/Edge telepítés. | Aktuális Safari, Chrome, Edge vagy Firefox böngészőlapon. |
+| **Linux** | Aktuális Chrome vagy PWA-telepítést támogató Edge/Chromium összeállítás → telepítés ikon. | Aktuális szabványos böngésző; Firefoxban működik a böngészős/offline használat, de nincs natív önálló PWA-telepítési folyamat. |
 
-A legtöbb applikáció akkor adja fel, amikor a legnagyobb szükséged lenne rá. A PROXAID ezzel szemben nem kér bocsánatot:
+Hivatalos platformleírások: [Apple — webalkalmazás iPhone-on](https://support.apple.com/guide/iphone/open-as-web-app-iphea86e5236/ios), [Apple — webalkalmazás Macen](https://support.apple.com/en-us/104996), [web.dev — asztali PWA-telepítés](https://web.dev/learn/pwa/installation) és [Microsoft Edge — PWA telepítése](https://learn.microsoft.com/en-us/microsoft-edge/progressive-web-apps/ux).
 
-* **A Világtérkép Teljes Letöltése:** Amikor először lépsz be, a rendszer nem darabol fel semmit, hanem a teljes beépített globális adatbázist (sürgősségi központok, patikák, ivóvízpontok, AED defibrillátorok) letölti és helyben rögzíti a memóriába (IndexedDB / CacheStorage). Laptopon és mobilon is zárt egészként fut, hálózati elérés nélkül is.
-* **Pontos Helymeghatározás & Inverz Tájolási Logika:** A hardveres GPS azonnal rögzíti a koordinátádat. Ha a GPS és a mobilhálózat teljesen bedől, a rendszer a legutolsó mentett pozícióból vagy a bázistornyok földrajzi metaadataiból számolt zónából (pl. Zala-régió / Nagykanizsa környéke) számolja ki a tartózkodási helyedet.
-* **Intelligens Kontextus Kereső:** Nincsenek nehézkes legördülő menük vagy felesleges szűrők. Írd be a keresőbe nyersen, amit keresel (pl. *"Szepetnek patika"* vagy *"Nagykanizsa"*), és a helyi intelligens algoritmus azonnal a legközelebbi regionális találatot dobja ki. Ha pedig olyan helyet keresel, ami még nincs benne a lokális bázisban, de van neted, a rendszer lekérdezi a külső valós adatbázisból (OpenStreetMap), berajzolja, és **véglegesen menti a memóriádba** a későbbi offline használatra.
+### Mit jelent itt a többplatformos működés?
 
----
+Ugyanaz a GitHub Pages-kiadás működik telefonon, tableten, laptopon és asztali gépen. Minden telepítésnek **saját helyi adatbázisa és gyorsítótára van**: nincs fiók, felhőprofil vagy automatikus eszközök közötti szinkron. A terepen fontos valamennyi eszközt külön frissítsd és külön teszteld.
 
-## 3. 🎙️ Hangvezérlés és Hangkimenet (A Krízis Interfész)
+## Offline architektúra
 
-Kritikus helyzetben, amikor a kezed remeg, vagy a fagyban esélytelen gépelni, a kommunikációnak más alapon kell működnie:
+A PROXAID négy szándékosan elkülönített réteget használ:
 
-* A kód teljes körű magyar nyelvi (`hu-HU`) beszédfelismerési profillal van felszerelve.
-* A **"HANGPARANCS / AUDIO"** gombra kattintva elég kimondanod a várost vagy a keresett egységet, a rendszer pedig nemcsak végrehajtja, hanem magyar hangszintetizátorral vissza is igazolja a parancsot.
+1. **Globális vészmag** — nagyon kicsi, mindig előtárazott segélyhívó- és működési adathalmaz.
+2. **Ellenőrzött területi mag** — kézzel gondozott, forráskapcsolt rekordok; az automatikus közösségi frissítés nem írhatja felül.
+3. **Generált területi pontcsomagok** — lehatárolt, OpenStreetMap-alapú egészségügyi, mentési, menedék-, víz-, higiéniai és kommunikációs pontok.
+4. **Későbbi nagy térkép- és útvonalcsomagok** — a részletes úthálózat és globális útvonaltervezés szándékosan nem része ennek a GitHub Pages-kiadásnak.
 
----
+A világ részletes úthálózata és minden sürgősségi/túlélési adat nem csomagolható felelősen egy kis statikus oldalba. A GitHub Pages korlátozza a közzétett oldal méretét, a böngészők pedig önállóan kezelik a tárhelykvótát és a háttérfutást. Ezért a PROXAID kis, ellenőrizhető és cserélhető területi csomagokra épül.
 
-## 4. 🔄 Napi GitHub Szinkronizációs Hátsó Kapu (Backdoor)
+## Keresés, helymeghatározás és térkép
 
-* **Kritikus Frissítések:** A háttérben a rendszer folyamatosan figyeli a változásokat. Ha a központi repóban új, hiteles adatok (pl. friss defibrillátorok vagy vészhelyzeti pontok) érkeznek, az oldal tetején megjelenik egy figyelmeztető sáv: `🔄 NAPI GITHUB SZINKRONIZÁCIÓ ELÉRHETŐ`.
-* Egyetlen kattintással frissítheted a lokális terminálodat, teljesen díjmentesen, extra szoftverek és előfizetések nélkül.
+- A keresés teljesen helyi rekordokon működik, és neveket, helyeket, kategóriákat és címkéket vizsgál.
+- Engedély esetén a böngészős helymeghatározás helyi pozíciójelölőt ad, és légvonalbeli távolság szerint rendezi a találatokat.
+- A helyengedély megtagadása nem tiltja le a keresést.
+- A csomagolt világnézet tájékozódást és ponteloszlást mutat; **nem utcaszintű térkép, fordulóról fordulóra navigáció vagy GPS/mobiltorony-trianguláció**.
+- Az eszköz GPS-e internet nélkül is működhet, de az elérhetőséget és pontosságot a hardver, az operációs rendszer, a böngésző, az engedély és a környezet határozza meg.
 
----
+## Frissítési és közzétételi lánc
 
-## 5. ℹ️ Hardveres Státuszmodulok (NFC & MESH)
+Két külön frissítési réteg működik:
 
-* **NFC Gomb:** Aktív státuszban (`NFC: BE (OLVASÁS)` vagy `NFC: BE (SZIMULÁLT)`) készen áll a fizikai vészhelyzeti tagek olvasására. Kikapcsolt állapotban piros kerettel jelzi a lekapcsolást.
-* **MESH Gomb:** A helyi peer-to-peer hálózati skálázást és szűrést kapcsolja be (`MESH: BE (P2P)`), vizuális és hangos visszajelzéssel kísérve.
+- **Az eszközön:** a PROXAID a közzétett katalógust és a telepített csomagokat legfeljebb naponta ellenőrzi, kivéve a kikényszerített kézi frissítést. Safari/iOS alatt a megbízható út az app megnyitása vagy a **Frissítés most**, mert a periodikus háttérfutás nem garantált.
+- **A repositoryban:** a `Refresh offline data packs` naponta lefut, és kézzel is indítható. Ha módosult csomagot commitol, kifejezetten elindítja a `Deploy GitHub Pages` workflow-t. Így az új adat akkor is kikerül a weboldalra, amikor a `GITHUB_TOKEN` által végzett normál push önmagában nem indítana új workflow-futást.
+
+Az ütemezett munka nem valós idejű garancia. Késhet, külső szolgáltató hibája miatt meghiúsulhat, vagy inaktív nyilvános repositorynál a GitHub letilthatja. Üres, túl nagy vagy hibás frissítés nem írja felül az előző érvényes csomagot.
+
+## Adatkategóriák
+
+Az adatmodell segélyhívókat, mentőállomásokat és sürgősségi osztályokat, kórházakat, ügyeleteket, klinikákat, gyógyszertárakat, AED-ket, rendőrséget, tűzoltóságot és mentést, menedékeket, ivóvizet, nyilvános WC-t, zuhanyt, mosási lehetőséget, nyilvános kommunikációt, üzemanyagot/töltést, túrainformációt és evakuációs pontokat támogat.
+
+A kategória–OpenStreetMap megfeleltetés a [`data/taxonomy.json`](./data/taxonomy.json) fájlban van. A tényleges lefedettséget a telepített csomagok adják; attól, hogy a séma ismer egy kategóriát, még nem biztos, hogy minden régióban van ilyen rekord.
+
+## Telepítés GitHub Pages-re
+
+1. A csomag **tartalmát** másold a repository gyökerébe. A meglévő mappák összeolvadnak; csak a pontosan azonos útvonalú fájlok cserélődnek.
+2. A külön fájlnéven lévő független workflow, például a Weekly Radar, megmarad. Ez a csomag csak a `.github/workflows/pages.yml` és `.github/workflows/update-data.yml` fájlokat kezeli.
+3. A **Settings → Pages → Source** beállításnál válaszd a **GitHub Actions** lehetőséget.
+4. Commitolj és pusholj a `main` ágra. A `Deploy GitHub Pages` közzététel előtt validálja a projektet.
+5. Minden céleszközön nyisd meg egyszer online a közzétett oldalt, szükség esetén telepítsd, nyomd meg a **Frissítés most** gombot, majd végezz valódi offline próbát.
+
+Minden futásidejű útvonal relatív, ezért az `owner.github.io/repository/` projektcím és az egyéni domain is támogatott. Az egyéni domainhez továbbra is helyes GitHub Pages- és DNS-beállítás kell.
+
+## Helyi ellenőrzés
+
+A repository ellenőrzéséhez Node.js 20 vagy újabb szükséges:
+
+```bash
+npm test
+```
+
+A Service Worker csak HTTPS alatt vagy `localhost` címen aktiválható; az `index.html` egyszerű `file://` megnyitása nem érvényes offline PWA-teszt.
+
+## Biztonsági és bizalmi határok
+
+- A helyengedély opcionális, a kapott koordinátát ez a kiadás helyben dolgozza fel.
+- A „forráskapcsolt” azt jelenti, hogy a rekord megjelöl egy forrást; nem jelent helyszíni, hatósági vagy orvosszakmai hitelesítést.
+- A Content Security Policy futás közben csak azonos eredetű adatkapcsolatot enged.
+- Az importált JSON-csomag szerkezetét az app ellenőrzi, de csak megbízható forrásból származó csomagot telepíts.
+- Az operációs rendszer a böngészős tárhelyet később is törölheti. A **Frissítés most** támogatott környezetben tartós tárhelyet kér, a felület pedig mutatja az észlelt adatmegőrzési állapotot.
+
+## Jelenleg nincs implementálva — még ne számíts rá
+
+A mostani kiadásban **nincs** hangvezérlés vagy hangos útmutatás, NFC-beolvasás, peer-to-peer MESH-rádió, titkosított SOS-relé, teljes részletes offline úttérkép, fordulóról fordulóra útvonaltervezés, mobiltorony-trianguláció vagy automatikus eszközök közötti szinkron. Ezek lehetséges későbbi modulok, nem jelenlegi biztonsági állítások.
+
+## Források és licencek
+
+- OpenStreetMap contributors — [ODbL 1.0](https://www.openstreetmap.org/copyright)
+- Natural Earth világnézet — [public domain feltételek](https://www.naturalearthdata.com/about/terms-of-use/)
+- GitHub Pages — [méret- és használati korlátok](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
+- GitHub Actions — [ütemezett workflow-k működése](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule)
+- MDN — [Periodic Background Sync korlátai](https://developer.mozilla.org/en-US/docs/Web/API/Web_Periodic_Background_Synchronization_API)
+
+Az alapértelmezett angol dokumentáció: **[README.md](./README.md)**.

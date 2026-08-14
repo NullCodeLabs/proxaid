@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-14T00:00:00Z",
+  "minimumRefreshHours": 24,
+  "movementRefreshKm": 80,
+  "packs": [
+    {
+      "id": "global-core",
+      "name": "Globális vészmag",
+      "url": "./data/core.json",
+      "version": "2026.08.14",
+      "required": true,
+      "autoInstall": true,
+      "estimatedBytes": 4500,
+      "bbox": [-180, -90, 180, 90]
+    },
+    {
+      "id": "hu-west",
+      "name": "Nyugat-Magyarország ellenőrzött mintamag",
+      "url": "./data/packs/hu-west.json",
+      "version": "2026.08.14",
+      "required": false,
+      "defaultInstall": true,
+      "autoInstall": false,
+      "estimatedBytes": 12000,
+      "bbox": [15.8, 45.6, 18.5, 47.4]
+    },
+    {
+      "id": "hu-west-osm",
+      "name": "Nyugat-Magyarország közösségi pontcsomag",
+      "url": "./data/packs/hu-west-osm.json",
+      "version": "2026.08.14",
+      "required": false,
+      "defaultInstall": false,
+      "autoInstall": true,
+      "estimatedBytes": 256,
+      "bbox": [15.8, 45.6, 18.5, 47.4]
+    }
+  ]
+}
