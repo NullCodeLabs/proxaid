@@ -1,4 +1,4 @@
-# 🛡️ PROXAID // A Mátrix Sötét Oldala Túlélési Kézikönyv
+# 🛡️ PROXAID // A Mátrix Sötét Oldala Túlélő Készlet | Nem csak adrenalin vadászok számára!
 
 ⚠️ **KRITIKUS BIZTONSÁGI FIGYELMEZTETÉS:** Ez nem egy sima weboldal vagy online kényelmi applikáció. Ez egy offline-first vészhelyzeti terminál. Amikor a digitális infrastruktúra darabjaira hullik, a felhőalapú rendszerek pedig cserbenhagynak, nem lesz időd bűvölni a térerőt. Itt nincsenek fiktív adatok, nincs üres ígérgetés, és nincs internetfüggőség. Csak a tiszta, keserű valóság, a globális koordináta-mátrix és a lokális cache, ami életben tart.
 
