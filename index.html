@@ -49,33 +49,27 @@
     <div id="updateBanner" class="update-banner" onclick="applyDailyGitHubSync()">🔄 DAILY MATRIX SYNC AVAILABLE! CLICK TO PULL LIVE NODES.</div>
     <div class="status" id="ui-status">Status: Initializing zero-fake matrix & local spatial index...</div>
     
-    <!-- USER GUIDE -->
     <div class="guide-box">
-        ℹ️ <strong>OFF-GRID BYPASS ENGINE:</strong> Type any location worldwide (villages, towns, rural areas, counties). If local node is missing, the engine executes direct live-to-offline spatial query (OpenStreetMap Overpass API) and locks it permanently into local IndexedDB storage.
+        ℹ️ <strong>OFF-GRID BYPASS ENGINE:</strong> Type any location worldwide. If local node is missing, the engine executes direct live-to-offline spatial query (OpenStreetMap Overpass/Nominatim API) and locks verified data permanently into local IndexedDB storage.
     </div>
 
-    <!-- UNIVERSAL CONTEXT SEARCH -->
     <div class="search-box">
-        <input type="text" id="searchInput" placeholder="Type any settlement, pharmacy, water, sos worldwide (e.g., Szepetnek, Zala, rural nodes)..." oninput="processUniversalQuery()">
+        <input type="text" id="searchInput" placeholder="Type any settlement, pharmacy, water, sos worldwide (e.g., Szepetnek, Zala, Budapest)..." oninput="processUniversalQuery()">
         <div class="search-comment">Universal Spatial Parser: auto-fetches real infrastructure from global coordinates if local cache misses.</div>
     </div>
 
-    <!-- VOICE & AUDIO -->
     <div class="voice-section">
         <button id="voiceBtn" class="voice-btn" onclick="toggleVoiceSearch()">🎤 VOICE / AUDIO</button>
         <span id="voiceStatus" style="font-size: 0.75rem; color: #ccc;">Microphone standby. Speak query.</span>
     </div>
 
-    <!-- MAP -->
     <div id="map"></div>
 
-    <!-- LIST -->
     <div class="card" id="content-card">
         <h3 id="active-tab-title" style="margin-top:0; font-size:0.9rem;">Verified Spatial Matrix (Zero Fictional Data)</h3>
         <div id="results-list">Loading core spatial index...</div>
     </div>
 
-    <!-- FOOTER -->
     <footer>
         <div id="ui-footer">PROXAID // Hyper-Dense Core // Offline Bypass Active</div>
         <div class="toggles">
@@ -87,23 +81,22 @@
     <!-- Leaflet.js -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-        // 1. ABSOLUTE ZERO-FAKE CORE MATRIX (Strictly Real National & Regional Anchors + Dynamic Spatial Fallback)
+        // 1. ABSOLUTE ZERO-FAKE CORE MATRIX (Strictly Real National & Regional Anchors)
         let masterDatabase = {
             "destinations": [
                 { "id": 1, "city": "budapest", "region": "budapest", "category": "sos", "name": "Országos Mentőszolgálat (OMSZ Központ)", "type": "Central Emergency", "info": "Országos vészhelyzeti koordinációs központ.", "phone": "112", "lat": 47.4979, "lng": 19.0402 },
-                { "id": 2, "city": "budapest", "region": "budapest", "category": "med", "name": "Semmelweis Egyetem Sürgősségi Betegellátó", "type": "Medical Center", "info": "Központi sürgősségi és trauma ellátás.", "phone": "+3614591500", "lat": 47.4850, "lng": 19.0800 },
-                { "id": 3, "city": "nagykanizsa", "region": "zala", "category": "med", "name": "Kanizsai Dorottya Kórház Sürgősségi Osztály", "type": "Medical Center", "info": "Zala vármegyei területi kórház és ügyeleti központ.", "phone": "+3693311400", "lat": 46.4525, "lng": 16.9910 },
-                { "id": 4, "city": "nagykanizsa", "region": "zala", "category": "sos", "name": "Nagykanizsai Rendőrkapitányság", "type": "Law Enforcement / SOS", "info": "Helyi rendészeti és vészhelyzeti egység.", "phone": "+3693312190", "lat": 46.4530, "lng": 16.9880 },
-                { "id": 5, "city": "szepetnek", "region": "zala", "category": "med", "name": "Szepetneki Helyi Orvosi Rendelő & Patika Fiók", "type": "Medical Point", "info": "Helyi alapellátás és gyógyszer-hozzáférési pont.", "phone": "+3693354000", "lat": 46.4667, "lng": 16.9000 },
-                { "id": 6, "city": "zalaegerszeg", "region": "zala", "category": "med", "name": "Zala Vármegyei Szent Rafael Kórház", "type": "Medical Center", "info": "Vármegyei szintű traumatológia és sürgősség.", "phone": "+3692507500", "lat": 46.8400, "lng": 16.8430 }
+                { "id": 2, "city": "budapest", "region": "budapest", "category": "med", "name": "Semmelweis Egyetem Sürgősségi Betegellátó", "type": "Medical Center", "info": "Központi sürgősségi és trauma ellátás.", "phone": null, "lat": 47.4850, "lng": 19.0800 },
+                { "id": 3, "city": "nagykanizsa", "region": "zala", "category": "med", "name": "Kanizsai Dorottya Kórház Sürgősségi Osztály", "type": "Medical Center", "info": "Zala vármegyei területi kórház és ügyeleti központ.", "phone": null, "lat": 46.4525, "lng": 16.9910 },
+                { "id": 4, "city": "nagykanizsa", "region": "zala", "category": "sos", "name": "Nagykanizsai Rendőrkapitányság", "type": "Law Enforcement / SOS", "info": "Helyi rendészeti és vészhelyzeti egység.", "phone": "112", "lat": 46.4530, "lng": 16.9880 },
+                { "id": 5, "city": "szepetnek", "region": "zala", "category": "med", "name": "Szepetneki Helyi Orvosi Rendelő", "type": "Medical Point", "info": "Helyi alapellátási pont.", "phone": null, "lat": 46.4667, "lng": 16.9000 },
+                { "id": 6, "city": "zalaegerszeg", "region": "zala", "category": "med", "name": "Zala Vármegyei Szent Rafael Kórház", "type": "Medical Center", "info": "Vármegyei szintű traumatológia és sürgősség.", "phone": null, "lat": 46.8400, "lng": 16.8430 }
             ]
         };
 
-        // IndexedDB Hardened Persistence Layer for True Offline Capability on iOS, Android, and Desktop PC
         let db;
         function initDB() {
             return new Promise((resolve) => {
-                let request = indexedDB.open("ProxaidHyperDB", 2);
+                let request = indexedDB.open("ProxaidHyperDB", 3);
                 request.onupgradeneeded = (e) => {
                     db = e.target.result;
                     if (!db.objectStoreNames.contains("nodes")) {
@@ -122,7 +115,6 @@
             let tx = db.transaction("nodes", "readwrite");
             let store = tx.objectStore("nodes");
             
-            // Pull any previously cached offline custom or spatial nodes from localStorage/IndexedDB
             let cachedCustomNodes = localStorage.getItem('proxaid_hyper_nodes');
             if (cachedCustomNodes) {
                 try {
@@ -136,25 +128,9 @@
             }
 
             masterDatabase.destinations.forEach(item => store.put(item));
-            checkDailyGitHubSyncTimer();
         }
         initStorageAndMap();
 
-        function checkDailyGitHubSyncTimer() {
-            let lastSync = localStorage.getItem('proxaid_last_sync');
-            let today = new Date().toDateString();
-            if (lastSync !== today) {
-                document.getElementById('updateBanner').style.display = 'block';
-            }
-        }
-
-        function applyDailyGitHubSync() {
-            localStorage.setItem('proxaid_last_sync', new Date().toDateString());
-            alert("✅ Hyper-Matrix Sync Successful: Global spatial indices updated.");
-            document.getElementById('updateBanner').style.display = 'none';
-        }
-
-        // Map & GPS Initialization with Zala Region / National Fallback
         let defaultLat = 46.4525; 
         let defaultLng = 16.9910;
         let cachedPos = localStorage.getItem('proxaid_last_pos');
@@ -217,7 +193,6 @@
 
         function panToNode(lat, lng) { map.setView([lat, lng], 14); }
 
-        // 2. ADVANCED BYPASS ENGINE: REAL-TIME OVERPASS API / NOMINATIM HYPER-FETCH WITH PERMANENT OFFLINE CACHING
         async function processUniversalQuery() {
             let query = document.getElementById('searchInput').value.toLowerCase().trim();
             if (query === "") {
@@ -234,7 +209,6 @@
                 item.category.toLowerCase().includes(query)
             );
 
-            // BYPASS HACK: If local cache fails, leverage public open spatial servers (Nominatim/Overpass) to find ANY rural town, village, pharmacy, or water point worldwide, then instantly store it permanently into IndexedDB/localStorage for offline future-proofing!
             if (filtered.length === 0 && navigator.onLine) {
                 try {
                     let response = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&addressdetails=1&limit=5`);
@@ -259,7 +233,6 @@
                             }
                         });
 
-                        // Permanent offline cache sync
                         localStorage.setItem('proxaid_hyper_nodes', JSON.stringify(masterDatabase.destinations));
                     }
                 } catch (e) {
@@ -276,7 +249,6 @@
             renderList(filtered);
         }
 
-        // Voice Command Interface
         let recognition;
         let isRecording = false;
 
@@ -330,7 +302,6 @@
             }
         }
 
-        // Hardware Modules (NFC & MESH)
         let nfcActive = false;
         async function toggleNFC() {
             nfcActive = !nfcActive;
@@ -376,7 +347,6 @@
             }
         }
 
-        // Universal PWA / Desktop App Install Bypass
         let deferredPrompt;
         window.addEventListener('beforeinstallprompt', (e) => {
             e.preventDefault();
