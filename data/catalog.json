@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-15T00:00:00Z",
+  "generatedAt": "2026-08-15T03:53:56.856Z",
   "minimumRefreshHours": 24,
   "movementRefreshKm": 80,
   "packs": [
@@ -11,8 +11,13 @@
       "version": "2026.08.14",
       "required": true,
       "autoInstall": true,
-      "estimatedBytes": 2253,
-      "bbox": [-180, -90, 180, 90]
+      "estimatedBytes": 4500,
+      "bbox": [
+        -180,
+        -90,
+        180,
+        90
+      ]
     },
     {
       "id": "hu-west",
@@ -22,8 +27,13 @@
       "required": false,
       "defaultInstall": true,
       "autoInstall": false,
-      "estimatedBytes": 4345,
-      "bbox": [15.8, 45.6, 18.5, 47.4]
+      "estimatedBytes": 12000,
+      "bbox": [
+        15.8,
+        45.6,
+        18.5,
+        47.4
+      ]
     },
     {
       "id": "hu-west-osm",
@@ -33,43 +43,13 @@
       "required": false,
       "defaultInstall": true,
       "autoInstall": true,
-      "estimatedBytes": 121001,
-      "bbox": [16.78, 46.34, 17.15, 46.58]
-    }
-  ],
-  "maps": [
-    {
-      "id": "hu-zala-south-map",
-      "name": "Dél-Zala offline utcatérkép",
-      "url": "./data/maps/hu-zala-south.geojson",
-      "version": "2026.08.15",
-      "defaultInstall": true,
-      "estimatedBytes": 1685946,
-      "bbox": [16.78, 46.34, 17.15, 46.58],
-      "source": "OpenStreetMap contributors",
-      "license": "ODbL 1.0"
-    }
-  ],
-  "guides": [
-    {
-      "id": "first-aid-hu-en",
-      "name": "Elsősegély és CPR — magyar/angol",
-      "url": "./data/first-aid.json",
-      "version": "2026.08.15",
-      "defaultInstall": true,
-      "estimatedBytes": 14337
-    }
-  ],
-  "audio": [
-    {
-      "id": "cpr-hands-only-hu",
-      "name": "Tartsd életben! — magyar narrált CPR",
-      "url": "./assets/audio/cpr_hands_only_hu.mp3",
-      "mode": "hands_only",
-      "language": "hu",
-      "estimatedBytes": 2020652,
-      "sha256": "863ce2721f9201e118f2032a9671d620b8ee073a4b8575d56f5a8c426921a983",
-      "source": "Országos Mentőszolgálat Alapítvány"
+      "estimatedBytes": 10851764,
+      "bbox": [
+        15.8,
+        45.6,
+        18.5,
+        47.4
+      ]
     }
   ]
 }
