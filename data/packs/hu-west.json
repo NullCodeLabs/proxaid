@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "packId": "hu-west",
-  "version": "2026.08.14",
-  "generatedAt": "2026-08-14T00:00:00Z",
+  "version": "2026.08.15",
+  "generatedAt": "2026-08-15T00:00:00Z",
   "license": "Source-linked seed records; not a substitute for the official care directory",
   "records": [
     {
@@ -56,13 +56,34 @@
       "country": "HU",
       "phone": "+3693312190",
       "website": "https://www.police.hu",
-      "coordinates": { "lat": 46.4556, "lon": 16.9927 },
+      "coordinates": { "lat": 46.45525324, "lon": 16.98718927 },
       "openingHours": null,
       "verification": "source_linked",
       "source": {
         "name": "police.hu",
         "url": "https://www.police.hu/hu/ugyintezes/szerv/orszagos-rendor-fokapitanysag/zala-varmegyei-rendor-fokapitanysag/nagykanizsai",
-        "retrievedAt": "2026-08-14"
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "hu-nagykanizsa-police-aed",
+      "name": "AED — Nagykanizsai Rendőrkapitányság",
+      "category": "aed",
+      "kind": "place",
+      "description": "A rendőrkapitányságon elhelyezett defibrillátor. Hozzáférésért fordulj a személyzethez.",
+      "locality": "Nagykanizsa",
+      "region": "Zala",
+      "country": "HU",
+      "phone": "+3693312190",
+      "website": "https://www.police.hu/hu/hirek-es-informaciok/legfrissebb-hireink/kozrendvedelem/elesben-hasznaltak-a-defibrillatort",
+      "coordinates": { "lat": 46.45525324, "lon": 16.98718927 },
+      "openingHours": null,
+      "access": "staff_assisted",
+      "verification": "official_directory",
+      "source": {
+        "name": "police.hu — Élesben használták a defibrillátort",
+        "url": "https://www.police.hu/hu/hirek-es-informaciok/legfrissebb-hireink/kozrendvedelem/elesben-hasznaltak-a-defibrillatort",
+        "retrievedAt": "2026-08-15"
       }
     },
     {

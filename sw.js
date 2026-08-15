@@ -1,5 +1,5 @@
-const SHELL_CACHE = "proxaid-shell-v4";
-const DATA_CACHE = "proxaid-data-v4";
+const SHELL_CACHE = "proxaid-shell-v5";
+const DATA_CACHE = "proxaid-data-v5";
 const DB_NAME = "proxaid-offline-v1";
 const SHELL_FILES = [
   "./",
@@ -7,6 +7,8 @@ const SHELL_FILES = [
   "./styles.css",
   "./app.js",
   "./manifest.webmanifest",
+  "./assets/vendor/leaflet.css",
+  "./assets/vendor/leaflet.js",
   "./assets/icon.svg",
   "./assets/icon-180.png",
   "./assets/icon-192.png",
@@ -16,9 +18,11 @@ const SHELL_FILES = [
   "./data/core.json",
   "./data/packs/hu-west.json",
   "./data/packs/hu-west-osm.json",
+  "./data/maps/hu-zala-south.geojson",
+  "./data/first-aid.json",
   "./data/regions.json",
   "./data/taxonomy.json",
-  "./data/world-110m.geojson"
+  "./assets/audio/cpr_hands_only_hu.mp3"
 ];
 
 const scoped = (path) => new URL(path, self.registration.scope).toString();
@@ -96,6 +100,12 @@ async function refreshDataCache() {
   for (const pack of catalog.packs ?? []) {
     if (!(pack.required || pack.defaultInstall || installedPackIds.has(pack.id)) || Number(pack.estimatedBytes ?? 0) > 5 * 1024 * 1024) continue;
     const request = new Request(new URL(pack.url, self.registration.scope), { cache: "no-store" });
+    const response = await fetch(request);
+    if (response.ok) await cache.put(request, response);
+  }
+  for (const descriptor of [...(catalog.maps ?? []), ...(catalog.guides ?? []), ...(catalog.audio ?? [])]) {
+    if (!descriptor.defaultInstall && descriptor.id !== "cpr-hands-only-hu") continue;
+    const request = new Request(new URL(descriptor.url, self.registration.scope), { cache: "no-store" });
     const response = await fetch(request);
     if (response.ok) await cache.put(request, response);
   }

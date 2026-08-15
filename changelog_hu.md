@@ -1,35 +1,40 @@
-# Változásnapló
+# Verziófejlődés
 
-Itt jelennek meg a PROXAID nyilvános, jelentős kiadási változásai. Belső próbálkozás, dokumentációs javítás, újragenerálás vagy újracsomagolás nem módosítja a termékverziót. Új verzió csak külön jóváhagyott termékkiadásnál jön létre.
+Itt jelennek meg a PROXAID nyilvános, jelentős változásai. A dokumentációs javítás, adatfrissítés, újragenerálás, teszt vagy újracsomagolás nem emeli a termékverziót.
 
-## v1.0 — 2026-08-14
+## v1.0 — 2026-08-15
 
-### Új
+### Alkalmazás
 
-- Telepíthető, offline-first PWA-mag telefonra, tabletre és asztali böngészőre.
-- Helyi IndexedDB-pontadatbázis szöveges/kategóriás kereséssel és helyalapú távolságrendezéssel.
-- Beépített Natural Earth világnézet külső térképcsempe- és CDN-függőség nélkül.
-- Rétegezett globális, ellenőrzött területi és generált területi pontcsomagmodell.
-- Ellenőrzött kézi JSON-csomagimport.
-- Forrás-, lekérési dátum- és ellenőrzési státusz minden pontrekordhoz.
-- Automatikus és kézi adatfrissítés az utolsó érvényes csomag biztonságos megtartásával.
-- Angol és magyar projektdokumentáció.
+- Egységes mobil-first felület telefonra, tabletre és asztali böngészőre.
+- Javított érintési célok, safe-area, tördelés és aktív mobil keresőmező.
+- ALWAYS ON felolvasás, külön `MIC ON` beszédbevitel és kézi HU/EN nyelvváltó.
+- Külön hívási lehetőségek telefonhoz, Skype-hoz, Viberhez és általános hívóapphoz.
+- Web NFC olvasás/írás, rendszermegosztásos MESH/Meshtastic vészüzenet és helyzetmegosztás.
 
-### Módosult
+### Térkép és adatok
 
-- A kanonikus termékverzió: **v1.0**.
-- Egyetlen kanonikus terjesztési csomag: `proxaid-offline.zip`.
-- A nyilvános dokumentáció belső feladatlista helyett a kiadott verziók fejlődését mutatja.
+- A világnézetet felváltotta a helyben csomagolt, nagyítható és mozgatható Dél‑Zala utcatérkép.
+- 3 809 helyi térképelem és 157 OpenStreetMap-pont került a régiócsomagba.
+- Szepetnek gyógyszertára, nagykanizsai gyógyszertárak, WC-k, ivóvíz, egészségügyi és közbiztonsági pontok kereshetők.
+- A Nagykanizsai Rendőrkapitányság AED-je külön, hivatalos rendőrségi forrású rekordot kapott.
+- A helyzetgomb utcaszintre nagyít és GPS-pontossági kört mutat.
+- A találatok a betöltött rekordok között, valós koordináta és légvonalbeli távolság szerint rendeződnek.
 
-### Javítva
+### Elsősegély és CPR
 
-- A csomagfrissítés teljesen lecseréli az adott csomag korábbi rekordjait; a forrásból törölt pontok nem maradnak bent.
-- Üres, túl nagy vagy hibás generált frissítés nem írhatja felül az utolsó érvényes publikált csomagot.
+- Súlyozott, elütést és szinonimát kezelő helyi vészhelyzeti keresés.
+- Kilenc forráskapcsolt elsősegély-ág magyar és angol offline szöveggel.
+- Külön csak mellkasi nyomásos és 30:2 felnőtt CPR-mód.
+- Helyi 110/perc ütem, 30:2 számlálás és képernyő-ébrentartási kérés.
+- Magyar narrált, csak mellkasi nyomásos hang ellenőrzőösszeggel.
+- Böngészőnyelv alapján a kiválasztott CPR-mód magyar vagy angol online tartalma nyílik meg.
 
-### Biztonság
+### Offline és biztonság
 
-- Nincs analitika, reklám vagy külső futásidejű script.
-- Az adatkapcsolat azonos eredetre korlátozott.
-- A helyadat feldolgozása a v1.0-ban az eszközön marad.
+- Az alkalmazás, Leaflet-megjelenítő, Dél‑Zala térkép, pontcsomag, elsősegélyadat és magyar hang előtárazása.
+- Külön készenléti jelzés az alkalmazásra, térképre, rekordokra és útmutató/hang csomagra.
+- Kevés tárhelynél operációsrendszer-specifikus rövid segítség; nyers kvótaérték nem jelenik meg.
+- Nincs analitika, reklám, külső futásidejű script vagy külső térképcsempe.
 
 [English changelog](./changelog.md)

@@ -3,9 +3,9 @@
   "regions": [
     {
       "id": "hu-west-osm",
-      "name": "Nyugat-Magyarország",
+      "name": "Dél-Zala",
       "enabled": true,
-      "bbox": [45.6, 15.8, 47.4, 18.5],
+      "bbox": [46.34, 16.78, 46.58, 17.15],
       "maximumRecords": 25000
     }
   ]

@@ -1,10 +1,13 @@
 import { access, readFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
 
 const required = [
   "index.html", "styles.css", "app.js", "sw.js", "manifest.webmanifest",
   "assets/icon.svg", "assets/icon-180.png", "assets/icon-192.png", "assets/icon-512.png",
+  "assets/vendor/leaflet.css", "assets/vendor/leaflet.js", "assets/audio/cpr_hands_only_hu.mp3",
   "data/catalog.json", "data/core.json", "data/regions.json",
-  "data/taxonomy.json", "data/world-110m.geojson", "404.html", ".nojekyll"
+  "data/taxonomy.json", "data/maps/hu-zala-south.geojson",
+  "data/first-aid.json", "404.html", ".nojekyll"
 ];
 
 for (const file of required) await access(new URL(`../${file}`, import.meta.url));
@@ -18,6 +21,7 @@ for (const size of ["192x192", "512x512"]) {
 const catalog = JSON.parse(await readFile(new URL("../data/catalog.json", import.meta.url), "utf8"));
 if (catalog.schemaVersion !== 1 || !Array.isArray(catalog.packs)) throw new Error("Hibás csomagkatalógus");
 if (!Number.isFinite(catalog.minimumRefreshHours) || !Number.isFinite(catalog.movementRefreshKm)) throw new Error("Hiányos frissítési szabály");
+if (!Array.isArray(catalog.maps) || !Array.isArray(catalog.guides) || !Array.isArray(catalog.audio)) throw new Error("Hiányos offline tartalomkatalógus");
 
 const ids = new Set();
 for (const descriptor of catalog.packs) {
@@ -43,8 +47,34 @@ for (const descriptor of catalog.packs) {
   }
 }
 
-const world = JSON.parse(await readFile(new URL("../data/world-110m.geojson", import.meta.url), "utf8"));
-if (world.type !== "FeatureCollection" || !Array.isArray(world.features) || !world.features.length) throw new Error("Hibás offline világnézet");
+const streetMap = JSON.parse(await readFile(new URL("../data/maps/hu-zala-south.geojson", import.meta.url), "utf8"));
+if (streetMap.type !== "FeatureCollection" || !validBbox(streetMap.bbox) || !streetMap.features.some((feature) => feature.properties?.layer === "road")) {
+  throw new Error("Hibás offline utcatérkép");
+}
+
+const firstAid = JSON.parse(await readFile(new URL("../data/first-aid.json", import.meta.url), "utf8"));
+for (const modeId of ["hands_only", "compressions_breaths"]) {
+  const mode = firstAid.cprModes?.[modeId];
+  if (!mode?.steps?.hu?.length || !mode?.steps?.en?.length || !validHttpUrl(mode.online?.hu?.url) || !validHttpUrl(mode.online?.en?.url)) {
+    throw new Error(`Hiányos CPR-mód: ${modeId}`);
+  }
+}
+if (firstAid.cprModes.hands_only.offlineAudio?.hu !== "./assets/audio/cpr_hands_only_hu.mp3") throw new Error("A magyar narráció nem a csak mellkasi nyomásos módhoz tartozik");
+if (firstAid.cprModes.compressions_breaths.offlineAudio?.hu || firstAid.cprModes.compressions_breaths.offlineAudio?.en) throw new Error("A 30:2 módhoz téves narrált hang van rendelve");
+if (!Array.isArray(firstAid.intents) || firstAid.intents.length < 8 || firstAid.intents.some((intent) => !intent.steps?.hu?.length || !intent.steps?.en?.length || !intent.sources?.length)) {
+  throw new Error("Hiányos elsősegély döntési fa");
+}
+
+const osmPack = JSON.parse(await readFile(new URL("../data/packs/hu-west-osm.json", import.meta.url), "utf8"));
+if (!osmPack.records.some((record) => record.id === "osm-node-5715927281" && record.category === "pharmacy")) throw new Error("Hiányzik a szepetneki gyógyszertár");
+const curatedPack = JSON.parse(await readFile(new URL("../data/packs/hu-west.json", import.meta.url), "utf8"));
+if (!curatedPack.records.some((record) => record.id === "hu-nagykanizsa-police-aed" && record.category === "aed" && record.verification === "official_directory")) {
+  throw new Error("Hiányzik a nagykanizsai rendőrségi AED hivatalos rekordja");
+}
+
+const audioDescriptor = catalog.audio.find((item) => item.id === "cpr-hands-only-hu");
+const audio = await readFile(new URL("../assets/audio/cpr_hands_only_hu.mp3", import.meta.url));
+if (!audioDescriptor || createHash("sha256").update(audio).digest("hex") !== audioDescriptor.sha256) throw new Error("A magyar CPR-hang ellenőrzőösszege eltér");
 
 const regions = JSON.parse(await readFile(new URL("../data/regions.json", import.meta.url), "utf8"));
 if (regions.schemaVersion !== 1 || !Array.isArray(regions.regions)) throw new Error("Hibás régiójegyzék");
@@ -67,7 +97,7 @@ for (const descriptor of catalog.packs.filter((item) => item.required || item.de
 }
 
 const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
-for (const id of ["mapCanvas", "searchInput", "syncButton", "storagePolicy", "packButton", "installDialog", "closeInstallDialog"]) {
+for (const id of ["streetMap", "searchInput", "micButton", "ttsButton", "handsOnlyButton", "breathsButton", "syncButton", "packButton", "nfcButton", "meshButton", "installDialog"]) {
   if (!html.includes(`id="${id}"`)) throw new Error(`Hiányzó kezelőfelületi elem: ${id}`);
 }
 

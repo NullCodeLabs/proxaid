@@ -1,8 +1,4130 @@
 {
   "schemaVersion": 1,
   "packId": "hu-west-osm",
-  "version": "2026.08.14",
-  "generatedAt": "2026-08-14T00:00:00Z",
-  "license": "OpenStreetMap contributors, ODbL 1.0 — https://www.openstreetmap.org/copyright",
-  "records": []
+  "version": "2026.08.15",
+  "generatedAt": "2026-08-15T15:54:19.653Z",
+  "license": "OpenStreetMap ODbL 1.0; community source, not an official operational registry",
+  "records": [
+    {
+      "id": "osm-node-1377915110",
+      "name": "Gyógyszertár",
+      "category": "pharmacy",
+      "kind": "place",
+      "description": "Gyógyszertár — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5609473,
+        "lon": 17.1235662
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [
+        "Benu"
+      ],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/1377915110",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2096176993",
+      "name": "Keleti Gyógyszertár",
+      "category": "pharmacy",
+      "kind": "place",
+      "description": "Gyógyszertár — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4621683,
+        "lon": 17.014832
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2096176993",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2271890043",
+      "name": "Gyermek háziorvos",
+      "category": "doctor",
+      "kind": "place",
+      "description": "Orvosi rendelő — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": "Nagykanizsa",
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4601478,
+        "lon": 17.0099462
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2271890043",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2271890133",
+      "name": "Centrum Gyógyszertár",
+      "category": "pharmacy",
+      "kind": "place",
+      "description": "Gyógyszertár — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4543577,
+        "lon": 17.0117573
+      },
+      "openingHours": "Mo-Sa 09:00-19:00; Su 09:00-15:00",
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2271890133",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2278075702",
+      "name": "Nyilvános telefon",
+      "category": "public_phone",
+      "kind": "place",
+      "description": "Nyilvános telefon — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4608568,
+        "lon": 17.0141573
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2278075702",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2306678480",
+      "name": "Nyilvános WC",
+      "category": "toilets",
+      "kind": "place",
+      "description": "Nyilvános WC — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5509387,
+        "lon": 17.123892
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2306678480",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2306688892",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5327049,
+        "lon": 17.1266507
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2306688892",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2366239536",
+      "name": "Belvárosi Patika",
+      "category": "pharmacy",
+      "kind": "place",
+      "description": "Gyógyszertár — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4550563,
+        "lon": 16.9892821
+      },
+      "openingHours": "Mo-Fr 07:30-18:00; Sa 07:30-12:00",
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2366239536",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2366239539",
+      "name": "Benu",
+      "category": "pharmacy",
+      "kind": "place",
+      "description": "Gyógyszertár — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4567267,
+        "lon": 16.9896214
+      },
+      "openingHours": "Mo-Fr 07:00-18:00; Sa 08:00-12:00",
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [
+        "Benu"
+      ],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2366239539",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2366239658",
+      "name": "Király gyógyszertár",
+      "category": "pharmacy",
+      "kind": "place",
+      "description": "Gyógyszertár — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4555554,
+        "lon": 16.9846028
+      },
+      "openingHours": "Mo-Fr 07:30-17:30; Sa 07:30-12:30",
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2366239658",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2366239695",
+      "name": "Orvosi rendelő (7. és 8. sz. háziorvosi szolgálat)",
+      "category": "doctor",
+      "kind": "place",
+      "description": "Orvosi rendelő — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4554116,
+        "lon": 16.9845963
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2366239695",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2449822891",
+      "name": "Nyilvános WC",
+      "category": "toilets",
+      "kind": "place",
+      "description": "Nyilvános WC — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4554559,
+        "lon": 16.9879774
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2449822891",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2496790448",
+      "name": "Nyilvános telefon",
+      "category": "public_phone",
+      "kind": "place",
+      "description": "Magyar Telekom",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4621784,
+        "lon": 16.9948954
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [
+        "Magyar Telekom"
+      ],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2496790448",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2496790510",
+      "name": "Nyilvános telefon",
+      "category": "public_phone",
+      "kind": "place",
+      "description": "Magyar Telekom Nyrt.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4622613,
+        "lon": 16.9898703
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [
+        "Magyar Telekom Nyrt."
+      ],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2496790510",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2497651745",
+      "name": "Dr. Szeghy Balázs bőrgyógyász",
+      "category": "doctor",
+      "kind": "place",
+      "description": "Orvosi rendelő — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": "Nagykanizsa",
+      "region": "Zala",
+      "country": "HU",
+      "phone": "+36309368411",
+      "website": null,
+      "coordinates": {
+        "lat": 46.4542061,
+        "lon": 16.9966583
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2497651745",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2497808665",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.45481,
+        "lon": 16.9933417
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2497808665",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2500553860",
+      "name": "Nyilvános telefon",
+      "category": "public_phone",
+      "kind": "place",
+      "description": "Magyar Telekom Nyrt.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4546885,
+        "lon": 16.992191
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [
+        "Magyar Telekom Nyrt."
+      ],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2500553860",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2502986514",
+      "name": "Nyilvános telefon",
+      "category": "public_phone",
+      "kind": "place",
+      "description": "Nyilvános telefon — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.519972,
+        "lon": 17.1235286
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2502986514",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2503282847",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5760208,
+        "lon": 17.1235894
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2503282847",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2503761575",
+      "name": "Nyilvános telefon",
+      "category": "public_phone",
+      "kind": "place",
+      "description": "Magyar Telekom Nyrt.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4567848,
+        "lon": 16.9889374
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [
+        "Magyar Telekom Nyrt."
+      ],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2503761575",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2504096652",
+      "name": "Nyilvános telefon",
+      "category": "public_phone",
+      "kind": "place",
+      "description": "Magyar Telekom Nyrt.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4552275,
+        "lon": 16.9875553
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [
+        "Magyar Telekom Nyrt."
+      ],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2504096652",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2504310482",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.450944,
+        "lon": 17.0189021
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2504310482",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2504310487",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4509639,
+        "lon": 17.0188299
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2504310487",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2504386826",
+      "name": "Zsálya gyógyszertár",
+      "category": "pharmacy",
+      "kind": "place",
+      "description": "Gyógyszertár — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": "Nagykanizsa",
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4642063,
+        "lon": 17.0120772
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": "yes",
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2504386826",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2505142814",
+      "name": "Nyilvános telefon",
+      "category": "public_phone",
+      "kind": "place",
+      "description": "Magyar Telekom Nyrt.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.45385,
+        "lon": 16.9895755
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [
+        "Magyar Telekom Nyrt."
+      ],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2505142814",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2505143349",
+      "name": "Nyilvános telefon",
+      "category": "public_phone",
+      "kind": "place",
+      "description": "Magyar Telekom Nyrt.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4562883,
+        "lon": 16.9980141
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [
+        "Magyar Telekom Nyrt."
+      ],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2505143349",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2506153818",
+      "name": "Nyilvános telefon",
+      "category": "public_phone",
+      "kind": "place",
+      "description": "Nyilvános telefon — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4224428,
+        "lon": 17.1230596
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2506153818",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2508600785",
+      "name": "Fagyöngy Patika",
+      "category": "pharmacy",
+      "kind": "place",
+      "description": "Gyógyszertár — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4525562,
+        "lon": 16.9985044
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2508600785",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2508600839",
+      "name": "Nyilvános telefon",
+      "category": "public_phone",
+      "kind": "place",
+      "description": "Magy Telekom Nyrt.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4585257,
+        "lon": 17.0166044
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [
+        "Magy Telekom Nyrt."
+      ],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2508600839",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2525486242",
+      "name": "Nyilvános telefon",
+      "category": "public_phone",
+      "kind": "place",
+      "description": "Magyar Telekom Nyrt.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4620749,
+        "lon": 17.0034299
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [
+        "Magyar Telekom Nyrt."
+      ],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2525486242",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2536755723",
+      "name": "Nyilvános WC",
+      "category": "toilets",
+      "kind": "place",
+      "description": "Nyilvános WC — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4646658,
+        "lon": 17.0135515
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2536755723",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2607975910",
+      "name": "Nyilvános WC",
+      "category": "toilets",
+      "kind": "place",
+      "description": "Nyilvános WC — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4539107,
+        "lon": 16.9944908
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2607975910",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2618622970",
+      "name": "Nyilvános telefon",
+      "category": "public_phone",
+      "kind": "place",
+      "description": "Nyilvános telefon — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4600815,
+        "lon": 17.0097346
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2618622970",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2624815098",
+      "name": "Benu",
+      "category": "pharmacy",
+      "kind": "place",
+      "description": "Gyógyszertár — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4543064,
+        "lon": 17.01217
+      },
+      "openingHours": "Mo-Fr 09:00-19:00; Sa 09:00-16:00; Su 09:00-15:00",
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [
+        "Benu"
+      ],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2624815098",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2624842666",
+      "name": "Nyilvános WC",
+      "category": "toilets",
+      "kind": "place",
+      "description": "Nyilvános WC — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.456617,
+        "lon": 16.9860239
+      },
+      "openingHours": "06:30-20:30",
+      "access": "yes",
+      "wheelchair": "no",
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2624842666",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2945506693",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5216134,
+        "lon": 17.1069531
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2945506693",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-2945506694",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5218128,
+        "lon": 17.1124449
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/2945506694",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-3115430078",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5714657,
+        "lon": 17.0957557
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/3115430078",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-3370497964",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5612199,
+        "lon": 17.0025176
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/3370497964",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-3423392765",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5505953,
+        "lon": 17.1251498
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/3423392765",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-3423392782",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5546468,
+        "lon": 17.1084119
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/3423392782",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-3456438414",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.3488627,
+        "lon": 16.8785869
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/3456438414",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-3456438422",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.3742831,
+        "lon": 16.9054098
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/3456438422",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-3456438436",
+      "name": "Nyilvános telefon",
+      "category": "public_phone",
+      "kind": "place",
+      "description": "Nyilvános telefon — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": "+3693311098",
+      "website": null,
+      "coordinates": {
+        "lat": 46.4402902,
+        "lon": 16.9867178
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/3456438436",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-3456438467",
+      "name": "Gyógyszertár",
+      "category": "pharmacy",
+      "kind": "place",
+      "description": "Gyógyszertár — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4903136,
+        "lon": 17.0520712
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/3456438467",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-3456438478",
+      "name": "Zöldfenyő Gyógyszertár",
+      "category": "pharmacy",
+      "kind": "place",
+      "description": "Gyógyszertár — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": "Nagykanizsa",
+      "region": "Zala",
+      "country": "HU",
+      "phone": "+3693333521",
+      "website": null,
+      "coordinates": {
+        "lat": 46.5006925,
+        "lon": 16.9857721
+      },
+      "openingHours": "Mo-Fr 08:00-17:00",
+      "access": null,
+      "wheelchair": "no",
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/3456438478",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-3456438479",
+      "name": "Nyilvános telefon",
+      "category": "public_phone",
+      "kind": "place",
+      "description": "+36 Érmés telefon",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.504011,
+        "lon": 16.915683
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [
+        "+36 Érmés telefon"
+      ],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/3456438479",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-3456439098",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5218376,
+        "lon": 17.1322862
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/3456439098",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-3456439164",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.578772,
+        "lon": 17.001581
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/3456439164",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-3465218042",
+      "name": "Nyilvános telefon",
+      "category": "public_phone",
+      "kind": "place",
+      "description": "Nyilvános telefon — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": "+3693346153",
+      "website": null,
+      "coordinates": {
+        "lat": 46.528214,
+        "lon": 16.828665
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/3465218042",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-3465219362",
+      "name": "Egészségház",
+      "category": "doctor",
+      "kind": "place",
+      "description": "Orvosi rendelő — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": "Tótszentmárton",
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.421455,
+        "lon": 16.807278
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/3465219362",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-3465219635",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.410234,
+        "lon": 16.828076
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/3465219635",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-3465219636",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.413153,
+        "lon": 16.823343
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/3465219636",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-3465219643",
+      "name": "Nyilvános telefon",
+      "category": "public_phone",
+      "kind": "place",
+      "description": "Nyilvános telefon — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": "+3693383602",
+      "website": null,
+      "coordinates": {
+        "lat": 46.421445,
+        "lon": 16.805122
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/3465219643",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-3465219644",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.421657,
+        "lon": 16.805146
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/3465219644",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-3563989029",
+      "name": "Nyilvános WC",
+      "category": "toilets",
+      "kind": "place",
+      "description": "Nyilvános WC — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.444082,
+        "lon": 17.0362832
+      },
+      "openingHours": "Mo-Th 08:00-16:00; Fr 08:00-13:30; Sa-Su 09:00-sunset",
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/3563989029",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-4343249281",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4442315,
+        "lon": 17.0413185
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/4343249281",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-4343448106",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5410536,
+        "lon": 16.8531157
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/4343448106",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-4586619001",
+      "name": "Orvosi rendelő",
+      "category": "doctor",
+      "kind": "place",
+      "description": "Csapi község önkormányzata",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5323481,
+        "lon": 17.0860158
+      },
+      "openingHours": "Tu 11:00-12:00",
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [
+        "Csapi község önkormányzata"
+      ],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/4586619001",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-4987216237",
+      "name": "Nyilvános WC",
+      "category": "toilets",
+      "kind": "place",
+      "description": "Nyilvános WC — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.457126,
+        "lon": 16.9449127
+      },
+      "openingHours": null,
+      "access": "customers",
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/4987216237",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-5174080728",
+      "name": "Nyilvános telefon",
+      "category": "public_phone",
+      "kind": "place",
+      "description": "Nyilvános telefon — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.561315,
+        "lon": 17.0782404
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/5174080728",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-5715927280",
+      "name": "Orvosi rendelő",
+      "category": "doctor",
+      "kind": "place",
+      "description": "Orvosi rendelő — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4345309,
+        "lon": 16.9007286
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/5715927280",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-5715927281",
+      "name": "Gyógyszertár",
+      "category": "pharmacy",
+      "kind": "place",
+      "description": "Gyógyszertár — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4345229,
+        "lon": 16.9009077
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/5715927281",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-5715967840",
+      "name": "Artézi kút",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4319547,
+        "lon": 16.8904613
+      },
+      "openingHours": null,
+      "access": "yes",
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/5715967840",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-5758834909",
+      "name": "AED",
+      "category": "aed",
+      "kind": "place",
+      "description": "Nagykanizsai Rendőrkapitányság",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4552037,
+        "lon": 16.9872492
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [
+        "Nagykanizsai Rendőrkapitányság"
+      ],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/5758834909",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-5773094764",
+      "name": "Nyilvános telefon",
+      "category": "public_phone",
+      "kind": "place",
+      "description": "Nyilvános telefon — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5553546,
+        "lon": 17.0444536
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/5773094764",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-5833527057",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4992537,
+        "lon": 16.8088094
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/5833527057",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-5864963373",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5789882,
+        "lon": 16.8869866
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/5864963373",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-5961500196",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5546377,
+        "lon": 17.1082846
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/5961500196",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-6002601630",
+      "name": "Gyógyszertár",
+      "category": "pharmacy",
+      "kind": "place",
+      "description": "Gyógyszertár — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5078461,
+        "lon": 16.7815294
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/6002601630",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-6018781158",
+      "name": "Gyógyszertár",
+      "category": "pharmacy",
+      "kind": "place",
+      "description": "Gyógyszertár — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4506475,
+        "lon": 16.8031161
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/6018781158",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-6050459488",
+      "name": "Szent Kristóf Patika",
+      "category": "pharmacy",
+      "kind": "place",
+      "description": "Gyógyszertár — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4564664,
+        "lon": 16.9874391
+      },
+      "openingHours": "Mo-Fr 06:00-22:00; Sa 07:00-13:00",
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/6050459488",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-6162544074",
+      "name": "Nyilvános WC",
+      "category": "toilets",
+      "kind": "place",
+      "description": "Nyilvános WC — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4794143,
+        "lon": 16.9168304
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/6162544074",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-6162544075",
+      "name": "Nyilvános WC",
+      "category": "toilets",
+      "kind": "place",
+      "description": "Nyilvános WC — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4784298,
+        "lon": 16.9176082
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/6162544075",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-6418379622",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.543887,
+        "lon": 16.9112792
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/6418379622",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-6537018755",
+      "name": "Nyilvános WC",
+      "category": "toilets",
+      "kind": "place",
+      "description": "Nyilvános WC — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5576864,
+        "lon": 17.1040692
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/6537018755",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-6551583702",
+      "name": "Nyilvános WC",
+      "category": "toilets",
+      "kind": "place",
+      "description": "Nyilvános WC — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4988891,
+        "lon": 16.9171365
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/6551583702",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-6653407906",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4180988,
+        "lon": 16.8205158
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/6653407906",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-6765277287",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.3975048,
+        "lon": 16.8495137
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/6765277287",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-6765277292",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4153588,
+        "lon": 16.8220277
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/6765277292",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-7088741850",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4604101,
+        "lon": 17.0455858
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/7088741850",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-7684765238",
+      "name": "Nyilvános WC",
+      "category": "toilets",
+      "kind": "place",
+      "description": "Nyilvános WC — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5046596,
+        "lon": 16.7838021
+      },
+      "openingHours": null,
+      "access": "yes",
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/7684765238",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-7714662001",
+      "name": "DVD Kotoriba",
+      "category": "fire_station",
+      "kind": "place",
+      "description": "Tűzoltóság — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": "Kotoriba",
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": "http://www.dvdkotoriba.hr/",
+      "coordinates": {
+        "lat": 46.3527179,
+        "lon": 16.8124267
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/7714662001",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-7716323633",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5735206,
+        "lon": 16.8270314
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/7716323633",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-7716380190",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5525856,
+        "lon": 17.1431592
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/7716380190",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-7750479024",
+      "name": "Ljekarna Čakovec",
+      "category": "pharmacy",
+      "kind": "place",
+      "description": "Gyógyszertár — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": "Kotoriba",
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": "https://ljekarna-cakovec.hr/ljekarne/kotoriba/",
+      "coordinates": {
+        "lat": 46.3538768,
+        "lon": 16.8131188
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/7750479024",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-7884438216",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5023033,
+        "lon": 17.0667818
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/7884438216",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-7884438223",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4951052,
+        "lon": 17.0513403
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/7884438223",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-7978862004",
+      "name": "Esőbeülő",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5050294,
+        "lon": 16.8312727
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/7978862004",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-7982313250",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4410293,
+        "lon": 16.9868621
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/7982313250",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-7982336651",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5047093,
+        "lon": 16.7837991
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/7982336651",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-8319650699",
+      "name": "Orvosi rendelő",
+      "category": "doctor",
+      "kind": "place",
+      "description": "Orvosi rendelő — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": "+36309274886",
+      "website": null,
+      "coordinates": {
+        "lat": 46.5224872,
+        "lon": 17.1258626
+      },
+      "openingHours": "Mo 08:00-12:00; Tu 10:00-12:00; We 13:00-16:00; Th 12:00-15:00; Fr 08:00-10:00",
+      "access": null,
+      "wheelchair": "yes",
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/8319650699",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-8522358607",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4995969,
+        "lon": 16.8091323
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/8522358607",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-8872374957",
+      "name": "Nyilvános WC",
+      "category": "toilets",
+      "kind": "place",
+      "description": "Nyilvános WC — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5596933,
+        "lon": 17.0312572
+      },
+      "openingHours": null,
+      "access": "yes",
+      "wheelchair": "no",
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/8872374957",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-9219758990",
+      "name": "Nyilvános WC",
+      "category": "toilets",
+      "kind": "place",
+      "description": "Nyilvános WC — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5547682,
+        "lon": 17.1082872
+      },
+      "openingHours": null,
+      "access": "yes",
+      "wheelchair": "no",
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/9219758990",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-9219758993",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5584924,
+        "lon": 17.1090866
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/9219758993",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-9242920559",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.3522013,
+        "lon": 16.954485
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/9242920559",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-9866310267",
+      "name": "Nyilvános WC",
+      "category": "toilets",
+      "kind": "place",
+      "description": "Nyilvános WC — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5584998,
+        "lon": 17.1088216
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/9866310267",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-9902604117",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5283752,
+        "lon": 16.8289177
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/9902604117",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-9910555550",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Vize sárgás, barnás",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5219029,
+        "lon": 17.1259076
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [
+        "Vize sárgás, barnás"
+      ],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/9910555550",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-10719822014",
+      "name": "Háziorvosi rendelő",
+      "category": "doctor",
+      "kind": "place",
+      "description": "Orvosi rendelő — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.3746429,
+        "lon": 16.9054887
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/10719822014",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-10744150239",
+      "name": "Nyilvános telefon",
+      "category": "public_phone",
+      "kind": "place",
+      "description": "Nyilvános telefon — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4475916,
+        "lon": 16.7859355
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/10744150239",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-10747076091",
+      "name": "Nyilvános telefon",
+      "category": "public_phone",
+      "kind": "place",
+      "description": "Nyilvános telefon — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.480761,
+        "lon": 16.8822459
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/10747076091",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-10875293857",
+      "name": "Gyógyszertár",
+      "category": "pharmacy",
+      "kind": "place",
+      "description": "Gyógyszertár — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5074049,
+        "lon": 16.7818208
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/10875293857",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-11049890299",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5033885,
+        "lon": 16.8073169
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/11049890299",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-11054646005",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4975747,
+        "lon": 17.0713172
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/11054646005",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-11158704522",
+      "name": "Orvosi rendelő",
+      "category": "doctor",
+      "kind": "place",
+      "description": "Orvosi rendelő — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": "+3693369019",
+      "website": null,
+      "coordinates": {
+        "lat": 46.362079,
+        "lon": 16.8769272
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/11158704522",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-11158760972",
+      "name": "Orvosi rendelő",
+      "category": "doctor",
+      "kind": "place",
+      "description": "Orvosi rendelő — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5545096,
+        "lon": 16.9359283
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/11158760972",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-11215326945",
+      "name": "Nyilvános WC",
+      "category": "toilets",
+      "kind": "place",
+      "description": "Nyilvános WC — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4409813,
+        "lon": 16.9867611
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/11215326945",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-11249193445",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4072513,
+        "lon": 17.0037669
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/11249193445",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-11276769640",
+      "name": "Patológia",
+      "category": "hospital",
+      "kind": "place",
+      "description": "Kórház — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4524245,
+        "lon": 16.9994289
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/11276769640",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-11323207269",
+      "name": "Gyógyszertár",
+      "category": "pharmacy",
+      "kind": "place",
+      "description": "Gyógyszertár — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4558096,
+        "lon": 16.965496
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/11323207269",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-11375451008",
+      "name": "Nyilvános WC",
+      "category": "toilets",
+      "kind": "place",
+      "description": "Nyilvános WC — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.445433,
+        "lon": 17.035531
+      },
+      "openingHours": null,
+      "access": "yes",
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/11375451008",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-11401281566",
+      "name": "Akadálymentes WC",
+      "category": "accessible_toilets",
+      "kind": "place",
+      "description": "Akadálymentes WC — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5519903,
+        "lon": 17.1237225
+      },
+      "openingHours": "06:00-21:00",
+      "access": "yes",
+      "wheelchair": "yes",
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/11401281566",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-11759135221",
+      "name": "Nyilvános telefon",
+      "category": "public_phone",
+      "kind": "place",
+      "description": "Magyar Telekom",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5665183,
+        "lon": 16.8366967
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [
+        "Magyar Telekom"
+      ],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/11759135221",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-11759135256",
+      "name": "Gyógyszertár",
+      "category": "pharmacy",
+      "kind": "place",
+      "description": "Gyógyszertár — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": "Bánokszentgyörgy",
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5450096,
+        "lon": 16.7821902
+      },
+      "openingHours": "Mo 07:00-16:00; Tu 07:00-17:00; We 07:00-12:30; Th 11:00-16:00; Fr 07:00-14:30",
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/11759135256",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-11762188104",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5001965,
+        "lon": 17.0791577
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/11762188104",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-11765577684",
+      "name": "Orvosi rendelő",
+      "category": "doctor",
+      "kind": "place",
+      "description": "Orvosi rendelő — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": "Nagykanizsa",
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4980983,
+        "lon": 16.9847137
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/11765577684",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-11765577685",
+      "name": "Orvosi rendelő",
+      "category": "doctor",
+      "kind": "place",
+      "description": "Orvosi rendelő — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": "Nagykanizsa",
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4983514,
+        "lon": 16.9848592
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/11765577685",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-12952081885",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "A turistaház kertjében kerti csap a színpadi rész mellett. Nyitva van a telek, nyugodtan be lehet menni.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5016036,
+        "lon": 16.8107449
+      },
+      "openingHours": null,
+      "access": "yes",
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [
+        "A turistaház kertjében kerti csap a színpadi rész mellett. Nyitva van a telek, nyugodtan be lehet menni."
+      ],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/12952081885",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-13060728716",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5582175,
+        "lon": 17.0233536
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/13060728716",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-13105348944",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5352463,
+        "lon": 16.8005036
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/13105348944",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-13125219290",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4943195,
+        "lon": 16.9783381
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/13125219290",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-13198496015",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.504028,
+        "lon": 16.9150279
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/13198496015",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-13265961331",
+      "name": "Nyilvános telefon",
+      "category": "public_phone",
+      "kind": "place",
+      "description": "Nyilvános telefon — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4933195,
+        "lon": 17.0820368
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/13265961331",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-13400861619",
+      "name": "Nyilvános WC",
+      "category": "toilets",
+      "kind": "place",
+      "description": "Nyilvános WC — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5509621,
+        "lon": 17.1222907
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/13400861619",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-13910329962",
+      "name": "Nyilvános WC",
+      "category": "toilets",
+      "kind": "place",
+      "description": "Nyilvános WC — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.440844,
+        "lon": 16.9865919
+      },
+      "openingHours": null,
+      "access": "yes",
+      "wheelchair": "no",
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/13910329962",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-13910329964",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4405912,
+        "lon": 16.9867263
+      },
+      "openingHours": null,
+      "access": "yes",
+      "wheelchair": "yes",
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/13910329964",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-13974450436",
+      "name": "Ivóvíz",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.3627119,
+        "lon": 17.1012155
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/13974450436",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-node-14021860338",
+      "name": "Nyilvános WC",
+      "category": "toilets",
+      "kind": "place",
+      "description": "Nyilvános WC — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.5519807,
+        "lon": 17.1237402
+      },
+      "openingHours": "06:00-21:00",
+      "access": "yes",
+      "wheelchair": "no",
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/node/14021860338",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-123000684",
+      "name": "Katasztrófavédelmi Őrs",
+      "category": "fire_station",
+      "kind": "place",
+      "description": "Tűzoltóság — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": "Zalakaros",
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": "https://www.katasztrofavedelem.hu/",
+      "coordinates": {
+        "lat": 46.559798533333336,
+        "lon": 17.125449377777777
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/123000684",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-199635311",
+      "name": "Keleti Gyógyszertár",
+      "category": "pharmacy",
+      "kind": "place",
+      "description": "Gyógyszertár — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.46218307692308,
+        "lon": 17.01483479230769
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/199635311",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-237140065",
+      "name": "XXI. sz. Felnőtt Háziorvosi Szolgálat",
+      "category": "doctor",
+      "kind": "place",
+      "description": "Orvosi rendelő — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.44903589999999,
+        "lon": 17.023026983333335
+      },
+      "openingHours": "Mo 11:00-15:00; Tu 08:00-10:00; We 11:00-15:00; Th 08:00-10:00; Fr 08:00-12:00",
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/237140065",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-237268920",
+      "name": "Kanizsai Dorottya kórház",
+      "category": "hospital",
+      "kind": "place",
+      "description": "Kórház — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": "Nagykanizsa",
+      "region": "Zala",
+      "country": "HU",
+      "phone": "+3693502092",
+      "website": "https://nkkorhaz.hu/",
+      "coordinates": {
+        "lat": 46.45149702941176,
+        "lon": 16.998932511764703
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/237268920",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-255064132",
+      "name": "Zenepavilon",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.45642643333334,
+        "lon": 16.98832127142857
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/255064132",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-666302129",
+      "name": "Klinika",
+      "category": "clinic",
+      "kind": "place",
+      "description": "Klinika — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": "Iharosberény",
+      "region": "Zala",
+      "country": "HU",
+      "phone": "+3682720272",
+      "website": null,
+      "coordinates": {
+        "lat": 46.36206988,
+        "lon": 17.10014776
+      },
+      "openingHours": "Mo 13:00-15:00; Tu 07:30-11:30; We 13:00-15:00; Th 13:00-15:00",
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/666302129",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-672029062",
+      "name": "Klinika",
+      "category": "clinic",
+      "kind": "place",
+      "description": "Klinika — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.410821320000004,
+        "lon": 16.98489426
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/672029062",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-721039540",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.39752674,
+        "lon": 16.849349460000003
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/721039540",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-897732842",
+      "name": "Orvosi rendelő",
+      "category": "doctor",
+      "kind": "place",
+      "description": "Orvosi rendelő — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": "Bánokszentgyörgy",
+      "region": "Zala",
+      "country": "HU",
+      "phone": "+3693346013",
+      "website": null,
+      "coordinates": {
+        "lat": 46.54460546,
+        "lon": 16.78246466
+      },
+      "openingHours": "Mo 12:00-16:00; We 10:00-13:00; Th 10:00-12:00",
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/897732842",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-957091648",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.51171142,
+        "lon": 16.88861542
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/957091648",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-976037132",
+      "name": "Nagykanizsai Tűzoltóság",
+      "category": "fire_station",
+      "kind": "place",
+      "description": "Tűzoltóság — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.45233928,
+        "lon": 16.996723144999997
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/976037132",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-976664234",
+      "name": "Medicover Egészségpont",
+      "category": "doctor",
+      "kind": "place",
+      "description": "Orvosi rendelő — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.46422406000001,
+        "lon": 17.006999479999998
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/976664234",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-978522490",
+      "name": "14. sz. Felnőtt Háziorvosi Rendelő",
+      "category": "doctor",
+      "kind": "place",
+      "description": "Orvosi rendelő — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": "Nagykanizsa",
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.45702268,
+        "lon": 17.0045006
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/978522490",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-978522491",
+      "name": "Alma Gyógyszertár",
+      "category": "pharmacy",
+      "kind": "place",
+      "description": "Salvia",
+      "locality": "Nagykanizsa",
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.45692556,
+        "lon": 17.00451218
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [
+        "Alma Gyógyszertár",
+        "Salvia"
+      ],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/978522491",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-980697729",
+      "name": "7. és 8. sz. Háziorvosi szolgálat",
+      "category": "doctor",
+      "kind": "place",
+      "description": "Orvosi rendelő — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.455407519999994,
+        "lon": 16.98455826
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/980697729",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-980697734",
+      "name": "Nagykanizsai Rendőrkapitányság",
+      "category": "police",
+      "kind": "place",
+      "description": "Rendőrség — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": "Nagykanizsa",
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.455253240000005,
+        "lon": 16.987189266666668
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/980697734",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-980951569",
+      "name": "Nagykanizsai Rendőrség - Kiskanizsai Kirendeltség",
+      "category": "police",
+      "kind": "place",
+      "description": "Rendőrség — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.45576381666666,
+        "lon": 16.957001066666667
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/980951569",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-1043431218",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.54096216000001,
+        "lon": 16.99219126
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/1043431218",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-1208432059",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.433223219999995,
+        "lon": 16.89847886
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/1208432059",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-1211712147",
+      "name": "Kerekeskút",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.412075359999996,
+        "lon": 16.98948892
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/1211712147",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-1211712156",
+      "name": "Kerekeskút",
+      "category": "drinking_water",
+      "kind": "place",
+      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.41367616,
+        "lon": 16.99291646
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/1211712156",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-1308545174",
+      "name": "Gyógyszertár",
+      "category": "pharmacy",
+      "kind": "place",
+      "description": "Gyógyszertár — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": "Murakeresztúr",
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.36354828888889,
+        "lon": 16.877952611111116
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/1308545174",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-1365630493",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.460372219999996,
+        "lon": 16.91553712
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/1365630493",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-1414387000",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.41377942,
+        "lon": 16.82282086
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/1414387000",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-1414387006",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.4178811,
+        "lon": 16.820749888888887
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/1414387006",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-1445210697",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.45053654,
+        "lon": 16.80196618
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/1445210697",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "osm-way-1445210698",
+      "name": "Menedék",
+      "category": "shelter",
+      "kind": "place",
+      "description": "Menedék — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
+      "locality": null,
+      "region": "Zala",
+      "country": "HU",
+      "phone": null,
+      "website": null,
+      "coordinates": {
+        "lat": 46.45063268,
+        "lon": 16.80129286
+      },
+      "openingHours": null,
+      "access": null,
+      "wheelchair": null,
+      "verification": "community_source",
+      "tags": [],
+      "source": {
+        "name": "OpenStreetMap contributors",
+        "url": "https://www.openstreetmap.org/way/1445210698",
+        "retrievedAt": "2026-08-15"
+      }
+    }
+  ]
 }
