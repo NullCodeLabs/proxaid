@@ -7,6 +7,10 @@
 
 PROXAID is an installable, offline-first web terminal for finding locally stored emergency and survival points. It runs from GitHub Pages, keeps its searchable records on the device, and avoids external map tiles, CDNs, analytics, advertising, and location tracking.
 
+> **v1.0 — public technical preview (14 August 2026):** the offline application core, local search, and pack handling provide a working foundation. Focused expansion of the mobile-first interface, detailed street mapping, and regional data coverage is underway. This release is primarily intended for developer evaluation and offline preparedness.
+
+Release history: **[`changelog.md`](./changelog.md)** · [Magyar változásnapló](./changelog_hu.md)
+
 > [!CAUTION]
 > **PROXAID is an aid, not an emergency service, medical device, or navigation system.** In immediate danger, call the official local emergency number and follow dispatcher instructions. Calls still require a working telephone network. Community data may be incomplete, inaccurate, or outdated.
 
@@ -22,23 +26,43 @@ PROXAID is an installable, offline-first web terminal for finding locally stored
 - **Manual JSON pack import:** prepared regional packs can be transferred and installed without changing the application code.
 - **Private-by-design operation:** location is used inside the browser and is not sent to a PROXAID server by this release.
 
+### Exact current offline payload
+
+- Interface: HTML, CSS, JavaScript, manifest, icons, and 404 page.
+- Local map: `world-110m.geojson` world overview.
+- Data description: catalog, regions, and taxonomy.
+- Point data: `global-core`, default-installed `hu-west`, and cached `hu-west-osm`.
+- `hu-west-osm` currently contains 0 records. Detailed street maps, route packs, and approved CPR audio are not yet included.
+
 ## Install on phones, tablets, and computers
 
 PROXAID targets current supported browser releases and keeps feature-detected fallbacks for older devices, including Safari on iOS 15. Each device must open the site online once before its application shell and selected packs can be used offline.
 
-| Platform | Recommended installation | Reliable fallback |
-|---|---|---|
-| **iPhone / iPad** | Open in Safari → **Share** → **Add to Home Screen** → enable **Open as Web App** when shown. | The built-in PROXAID install help also covers the older iOS 15 flow. Open once online, then test in Airplane Mode. |
-| **Android** | Open in current Chrome, Edge, or Firefox → choose **Install app** / **Add to Home screen** from the browser menu or install prompt. | Use it in the browser; offline caching and local search do not depend on a standalone window. |
-| **Windows** | Current Chrome or Edge → select the install icon in the address bar. | Use current Chrome, Edge, or Firefox in a normal browser tab. |
-| **macOS** | Safari on macOS Sonoma 14+ → **File → Add to Dock**, or use current Chrome/Edge install. | Use current Safari, Chrome, Edge, or Firefox in a browser tab. |
-| **Linux** | Current Chrome or Edge/Chromium build with PWA installation → select the install icon. | Use a current standards-based browser; Firefox supports browser/offline use but not a native standalone PWA install flow. |
+- **iPhone / iPad:** Safari → **Share** → **Add to Home Screen**. Fallback: Safari tab.
+- **Android:** Chrome/Edge/Firefox → **Install app** or **Add to Home screen**. Fallback: browser tab.
+- **Windows:** Chrome/Edge install icon. Fallback: Chrome/Edge/Firefox tab.
+- **macOS:** Safari → **File → Add to Dock**, or Chrome/Edge install. Fallback: browser tab.
+- **Linux:** Chromium/Chrome/Edge build with PWA installation. Fallback: standards-based browser tab.
 
 Official platform instructions: [Apple — web apps on iPhone](https://support.apple.com/guide/iphone/open-as-web-app-iphea86e5236/ios), [Apple — web apps on Mac](https://support.apple.com/en-us/104996), [web.dev — desktop PWA installation](https://web.dev/learn/pwa/installation), and [Microsoft Edge — installing PWAs](https://learn.microsoft.com/en-us/microsoft-edge/progressive-web-apps/ux).
 
+**iOS/iPadOS 15 installation path:** Safari → Share → Add to Home Screen.
+
 ### What “cross-platform” means here
 
-The same GitHub Pages deployment works on phone, tablet, laptop, and desktop. Every installation has its **own local database and cache**: there is no account, cloud profile, or automatic device-to-device synchronization. Refresh and test each important device separately before relying on it in the field.
+The same GitHub Pages deployment works on phone, tablet, laptop, and desktop. Every browser/installation has its **own local database and cache**: there is no account, cloud profile, or automatic device-to-device synchronization. An offline app does not synchronize; it reads the last verified local copy. Network refresh can occur only while connectivity and platform execution allow it.
+
+The accepted bridge is a portable signed pack: download one region file to Files/Downloads, USB or removable storage, then import and verify that same file in each browser/PWA. OS sharing, QR manifests and local WebRTC/PairDrop-style transfer may move the file, but cannot inject one browser's IndexedDB or Cache Storage into another browser automatically.
+
+### Global support strategy
+
+Absolute support for every past and future device/browser is not technically possible. PROXAID instead uses capability tiers:
+
+1. **Emergency minimum:** responsive text UI, local emergency numbers, manual search and file import without WebGL, NFC, Bluetooth or speech.
+2. **Offline PWA:** Service Worker, local database, geolocation and downloaded data/audio packs.
+3. **Detailed map:** regional road map/routing packs where GPU, memory and storage allow, with a list/non-WebGL fallback.
+4. **Optional device APIs:** speech, NFC, Bluetooth and richer sharing only after feature detection, permission and a tested fallback.
+5. **Native safety tier:** iOS/Android system APIs for background geofencing, local notifications, health stores and reliable external-device integration.
 
 ## Offline architecture
 
@@ -51,6 +75,10 @@ PROXAID uses four deliberately separate layers:
 
 A detailed global road map plus worldwide emergency and survival datasets cannot responsibly be bundled into a small static site. GitHub Pages has a published-site size limit, while browsers independently control storage quotas and background execution. PROXAID therefore favors small, inspectable, replaceable regional packs.
 
+No single global directory is authoritative enough. The accepted pipeline prefers national/regional official emergency, AED, pharmacy, on-call and health-facility registries, then uses OpenStreetMap/Geofabrik, Overture and healthsites.io as open baselines. Commercial directories such as OPTEN may enrich addresses/contact data only after API, licence, redistribution and freshness review; they cannot override an official operational registry merely because they list a business.
+
+Opening status has three separate states: **scheduled open now** calculated locally from fresh parseable hours, **live open** confirmed by a current authoritative online source, and **unknown/stale**. The app must also calculate the next scheduled opening where possible and must never display a reassuring open state from missing or stale data.
+
 ## Search, positioning, and map behavior
 
 - Search works entirely against local records and recognizes names, locations, categories, and tags.
@@ -58,6 +86,10 @@ A detailed global road map plus worldwide emergency and survival datasets cannot
 - Denying location does not disable search.
 - The bundled world view shows orientation and point distribution; it is **not street-level mapping, turn-by-turn navigation, or GPS/cell-tower triangulation**.
 - Device GPS may remain available without internet, but availability and accuracy are controlled by the hardware, operating system, browser, permissions, and surroundings.
+
+Szepetnek acceptance test: **My location** focuses Szepetnek at street-level zoom; results appear only at their real coordinates; empty or insufficient local coverage shows **no downloaded verified result** instead of Budapest/default markers.
+
+Distance sorting means **nearest loaded record**, not nearest suitable/open/verified lifesaving resource. Suitability, current availability, route time and coverage confidence must be evaluated separately.
 
 ## Refresh and publishing chain
 
@@ -73,6 +105,57 @@ The scheduled job is not a real-time guarantee. It can be delayed, fail because 
 The model supports emergency numbers, ambulance and emergency departments, hospitals, out-of-hours care, clinics, pharmacies, AEDs, police, fire and rescue, shelters, drinking water, public toilets, showers, laundry, public communication, fuel/charging, trail information, and evacuation-related points.
 
 The category-to-OpenStreetMap mapping is documented in [`data/taxonomy.json`](./data/taxonomy.json). Coverage depends on the installed packs; support in the schema does not mean every region currently contains every category.
+
+Country-specific call packs must preserve service level. For Hungary, 112 is the primary life-threatening emergency action; 1830 is a visually different lower-level out-of-hours primary-care action. Communication buttons may expose `tel:`, `sms:` and optional app/share handlers, but a web page cannot reliably inventory every installed app. Unverified Viber/Skype/other possibilities must appear as grey **Try/Open** actions, not as “installed”, and network-dependent handlers must show offline status.
+
+## Accepted audio model — three separate functions
+
+- **UI narration / TTS — ALWAYS ON:** every button and instruction interaction is spoken in the active/browser language, including NFC, MESH, and emergency controls.
+- **MIC ON / STT:** the button at the start of search receives speech and writes recognized text into the search field.
+- **CPR audio:** a separate beat/song or short narrated instruction for pacing resuscitation. It is neither button narration nor microphone input.
+
+The four files in the existing `cpr_audio_guides.zip` are **rejected prototypes** and must not be integrated.
+
+- Legally downloadable beat candidate: [CPR beat — direct MP3](https://upload.wikimedia.org/wikipedia/commons/transcoded/e/e6/CPR_beat.ogg/CPR_beat.ogg.mp3) · [source and public-domain licence](https://commons.wikimedia.org/wiki/File:CPR_beat.ogg)
+- Hungarian online training: [OMSZA — Tartsd életben!](https://www.youtube.com/watch?v=CMstTrW4kmc)
+- English online training: [British Heart Foundation — Hands-Only CPR](https://www.youtube.com/watch?v=O92KL1mw77c)
+- Original song online: [Bee Gees — Stayin’ Alive](https://www.youtube.com/watch?v=I_izvAbhExY) — link only; do not package it in the repository without permission.
+
+The accepted offline skills library also includes a professionally reviewed classic trained-rescuer adult compression-plus-breath pathway and separate scene-safety, recovery-position, choking, severe-bleeding, burns and other source-versioned first-aid modules. Dispatcher/AED instructions override prerecorded guidance. If a reviewed language pack is missing, built-in browser translation and then a clearly labelled extension suggestion may be offered only as an online, privacy-disclosed last resort.
+
+## NFC, MESH, discreet help and satellite truth
+
+- **NFC:** optional signed emergency-card or pack-manifest exchange. Android Web NFC is an enhancement; iPhone/Safari cannot be the baseline. A public NFC tag must contain only a user-selected minimal emergency card, not the detailed health profile.
+- **MESH:** QR/file transfer and local WebRTC are active-app paths; reliable background BLE/Wi-Fi relaying needs native code. Real off-grid multi-hop requires compatible external radio hardware such as Meshtastic/LoRa and matching regional radio settings.
+- **GPS:** receives a position; it does not transmit an alert. SMS, mobile data, Wi-Fi, Bluetooth, push and external radio each need separate permissions, delivery and acknowledgement states.
+- **Discreet help:** a browser PWA cannot capture volume/power combinations while locked. Use the operating system Emergency SOS setup as the hardware-button path; future native/in-app duress options must not claim delivery without acknowledgement.
+- **Signal for Help:** the thumb-in-palm gesture means “contact me safely”, not “automatically call police”. Camera recognition requires the app open and camera permission and carries false-positive/coercion risks.
+- **Starlink/satellite:** when a terminal, direct-to-cell service or OS satellite feature supplies connectivity, PROXAID can use that normal transport. Availability is device/carrier/country/plan dependent; there is no universal browser API that turns GPS/NFC/Bluetooth into satellite messaging.
+
+## Private emergency health profile target
+
+Accepted combined intake: manual local form + authorized HealthKit/Health Connect import in the native mobile shell + signed QR/file export and import. Merge only fields selected by the user.
+
+Keep two layers: a private detailed profile, and a separately chosen minimal responder card for QR/NFC/lock-screen display. Candidate fields include unknown/unverified blood group, allergies, anticoagulants and other medicines, relevant diagnoses, implants/pacemaker, diabetes, epilepsy, anaphylaxis, pregnancy where relevant, donor status as a user statement, language, emergency instructions and trusted contacts.
+
+Local-only processing substantially reduces disclosure risk but does not automatically remove GDPR or other health-data obligations. The form must warn about stale/self-reported data, wrong blood group, lost/shared devices, lock-screen/NFC exposure, screenshots, browser deletion, backups/exports and malicious tag replacement. No analytics or third-party scripts may touch the profile.
+
+## One product: PWA core plus a thin native safety shell
+
+This does **not** mean two separate products. The same responsive UI, data model, offline map/search, language packs and safety logic remain the shared PROXAID core. Browser/PWA distribution works everywhere it can. An optional iOS/Android shell—potentially using a reviewed Capacitor-style bridge—adds only OS-controlled functions such as background border geofencing/local notifications, HealthKit/Health Connect, stronger NFC/BLE and external MESH support. Desktop stays web/PWA, and the PWA remains useful without the mobile shell.
+
+Border-pack warnings illustrate the split: an open foreground PWA may compare GPS with downloaded pack boundaries; an inactive/locked alert requires native iOS region monitoring or Android geofencing. Roaming is not a reliable border detector. The safe design preloads adjacent border strips, uses distance hysteresis against GPS jitter, and names the missing pack in a local notification. Sound, vibration and LEDs remain subject to OS/device/user settings; Web Push is network delivery and is not an offline GPS alarm.
+
+## Large downloads and GitHub Releases
+
+Keep source code and small approved audio in the repository. A GitHub Release asset is a separately downloadable attachment, not a blob copied into every Git clone/history; each asset must be under 2 GiB. This is suitable for whole regional packs that the user downloads and imports. Direct PMTiles streaming is a different requirement: the host must correctly support HTTP Range requests and CORS, so use tested object storage/CDN when on-demand tile reads are required.
+
+Upload a release pack:
+
+1. Open [NullCodeLabs/proxaid — new Release](https://github.com/NullCodeLabs/proxaid/releases/new).
+2. Enter a version tag and short release title.
+3. Drop the region pack into **Attach binaries**.
+4. Select **Publish release**, then copy the asset download URL into the PROXAID catalog.
 
 ## Deploy to GitHub Pages
 
@@ -102,9 +185,11 @@ Service Workers require HTTPS or `localhost`; opening `index.html` through `file
 - Imported JSON packs are structurally validated, but only install packs from a source you trust.
 - Browser storage may still be evicted by the operating system. **Refresh now** requests persistent storage where supported, and the interface shows the detected storage policy.
 
-## Not implemented — do not rely on these yet
+## v1.0 scope and evolution
 
-The current release does **not** provide voice commands or audio guidance, NFC scanning, peer-to-peer MESH radio, encrypted SOS relays, full detailed offline road maps, turn-by-turn route planning, cell-tower triangulation, or automatic synchronization between devices. These are possible future modules, not current safety claims.
+v1.0 is the first public technical release of the offline application core, local point database, geolocation sorting, pack import, and source/freshness labels. The mobile-first interface, detailed offline street maps, TTS, MIC ON, approved CPR audio, NFC/MESH, background alerts, and native health-data bridge are development directions for separately approved future releases.
+
+Public version evolution is maintained in **[`changelog.md`](./changelog.md)**.
 
 ## Sources and licences
 
@@ -113,5 +198,13 @@ The current release does **not** provide voice commands or audio guidance, NFC s
 - GitHub Pages — [limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
 - GitHub Actions — [scheduled workflow behavior](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule)
 - MDN — [Periodic Background Sync limitations](https://developer.mozilla.org/en-US/docs/Web/API/Web_Periodic_Background_Synchronization_API)
+- WebKit — [iOS/iPadOS 16.4 Home Screen support](https://webkit.org/blog/13878/web-push-for-web-apps-on-ios-and-ipados/)
+- MDN — [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API)
+- Protomaps — [PMTiles HTTP Range/CORS hosting](https://docs.protomaps.com/pmtiles/cloud-storage)
+- healthsites.io — [open health-facility API](https://healthsites.io/api/docs/)
+- Canadian Women's Foundation — [Signal for Help](https://canadianwomen.org/signal-for-help/)
+- Apple/Android — [HealthKit authorization](https://developer.apple.com/documentation/healthkit/authorizing-access-to-health-data), [Health Connect](https://developer.android.com/health-and-fitness/health-connect/get-started)
+- AHA/OMSZ/EU — [2025 Adult BLS](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-basic-life-support), [Hungarian 1830 service](https://www.mentok.hu/ugyelet/), [European 112](https://digital-strategy.ec.europa.eu/en/policies/112)
+- GitHub — [Release assets](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases)
 
 For the complete Hungarian documentation, see **[README_hu.md](./README_hu.md)**.
