@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npm run validate",
     "validate": "node tools/validate.mjs",
-    "update:data": "node tools/update-packs.mjs"
+    "update:data": "node tools/update-packs.mjs",
+    "ingest:candidates": "node tools/ingest-candidates.mjs"
   },
   "engines": { "node": ">=20" }
 }

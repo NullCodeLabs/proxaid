@@ -1,8 +1,8 @@
 {
   "id": "./",
-  "name": "PROXAID Offline",
+  "name": "Ha baj van, de nincs internet, esetleg telefon sem, GPS lefedettség sem! Nem csak adrenalin vadászok számára!",
   "short_name": "PROXAID",
-  "description": "Eszközön tárolt sürgősségi és túlélési pontok offline keresése.",
+  "description": "Offline is működő vészhelyzeti térkép és elsősegélynyújtás támogatással.",
   "lang": "hu",
   "start_url": "./?source=pwa",
   "scope": "./",

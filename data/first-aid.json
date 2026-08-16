@@ -4,8 +4,8 @@
   "defaultLanguage": "en",
   "supportedLanguages": ["hu", "en"],
   "sourceNote": {
-    "hu": "A 2025-ös életmentési elágazásokat a Resuscitation Council útmutatói támogatják: BLS 2025, elsősegély 2025.",
-    "en": "The 2025 lifesaving branches are supported by Resuscitation Council guidance: BLS 2025 and First Aid 2025."
+    "hu": "A teendőket a RCUK 2025, az IFRC 2025 és a WHO sürgősségi útmutatói támogatják.",
+    "en": "The actions are supported by RCUK 2025, IFRC 2025 and WHO emergency-care guidance."
   },
   "sources": {
     "bls2025": {
@@ -23,6 +23,18 @@
     "omszaHandsOnly": {
       "name": "Országos Mentőszolgálat Alapítvány — Tartsd életben!",
       "url": "https://www.mentoalapitvany.hu/v/tartsd-eletben-ujraelesztes-egyszeruen-es-gyorsan/"
+    },
+    "ifrc2025": {
+      "name": "IFRC — International First Aid, Resuscitation and Education Guidelines 2025",
+      "url": "https://www.ifrc.org/document/ifrc-international-first-aid-resuscitation-and-education-guidelines-2025"
+    },
+    "whoMassCasualty": {
+      "name": "WHO — Mass Casualty Management",
+      "url": "https://www.who.int/teams/integrated-health-services/clinical-services-and-systems/emergency-and-critical-care/mass-casualty-management"
+    },
+    "whoPrehospital": {
+      "name": "WHO — Prehospital emergency care toolkit",
+      "url": "https://www.who.int/teams/integrated-health-services/clinical-services-and-systems/emergency-and-critical-care/prehospital-toolkit"
     }
   },
   "cprModes": {
@@ -37,16 +49,16 @@
       },
       "steps": {
         "hu": [
-          "Hívd a 112-t, tedd kihangosítóra, és kérj AED-t.",
+          "Hívd a 112-t, tedd kihangosítóra, és kérj defibrillátort (AED-t).",
           "Tedd mindkét tenyered a mellkas közepére.",
           "Nyomd 5–6 centiméter mélyre, percenként 100–120 alkalommal.",
-          "Folytasd megszakítás nélkül; kövesd a segélyirányító és az AED utasításait."
+          "Folytasd megszakítás nélkül; kövesd a segélyirányító és a defibrillátor (AED) utasításait."
         ],
         "en": [
-          "Call the local emergency number, use speakerphone, and ask for an AED.",
+          "Call the local emergency number, use speakerphone, and ask for a defibrillator (AED).",
           "Place both hands in the centre of the chest.",
           "Push 5–6 centimetres deep at 100–120 compressions per minute.",
-          "Continue without interruption; follow the dispatcher and AED prompts."
+          "Continue without interruption; follow the dispatcher and defibrillator (AED) prompts."
         ]
       },
       "offlineAudio": {
@@ -78,16 +90,16 @@
       },
       "steps": {
         "hu": [
-          "Hívd a 112-t, tedd kihangosítóra, és kérj AED-t.",
+          "Hívd a 112-t, tedd kihangosítóra, és kérj defibrillátort (AED-t).",
           "Végezz 30 mellkasi nyomást 5–6 centiméter mélyen, percenként 100–120 ütemben.",
           "Nyisd meg a légutat, fogd be az orrot, és adj 2 befúvást; a mellkas emelkedjen meg.",
-          "Folytasd 30:2 arányban; kövesd a segélyirányító és az AED utasításait."
+          "Folytasd 30:2 arányban; kövesd a segélyirányító és a defibrillátor (AED) utasításait."
         ],
         "en": [
-          "Call the local emergency number, use speakerphone, and ask for an AED.",
+          "Call the local emergency number, use speakerphone, and ask for a defibrillator (AED).",
           "Give 30 chest compressions, 5–6 centimetres deep, at 100–120 per minute.",
           "Open the airway, pinch the nose and give 2 breaths, watching for chest rise.",
-          "Continue at 30:2; follow the dispatcher and AED prompts."
+          "Continue at 30:2; follow the dispatcher and defibrillator (AED) prompts."
         ]
       },
       "offlineAudio": {
@@ -115,10 +127,10 @@
       "priority": 100,
       "keywords": ["nem lelegzik", "nem lélegzik", "nincs legzes", "nincs légzés", "nem reagal", "nem reagál", "osszeesett", "összeesett", "szivmegallas", "szívmegállás", "ujraelesztes", "újraélesztés", "cpr", "unresponsive", "not breathing", "cardiac arrest", "collapsed"],
       "title": {"hu": "Nem reagál és nem lélegzik normálisan", "en": "Unresponsive and not breathing normally"},
-      "summary": {"hu": "Segélyhívás, azonnali CPR és AED.", "en": "Emergency call, immediate CPR and AED."},
+      "summary": {"hu": "Segélyhívás, azonnali CPR és defibrillátor (AED).", "en": "Emergency call, immediate CPR and defibrillator (AED)."},
       "steps": {
-        "hu": ["Ellenőrizd, biztonságos-e a helyszín.", "Hívd a 112-t, tedd kihangosítóra.", "Kérj AED-t, és kezdd el az újraélesztést.", "Válaszd a csak mellkasi nyomást vagy a 30:2 módot."],
-        "en": ["Check that the scene is safe.", "Call the local emergency number and use speakerphone.", "Ask for an AED and start CPR.", "Choose hands-only CPR or the 30:2 mode."]
+        "hu": ["Ellenőrizd, biztonságos-e a helyszín.", "Hívd a 112-t, tedd kihangosítóra.", "Kérj defibrillátort (AED-t), és kezdd el az újraélesztést.", "Válaszd a csak mellkasi nyomást vagy a 30:2 módot."],
+        "en": ["Check that the scene is safe.", "Call the local emergency number and use speakerphone.", "Ask for a defibrillator (AED) and start CPR.", "Choose hands-only CPR or the 30:2 mode."]
       },
       "cprModes": ["hands_only", "compressions_breaths"],
       "sources": ["bls2025"]
@@ -166,8 +178,8 @@
       "title": {"hu": "Vízből mentett, nem lélegzik normálisan", "en": "Drowning casualty not breathing normally"},
       "summary": {"hu": "Segélyhívás; a befúvás különösen fontos, kövesd a segélyirányítót.", "en": "Emergency call; rescue breaths are especially important—follow the dispatcher."},
       "steps": {
-        "hu": ["Csak akkor menj a vízbe, ha biztonságos.", "Hívd a 112-t és tedd kihangosítóra.", "Kövesd a segélyirányító utasítását; ha képzett vagy, adj 5 kezdeti befúvást, majd 30:2 CPR-t.", "Kérj AED-t és használd, amint elérhető."],
-        "en": ["Enter the water only if it is safe.", "Call the local emergency number and use speakerphone.", "Follow the dispatcher; if trained, give 5 initial rescue breaths, then CPR at 30:2.", "Ask for and use an AED as soon as available."]
+        "hu": ["Csak akkor menj a vízbe, ha biztonságos.", "Hívd a 112-t és tedd kihangosítóra.", "Kövesd a segélyirányító utasítását; ha képzett vagy, adj 5 kezdeti befúvást, majd 30:2 CPR-t.", "Kérj defibrillátort (AED-t), és használd, amint elérhető."],
+        "en": ["Enter the water only if it is safe.", "Call the local emergency number and use speakerphone.", "Follow the dispatcher; if trained, give 5 initial rescue breaths, then CPR at 30:2.", "Ask for and use a defibrillator (AED) as soon as available."]
       },
       "cprModes": ["compressions_breaths"],
       "sources": ["firstAid2025", "bls2025"]
@@ -213,12 +225,12 @@
       "priority": 99,
       "keywords": ["tomegbaleset", "tömegbaleset", "sok serult", "sok sérült", "multiple casualties", "mass casualty"],
       "title": {"hu": "Több sérült vagy tömegbaleset", "en": "Multiple casualties"},
-      "summary": {"hu": "Helyszínbiztonság, 112, pontos hely és veszélyek; ne válj újabb sérültté.", "en": "Scene safety, emergency call, exact location and hazards; do not become another casualty."},
+      "summary": {"hu": "Biztonság, 112, pontos helyzetjelentés és azonnali életmentő beavatkozás.", "en": "Safety, emergency call, exact incident report and immediate lifesaving action."},
       "steps": {
-        "hu": ["Állj meg biztonságos helyen, figyeld a forgalmat, tüzet, áramot és veszélyes anyagot.", "Hívd a 112-t: mondd a pontos helyet, veszélyt és a sérültek becsült számát.", "Csak biztonságosan közelíts; először a súlyos vérzést és a nem normális légzést kezeld."],
-        "en": ["Stop in a safe place and watch for traffic, fire, electricity and hazardous materials.", "Call emergency services with the exact location, hazards and estimated number of casualties.", "Approach only when safe; prioritise severe bleeding and abnormal breathing."]
+        "hu": ["Állj meg biztonságos helyen. Figyeld a forgalmat, tüzet, áramot, omlást és veszélyes anyagot.", "Hívd a 112-t kihangosítva. Mondd a pontos helyet, a veszélyt, a sérültek becsült számát és a megközelítést.", "Ne végezz képzettséget igénylő osztályozást. Kövesd a segélyirányítót, és kérj fel konkrét segítőket.", "Azonnal csillapítsd a súlyos vérzést. Nem reagáló embernél ellenőrizd a légzést; nem normális légzésnél kezdd a CPR-t és kérj defibrillátort (AED-t).", "A járóképes sérülteket csak akkor irányítsd biztonságos gyülekezőhelyre, ha az útvonal veszélytelen."],
+        "en": ["Stop in a safe place. Check traffic, fire, electricity, collapse and hazardous materials.", "Call emergency services on speakerphone. Give the exact location, hazards, estimated number affected and access route.", "Do not perform professional triage unless trained. Follow the dispatcher and assign specific helpers.", "Control severe bleeding immediately. Check breathing in an unresponsive person; start CPR and request a defibrillator (AED) if breathing is abnormal.", "Direct walking casualties to a safe assembly point only when the route is free of danger."]
       },
-      "sources": ["firstAid2025"]
+      "sources": ["whoMassCasualty", "whoPrehospital", "ifrc2025", "firstAid2025"]
     }
   ]
 }

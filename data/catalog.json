@@ -1,50 +1,73 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-15T00:00:00Z",
-  "minimumRefreshHours": 24,
+  "generatedAt": "2026-08-16T00:00:00Z",
+  "minimumRefreshHours": 720,
   "movementRefreshKm": 80,
+  "globalDiscovery": {
+    "coverage": "worldwide-on-demand",
+    "provider": "OpenStreetMap Overpass API",
+    "radiusMeters": 15000,
+    "refreshHours": 720,
+    "fields": ["coordinates", "address", "landmark", "phone", "mobile", "fax", "email", "website", "socialContacts", "openingHours", "access", "wheelchair", "source", "checkedAt"],
+    "offlineMap": {
+      "radiusMeters": 12000,
+      "refreshHours": 720,
+      "layers": ["places", "roads", "paths", "water", "rail"]
+    }
+  },
   "packs": [
     {
       "id": "global-core",
-      "name": "Globális vészmag",
+      "name": "Global emergency core",
       "url": "./data/core.json",
-      "version": "2026.08.14",
+      "version": "2026.08.16",
       "required": true,
       "autoInstall": true,
-      "estimatedBytes": 2253,
+      "estimatedBytes": 5959,
       "bbox": [-180, -90, 180, 90]
     },
     {
       "id": "hu-west",
-      "name": "Nyugat-Magyarország ellenőrzött mintamag",
+      "name": "Reviewed reference pack — Western Hungary",
       "url": "./data/packs/hu-west.json",
       "version": "2026.08.15",
       "required": false,
       "defaultInstall": true,
       "autoInstall": false,
-      "estimatedBytes": 4345,
+      "estimatedBytes": 4786,
       "bbox": [15.8, 45.6, 18.5, 47.4]
     },
     {
       "id": "hu-west-osm",
-      "name": "Dél-Zala közösségi pontcsomag",
+      "name": "Bundled community reference points",
       "url": "./data/packs/hu-west-osm.json",
-      "version": "2026.08.15",
+      "version": "2026.08.16.2",
       "required": false,
       "defaultInstall": true,
       "autoInstall": true,
-      "estimatedBytes": 121001,
+      "estimatedBytes": 121020,
+      "bbox": [16.78, 46.34, 17.15, 46.58]
+    },
+    {
+      "id": "hu-west-osm-events",
+      "name": "Bundled temporary reference points",
+      "url": "./data/packs/hu-west-osm-events.json",
+      "version": "2026.08.16",
+      "required": false,
+      "defaultInstall": true,
+      "autoInstall": true,
+      "estimatedBytes": 241,
       "bbox": [16.78, 46.34, 17.15, 46.58]
     }
   ],
   "maps": [
     {
       "id": "hu-zala-south-map",
-      "name": "Dél-Zala offline utcatérkép",
+      "name": "Bundled offline reference street map",
       "url": "./data/maps/hu-zala-south.geojson",
       "version": "2026.08.15",
       "defaultInstall": true,
-      "estimatedBytes": 1685946,
+      "estimatedBytes": 1685953,
       "bbox": [16.78, 46.34, 17.15, 46.58],
       "source": "OpenStreetMap contributors",
       "license": "ODbL 1.0"
@@ -53,11 +76,11 @@
   "guides": [
     {
       "id": "first-aid-hu-en",
-      "name": "Elsősegély és CPR — magyar/angol",
+      "name": "First aid and CPR — English/Hungarian",
       "url": "./data/first-aid.json",
       "version": "2026.08.15",
       "defaultInstall": true,
-      "estimatedBytes": 14337
+      "estimatedBytes": 15907
     }
   ],
   "audio": [

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "packId": "global-core",
-  "version": "2026.08.14",
-  "generatedAt": "2026-08-14T00:00:00Z",
+  "version": "2026.08.16",
+  "generatedAt": "2026-08-16T00:00:00Z",
   "license": "Mixed official directory metadata; verify each source entry",
   "records": [
     {
@@ -58,6 +58,90 @@
         "url": "https://www.mentok.hu/ugyelet/",
         "retrievedAt": "2026-08-14"
       }
+    },
+    {
+      "id": "us-emergency-911",
+      "name": "United States emergency services",
+      "category": "emergency_call",
+      "kind": "phone",
+      "description": "United States police, fire or ambulance emergency call.",
+      "country": "US",
+      "phone": "911",
+      "website": "https://www.911.gov/calling-911",
+      "coordinates": null,
+      "openingHours": "24/7",
+      "verification": "official_directory",
+      "source": { "name": "United States National 911 Program", "url": "https://www.911.gov/calling-911", "retrievedAt": "2026-08-16" }
+    },
+    {
+      "id": "gb-emergency-999",
+      "name": "United Kingdom emergency services",
+      "category": "emergency_call",
+      "kind": "phone",
+      "description": "United Kingdom national emergency response service; 112 also reaches the same service.",
+      "country": "GB",
+      "phone": "999",
+      "website": "https://www.gov.uk/guidance/999-and-112-the-uks-national-emergency-numbers",
+      "coordinates": null,
+      "openingHours": "24/7",
+      "verification": "official_directory",
+      "source": { "name": "GOV.UK", "url": "https://www.gov.uk/guidance/999-and-112-the-uks-national-emergency-numbers", "retrievedAt": "2026-08-16" }
+    },
+    {
+      "id": "au-emergency-000",
+      "name": "Australia Triple Zero",
+      "category": "emergency_call",
+      "kind": "phone",
+      "description": "Australia's main emergency number for life-threatening or time-critical situations.",
+      "country": "AU",
+      "phone": "000",
+      "website": "https://www.triplezero.gov.au/",
+      "coordinates": null,
+      "openingHours": "24/7",
+      "verification": "official_directory",
+      "source": { "name": "Australian Government Triple Zero", "url": "https://www.triplezero.gov.au/", "retrievedAt": "2026-08-16" }
+    },
+    {
+      "id": "nz-emergency-111",
+      "name": "New Zealand emergency services",
+      "category": "emergency_call",
+      "kind": "phone",
+      "description": "New Zealand police, fire or ambulance emergency call.",
+      "country": "NZ",
+      "phone": "111",
+      "website": "https://www.police.govt.nz/call-111",
+      "coordinates": null,
+      "openingHours": "24/7",
+      "verification": "official_directory",
+      "source": { "name": "New Zealand Police", "url": "https://www.police.govt.nz/call-111", "retrievedAt": "2026-08-16" }
+    },
+    {
+      "id": "in-emergency-112",
+      "name": "India Emergency Response Support System",
+      "category": "emergency_call",
+      "kind": "phone",
+      "description": "Pan-India integrated emergency response number.",
+      "country": "IN",
+      "phone": "112",
+      "website": "https://www.mha.gov.in/en/commoncontent/emergency-response-support-system-erss",
+      "coordinates": null,
+      "openingHours": "24/7",
+      "verification": "official_directory",
+      "source": { "name": "Government of India Ministry of Home Affairs", "url": "https://www.mha.gov.in/en/commoncontent/emergency-response-support-system-erss", "retrievedAt": "2026-08-16" }
+    },
+    {
+      "id": "jp-fire-ambulance-119",
+      "name": "Japan fire and ambulance emergency call",
+      "category": "emergency_call",
+      "kind": "phone",
+      "description": "Japan emergency call for fire services and ambulance.",
+      "country": "JP",
+      "phone": "119",
+      "website": "https://www.fdma.go.jp/mission/enrichment/kyukyumusen_kinkyutuhou/119.html",
+      "coordinates": null,
+      "openingHours": "24/7",
+      "verification": "official_directory",
+      "source": { "name": "Japan Fire and Disaster Management Agency", "url": "https://www.fdma.go.jp/mission/enrichment/kyukyumusen_kinkyutuhou/119.html", "retrievedAt": "2026-08-16" }
     }
   ]
 }

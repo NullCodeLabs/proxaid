@@ -3,10 +3,12 @@
   "regions": [
     {
       "id": "hu-west-osm",
-      "name": "Dél-Zala",
+      "name": "Bundled reference region",
       "enabled": true,
       "bbox": [46.34, 16.78, 46.58, 17.15],
-      "maximumRecords": 25000
+      "maximumRecords": 25000,
+      "mapId": "hu-zala-south-map",
+      "mapOutput": "data/maps/hu-zala-south.geojson"
     }
   ]
 }

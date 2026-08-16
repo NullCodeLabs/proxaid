@@ -1,9 +1,22 @@
 name: Refresh offline data packs
 
 on:
+  push:
+    paths:
+      - "data/inbox/**"
   schedule:
-    - cron: "17 3 * * *"
+    - cron: "17 3 1 * *"
+    - cron: "37 3 * * 1"
+    - cron: "27 4 2 1,4,7,10 *"
+    - cron: "47 4 3 1 *"
   workflow_dispatch:
+    inputs:
+      mode:
+        description: Refresh mode
+        required: true
+        default: monthly
+        type: choice
+        options: [monthly, temporary, quarterly, audit, ingest]
 
 permissions:
   actions: write
@@ -17,23 +30,37 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v6
       - uses: actions/setup-node@v7
         with:
-          node-version: 22
-      - run: npm run update:data
+          node-version: 24
+          package-manager-cache: false
+      - name: Select cadence
+        id: cadence
+        shell: bash
+        run: |
+          MODE="${{ inputs.mode }}"
+          if [[ "${{ github.event_name }}" == "push" ]]; then MODE="ingest"; fi
+          if [[ -z "$MODE" && "${{ github.event.schedule }}" == "37 3 * * 1" ]]; then MODE="temporary"; fi
+          if [[ -z "$MODE" && "${{ github.event.schedule }}" == "27 4 2 1,4,7,10 *" ]]; then MODE="quarterly"; fi
+          if [[ -z "$MODE" && "${{ github.event.schedule }}" == "47 4 3 1 *" ]]; then MODE="audit"; fi
+          if [[ -z "$MODE" ]]; then MODE="monthly"; fi
+          echo "mode=$MODE" >> "$GITHUB_OUTPUT"
+      - run: npm run ingest:candidates
+      - if: steps.cadence.outputs.mode != 'ingest'
+        run: npm run update:data -- --mode=${{ steps.cadence.outputs.mode }}
       - run: npm run validate
-      - name: Commit changed packs
+      - name: Commit changed data
         id: commit
         run: |
           git config user.name "proxaid-data-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/catalog.json data/packs
+          git add data/catalog.json data/maps data/packs data/review data/sources.json
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          git commit -m "data: refresh offline packs"
+          git commit -m "data: refresh ${{ steps.cadence.outputs.mode }} sources"
           git push
           echo "changed=true" >> "$GITHUB_OUTPUT"
       - name: Publish refreshed data

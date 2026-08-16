@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "lastAuditAt": "2026-08-16T00:33:25.502Z",
+  "sources": [
+    {
+      "id": "openstreetmap-overpass",
+      "name": "OpenStreetMap / Overpass API",
+      "url": "https://wiki.openstreetmap.org/wiki/Overpass_API",
+      "categories": [
+        "aed",
+        "pharmacy",
+        "healthcare",
+        "toilets",
+        "water",
+        "shelter",
+        "rescue",
+        "connection"
+      ],
+      "cadence": "monthly",
+      "pipeline": "automatic regional builds + worldwide on-demand 15 km discovery",
+      "license": "ODbL 1.0"
+    },
+    {
+      "id": "openstreetmap-temporary",
+      "name": "OpenStreetMap temporary and disaster-response features",
+      "url": "https://wiki.openstreetmap.org/wiki/Emergency_facilities_and_amenities",
+      "categories": [
+        "temporary_shelter",
+        "assembly_point",
+        "temporary_hygiene",
+        "temporary_first_aid"
+      ],
+      "cadence": "weekly",
+      "pipeline": "automatic",
+      "license": "ODbL 1.0"
+    },
+    {
+      "id": "overture",
+      "name": "Overture Maps Foundation",
+      "url": "https://docs.overturemaps.org/getting-data/",
+      "categories": [
+        "global_places",
+        "transportation",
+        "divisions"
+      ],
+      "cadence": "monthly",
+      "pipeline": "map-pack candidate",
+      "license": "CDLA Permissive 2.0 / ODbL by source"
+    },
+    {
+      "id": "nngyk-pharmacy",
+      "name": "NNGYK pharmacy finder",
+      "url": "https://ogyei.gov.hu/gyogyszertarkereso",
+      "categories": [
+        "pharmacy",
+        "on_call_pharmacy"
+      ],
+      "cadence": "quarterly",
+      "pipeline": "reviewed import",
+      "license": "source terms apply"
+    },
+    {
+      "id": "police-hu-aed",
+      "name": "Hungarian Police defibrillator (AED) notices",
+      "url": "https://www.police.hu/hu/hirek-es-informaciok/legfrissebb-hireink/kozrendvedelem/elesben-hasznaltak-a-defibrillatort",
+      "categories": [
+        "aed"
+      ],
+      "cadence": "quarterly",
+      "pipeline": "reviewed import",
+      "license": "source terms apply"
+    },
+    {
+      "id": "who-emergency-care",
+      "name": "WHO Emergency Care Toolkit",
+      "url": "https://www.who.int/teams/integrated-health-services/clinical-services-and-systems/emergency-and-critical-care/emergency-care-toolkit",
+      "categories": [
+        "first_aid",
+        "mass_casualty"
+      ],
+      "cadence": "quarterly",
+      "pipeline": "guidance review",
+      "license": "WHO terms apply"
+    },
+    {
+      "id": "rcuk-2025",
+      "name": "Resuscitation Council UK Guidelines 2025",
+      "url": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines",
+      "categories": [
+        "cpr",
+        "aed",
+        "first_aid"
+      ],
+      "cadence": "quarterly",
+      "pipeline": "guidance review",
+      "license": "source terms apply"
+    },
+    {
+      "id": "us-911",
+      "name": "United States National 911 Program",
+      "url": "https://www.911.gov/calling-911",
+      "categories": ["emergency_call"],
+      "cadence": "annual",
+      "pipeline": "bundled official emergency number",
+      "license": "United States government source"
+    },
+    {
+      "id": "uk-999-112",
+      "name": "GOV.UK national emergency numbers",
+      "url": "https://www.gov.uk/guidance/999-and-112-the-uks-national-emergency-numbers",
+      "categories": ["emergency_call"],
+      "cadence": "annual",
+      "pipeline": "bundled official emergency number",
+      "license": "Open Government Licence applies"
+    },
+    {
+      "id": "au-triple-zero",
+      "name": "Australian Government Triple Zero",
+      "url": "https://www.triplezero.gov.au/",
+      "categories": ["emergency_call"],
+      "cadence": "annual",
+      "pipeline": "bundled official emergency number",
+      "license": "source terms apply"
+    },
+    {
+      "id": "nz-111",
+      "name": "New Zealand Police 111",
+      "url": "https://www.police.govt.nz/call-111",
+      "categories": ["emergency_call"],
+      "cadence": "annual",
+      "pipeline": "bundled official emergency number",
+      "license": "New Zealand government source terms apply"
+    },
+    {
+      "id": "in-112-erss",
+      "name": "India Emergency Response Support System",
+      "url": "https://www.mha.gov.in/en/commoncontent/emergency-response-support-system-erss",
+      "categories": ["emergency_call"],
+      "cadence": "annual",
+      "pipeline": "bundled official emergency number",
+      "license": "Government of India source terms apply"
+    },
+    {
+      "id": "jp-119",
+      "name": "Japan Fire and Disaster Management Agency 119",
+      "url": "https://www.fdma.go.jp/mission/enrichment/kyukyumusen_kinkyutuhou/119.html",
+      "categories": ["emergency_call"],
+      "cadence": "annual",
+      "pipeline": "bundled official emergency number",
+      "license": "Japanese government source terms apply"
+    }
+  ]
+}

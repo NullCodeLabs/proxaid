@@ -1,5 +1,5 @@
-const SHELL_CACHE = "proxaid-shell-v5";
-const DATA_CACHE = "proxaid-data-v5";
+const SHELL_CACHE = "proxaid-shell-v10";
+const DATA_CACHE = "proxaid-data-v10";
 const DB_NAME = "proxaid-offline-v1";
 const SHELL_FILES = [
   "./",
@@ -9,6 +9,8 @@ const SHELL_FILES = [
   "./manifest.webmanifest",
   "./assets/vendor/leaflet.css",
   "./assets/vendor/leaflet.js",
+  "./assets/vendor/qrcode.mjs",
+  "./assets/vendor/qrcode_utf8.mjs",
   "./assets/icon.svg",
   "./assets/icon-180.png",
   "./assets/icon-192.png",
@@ -18,10 +20,21 @@ const SHELL_FILES = [
   "./data/core.json",
   "./data/packs/hu-west.json",
   "./data/packs/hu-west-osm.json",
+  "./data/packs/hu-west-osm-events.json",
   "./data/maps/hu-zala-south.geojson",
   "./data/first-aid.json",
   "./data/regions.json",
   "./data/taxonomy.json",
+  "./data/sources.json",
+  "./README.md",
+  "./README_hu.md",
+  "./user-guide.md",
+  "./sources.md",
+  "./user-guide_hu.md",
+  "./sources_hu.md",
+  "./changelog.md",
+  "./changelog_hu.md",
+  "./third-party-notices.md",
   "./assets/audio/cpr_hands_only_hu.mp3"
 ];
 
@@ -60,7 +73,7 @@ self.addEventListener("message", (event) => {
 });
 
 self.addEventListener("periodicsync", (event) => {
-  if (event.tag === "proxaid-daily-sync") event.waitUntil(refreshDataCache());
+  if (event.tag === "proxaid-monthly-sync") event.waitUntil(refreshDataCache());
 });
 
 self.addEventListener("sync", (event) => {

@@ -5,10 +5,10 @@
       "id": "medical",
       "label": "Egészség és mentés",
       "categories": [
-        "emergency_call", "ambulance", "hospital_emergency", "urgent_care", "hospital", "clinic", "doctor", "pharmacy", "aed", "first_aid", "poison_control", "crisis_hotline", "blood_bank"
+        "emergency_call", "ambulance", "hospital_emergency", "urgent_care", "hospital", "clinic", "doctor", "pharmacy", "medical_supply", "aed", "first_aid", "poison_control", "crisis_hotline", "blood_bank"
       ],
       "osmSelectors": [
-        "emergency=ambulance_station", "emergency=defibrillator", "emergency=phone", "emergency=lifeguard", "amenity=hospital", "amenity=clinic", "amenity=doctors", "amenity=pharmacy", "healthcare=*"
+        "emergency=ambulance_station", "emergency=defibrillator", "emergency=phone", "emergency=lifeguard", "amenity=hospital", "amenity=clinic", "amenity=doctors", "amenity=pharmacy", "healthcare=*", "shop=chemist", "shop=medical_supply"
       ]
     },
     {

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "packId": "hu-west-osm",
-  "version": "2026.08.15",
+  "version": "2026.08.16.2",
   "generatedAt": "2026-08-15T15:54:19.653Z",
   "license": "OpenStreetMap ODbL 1.0; community source, not an official operational registry",
   "records": [
@@ -1699,7 +1699,7 @@
     },
     {
       "id": "osm-node-5758834909",
-      "name": "AED",
+      "name": "Defibrillátor (AED)",
       "category": "aed",
       "kind": "place",
       "description": "Nagykanizsai Rendőrkapitányság",

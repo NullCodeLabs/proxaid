@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-16T00:33:25.502Z",
+  "status": "review_required",
+  "checks": [
+    {
+      "id": "openstreetmap-overpass",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://wiki.openstreetmap.org/wiki/Overpass_API"
+    },
+    {
+      "id": "openstreetmap-temporary",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://wiki.openstreetmap.org/wiki/Emergency_facilities_and_amenities"
+    },
+    {
+      "id": "overture",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://docs.overturemaps.org/getting-data/"
+    },
+    {
+      "id": "nngyk-pharmacy",
+      "ok": false,
+      "status": 502,
+      "finalUrl": "https://ogyei.gov.hu/gyogyszertarkereso"
+    },
+    {
+      "id": "police-hu-aed",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.police.hu/hu/hirek-es-informaciok/legfrissebb-hireink/kozrendvedelem/elesben-hasznaltak-a-defibrillatort"
+    },
+    {
+      "id": "who-emergency-care",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.who.int/teams/integrated-health-services/clinical-services-and-systems/emergency-and-critical-care/emergency-care-toolkit"
+    },
+    {
+      "id": "rcuk-2025",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines"
+    }
+  ]
+}

@@ -1,120 +1,61 @@
-# PROXAID v1.0 — offline emergency map and first aid
+# When trouble hits but there is no internet — perhaps no phone or GPS coverage either. Not just for adrenaline seekers.
 
-> Critical information should not disappear when the network does.
+> **An offline-capable emergency map with first-aid support.**
 
-[![Deploy GitHub Pages](https://github.com/NullCodeLabs/proxaid/actions/workflows/pages.yml/badge.svg)](https://github.com/NullCodeLabs/proxaid/actions/workflows/pages.yml)
-[![Refresh offline data](https://github.com/NullCodeLabs/proxaid/actions/workflows/update-data.yml/badge.svg)](https://github.com/NullCodeLabs/proxaid/actions/workflows/update-data.yml)
+**PROXAID v1.0**
 
-PROXAID is an offline-first web app for phones, tablets and computers. v1.0 contains a detailed local street map for South Zala, source-linked emergency and essential-service points, and Hungarian/English first-aid guidance. It loads no analytics, advertising, external runtime scripts or map tiles.
+## Open the app
 
-[Hungarian README](./README_hu.md) · [Changelog](./changelog.md)
+**[Launch PROXAID](https://nullcodelabs.github.io/proxaid/)** — open it online once, allow location only when needed, press **Refresh now**, then test the installed copy in airplane mode.
 
-> [!CAUTION]
-> In immediate danger, call the local emergency number and follow the dispatcher. The app is not an emergency service and does not replace professional training or on-scene judgement.
+[Magyar README](./README_hu.md) · [Detailed User Guide](./user-guide.md) · [Sources](./sources.md) · [Changelog](./changelog.md)
 
-## Included in v1.0
+## What it is and who it is for
 
-- Mobile-first responsive interface for touch, keyboard, phone, tablet and desktop.
-- Local South Zala street map derived from OpenStreetMap: roads, named walking/cycling/trail paths, water and settlements.
-- Street-level pinch zoom, pan, GPS focus and accuracy circle.
-- 165 starter records, including Szepetnek pharmacy, Nagykanizsa pharmacies, toilets, drinking water, healthcare points and the officially sourced AED at Nagykanizsa Police Station.
-- Distance ordering only among records downloaded to the current app instance.
-- Local fuzzy and contextual search for spelling variation, accents, synonyms and emergency phrases.
-- Weighted first-aid matches for cardiac arrest, recovery position, choking, severe bleeding, drowning, burns, infant fever, accidents and multiple casualties.
-- ALWAYS ON UI/instruction speech with a separate `MIC ON` speech-input button.
-- Separate adult CPR modes: hands-only and 30 compressions + 2 rescue breaths.
-- Local 110 BPM pacing, 30:2 counting, screen wake-lock request and a Hungarian narrated hands-only track.
-- Optional Web NFC read/write and universal system-share fallback.
-- A timestamped location payload shareable to MESH/Meshtastic or messaging apps.
-- Phone, Skype, Viber and generic calling handlers; a user-confirmed working handler is placed first.
-- Separate readiness state for app, street map, points, guides and audio, without exposing confusing raw browser quotas.
+PROXAID is a global, responsive, offline-first emergency PWA for the public, travellers, outdoor users, event teams and responders. It keeps essential guidance and collected place data usable when connectivity degrades.
 
-## CPR modes and language routing
+The bundled reference data demonstrates one regional pipeline, not a product boundary. Online mapping and nearby discovery work worldwide; offline coverage expands through collected records and importable regional maps.
 
-### Hands-only CPR
+> [!IMPORTANT]
+> In immediate danger, call the local emergency number and follow the dispatcher.
 
-For an adult when the rescuer is not trained, unable or unwilling to give rescue breaths. The local guide runs continuous compressions at 100–120 per minute.
+## Capabilities
 
-- Hungarian online content: [OMSZA — Tartsd életben!](https://www.youtube.com/watch?v=CMstTrW4kmc)
-- English online content: [British Heart Foundation — Hands-Only CPR](https://www.youtube.com/watch?v=O92KL1mw77c)
-- Hungarian offline narration: `assets/audio/cpr_hands_only_hu.mp3`
-- Audio source: [Hungarian National Ambulance Service Foundation](https://www.mentoalapitvany.hu/v/tartsd-eletben-ujraelesztes-egyszeruen-es-gyorsan/)
+- Global labelled OpenStreetMap online; on-demand offline saving of a 12 km street/road/water/place layer, plus persistent import of additional GeoJSON regions.
+- Worldwide 15 km essential-place discovery around GPS or the current map centre; collected results remain available offline.
+- Address/landmark, exact GPS, current open/closed state, today's hours, full schedule, public contacts, route handoff, live website and source links where published.
+- Overlapping filters for urgent care, healthcare, defibrillator (AED), pharmacy, water, hygiene, shelter, rescue and communication.
+- Contextual offline search for emergency phrases, accents, partial words, spelling variation and reviewed synonyms.
+- Speech output enabled by default; separate `MIC ON` speech input.
+- Separate hands-only and 30:2 CPR modes, local 110/min pacing and Hungarian hands-only narration.
+- HERO multiple-casualty guidance and HeroHUB handover by QR, NFC, system sharing, copy or JSON.
+- Editable local emergency number with `tel:`/SMS/app handoff/copy/QR, plus an on-device medical card with QR/NFC/share handover.
+- Direct CSV, JSON and GeoJSON import; a global research prompt and review queue for additional sources.
+- Responsive layout for phones, tablets and desktop browsers; installable PWA and offline application shell.
+- No analytics or advertising trackers.
 
-### 30 compressions + 2 rescue breaths
+## Quick use
 
-For an adult when the rescuer is trained, able and willing to give breaths. The local pacing pauses after 30 compressions for two breaths, then starts the next cycle.
+1. Open the live app online and press **My location** or move the map to the target area.
+2. Press **Refresh now** to collect the current 15 km place area and 12 km offline street map.
+3. Search or choose a category; press **Show** for the map and **Details** for hours and contacts.
+4. Install the PWA, then verify map, search, guides, QR and CPR in airplane mode.
+5. For immediate danger use the emergency call first; for multiple casualties use **HERO** and **HeroHUB**.
 
-- Hungarian online content: [Egészségvonal — Újraélesztés](https://egeszsegvonal.gov.hu/egeszseg-a-z/u-u/ujraelesztes.html)
-- English online content: [Resuscitation Council UK — How to do CPR](https://www.resus.org.uk/public-resource/how-do-cpr)
-- Offline: Hungarian and English text, speech output and local 30:2 pacing.
+## Repository mini-guide
 
-The initial language follows the browser. Hungarian browsers receive Hungarian resources; every other browser language falls back to reviewed English resources. The visible `HU / EN` selector can override this. The online action always matches the selected CPR mode.
-
-*The 2025 lifesaving branches are supported by Resuscitation Council guidance: [Adult BLS 2025](https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/adult-basic-life-support-guidelines) and [First Aid 2025](https://www.resus.org.uk/professional-library/2025-resuscitation-guidelines/first-aid-guidelines).*
-
-## Offline use
-
-1. Open the site once while online.
-2. Select **Refresh now**.
-3. Wait until all four readiness rows report downloaded content.
-4. Enable airplane mode and test the map, search and both CPR modes.
-
-Installation:
-
-- iPhone / iPad: Safari → Share → Add to Home Screen.
-- Android: browser menu → Install or Add to Home screen.
-- Windows / macOS / Linux: use the browser install action; normal browser-tab use remains available.
-
-When storage is low, the app shows one warning and the short settings route for the detected operating system.
-
-## Map and point data
-
-The initial South Zala street-map bounds are 16.78–17.15° E and 46.34–46.58° N. Street-level detail is available inside this area; other areas can be added through the same replaceable regional-pack format.
-
-Starter point categories include AED, pharmacy, hospital, clinic, doctor, police, fire station, shelter, drinking water, toilet, accessible toilet and public phone. Every result displays its source and retrieval date.
-
-- Community baseline: [OpenStreetMap contributors — ODbL](https://www.openstreetmap.org/copyright)
-- Police-station AED: [police.hu — AED used in a real resuscitation](https://www.police.hu/hu/hirek-es-informaciok/legfrissebb-hireink/kozrendvedelem/elesben-hasznaltak-a-defibrillatort)
-- Official Hungarian pharmacy expansion source: [NNGYK pharmacy finder](https://ogyei.gov.hu/?url=gyogyszertarkereso)
-
-## Audio, NFC, MESH and calling
-
-- TTS: UI and instruction speech is enabled by default.
-- MIC ON: writes recognized speech into search; typing always remains available.
-- CPR audio: separate local pacing/narration, not TTS or microphone input.
-- NFC: NDEF read/write on supported Android/Chromium; the same payload uses system sharing elsewhere.
-- MESH: shares the emergency payload to a user-selected Meshtastic, MESH or messaging app.
-- Calling: `tel:` is primary; Skype, Viber and generic protocols are labelled **Try/Open**.
-
-## Privacy and security
-
-- Location, search and imported records stay in local browser storage.
-- No analytics, advertising, external map tiles or third-party runtime code.
-- Content Security Policy restricts runtime data connections to the same origin.
-- Imported files must match the PROXAID JSON-pack schema.
-- A source-linked record does not prove live access or opening status.
-
-## Project files
-
-- `index.html`, `styles.css`, `app.js` — responsive app.
-- `sw.js` — offline cache and refresh.
-- `data/maps/hu-zala-south.geojson` — local street map.
-- `data/packs/hu-west-osm.json` — OpenStreetMap point pack.
-- `data/packs/hu-west.json` — curated source records.
-- `data/first-aid.json` — bilingual first-aid and CPR decision tree.
-- `assets/audio/cpr_hands_only_hu.mp3` — Hungarian narrated hands-only CPR audio.
-- `tools/validate.mjs` — release validation for structure, sources, map, CPR and audio hash.
-
-## Local validation and deployment
-
-Node.js 20 or later:
+The project is a static PWA. Serve the repository over HTTPS or `localhost`; no build step is required. Node.js 20 or later is used for validation and data tooling:
 
 ```bash
 npm test
 ```
 
-Service Workers require HTTPS or `localhost`. For GitHub Pages, copy the archive contents to the repository root, select **GitHub Actions** as the Pages source, and push to `main`.
+GitHub Actions deploys Pages and runs weekly, monthly, quarterly and annual data workflows. Web-research/LLM output can enter the review queue through the canonical CSV prompt in [`data/inbox/README.md`](./data/inbox/README.md). Only reviewed records belong in public offline packs.
 
-## v1.0 version rule
+## Data and privacy
 
-Documentation edits, data refreshes, regeneration, tests and repackaging do not increment the product version. The canonical release remains v1.0 and the distribution archive is `proxaid-offline.zip`.
+Online map mode requests OpenStreetMap tiles. Online nearby discovery sends the requested GPS/map-centre area to an Overpass endpoint. Searches, imported packs and HeroHUB drafts otherwise stay local until the user shares or exports them.
+
+Detailed operation, platform notes, NFC/MESH behaviour, data flow and troubleshooting are in the **[User Guide](./user-guide.md)**. Clinical and technical references are in **[Sources](./sources.md)**.
+
+Documentation, data refreshes, tests and repackaging do not increment the product version. The canonical product version remains **v1.0**.
