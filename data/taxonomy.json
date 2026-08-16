@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "groups": [
+    {
+      "id": "medical",
+      "label": "Egészség és mentés",
+      "categories": [
+        "emergency_call", "ambulance", "hospital_emergency", "urgent_care", "hospital", "clinic", "doctor", "pharmacy", "aed", "first_aid", "poison_control", "crisis_hotline", "blood_bank"
+      ],
+      "osmSelectors": [
+        "emergency=ambulance_station", "emergency=defibrillator", "emergency=phone", "emergency=lifeguard", "amenity=hospital", "amenity=clinic", "amenity=doctors", "amenity=pharmacy", "healthcare=*"
+      ]
+    },
+    {
+      "id": "rescue",
+      "label": "Hatóság és mentőpont",
+      "categories": [
+        "police", "fire_station", "mountain_rescue", "water_rescue", "coast_guard", "lifeguard", "disaster_response", "assembly_point", "disaster_shelter", "helipad"
+      ],
+      "osmSelectors": [
+        "amenity=police", "amenity=fire_station", "emergency=mountain_rescue", "emergency=water_rescue", "emergency=assembly_point", "emergency=disaster_response", "aeroway=helipad"
+      ]
+    },
+    {
+      "id": "shelter",
+      "label": "Menedék és alapellátás",
+      "categories": [
+        "shelter", "warming_center", "cooling_center", "homeless_shelter", "night_shelter", "alpine_hut", "wilderness_hut", "food_assistance", "drinking_water"
+      ],
+      "osmSelectors": [
+        "amenity=shelter", "amenity=social_facility", "social_facility=shelter", "social_facility=food_bank", "social_facility=soup_kitchen", "tourism=alpine_hut", "tourism=wilderness_hut", "amenity=drinking_water"
+      ]
+    },
+    {
+      "id": "hygiene",
+      "label": "Higiénia és akadálymentesség",
+      "categories": [
+        "toilets", "accessible_toilets", "baby_changing", "shower", "washing", "laundry", "sanitary_dump"
+      ],
+      "osmSelectors": [
+        "amenity=toilets", "toilets:wheelchair=yes", "changing_table=yes", "amenity=shower", "amenity=lavoir", "shop=laundry", "amenity=sanitary_dump_station"
+      ]
+    },
+    {
+      "id": "navigation",
+      "label": "Tájékozódás és kapcsolat",
+      "categories": [
+        "trail", "guidepost", "information_map", "emergency_access_point", "public_phone", "internet_access", "embassy", "fuel", "charging", "transport_hub", "evacuation_route"
+      ],
+      "osmSelectors": [
+        "highway=path", "highway=footway", "route=hiking", "information=guidepost", "information=map", "highway=emergency_access_point", "amenity=telephone", "internet_access=*", "office=diplomatic", "amenity=fuel", "amenity=charging_station"
+      ]
+    }
+  ],
+  "qualityFields": [
+    "name", "coordinates", "phone", "opening_hours", "access", "wheelchair", "indoor", "level", "operator", "source", "source_date", "check_date"
+  ]
+}

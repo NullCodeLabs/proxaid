@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <meta name="theme-color" content="#061410" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="referrer" content="no-referrer" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests" />
+    <meta name="description" content="PROXAID: offline utcatérkép, helyi sürgősségi pontok és elsősegély-útmutatók." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="PROXAID" />
+    <title>PROXAID Offline</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./assets/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./assets/icon-180.png" />
+    <link rel="stylesheet" href="./assets/vendor/leaflet.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#searchInput">Ugrás a kereséshez</a>
+
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="PROXAID kezdőlap">
+        <span class="brand-mark" aria-hidden="true">+</span>
+        <span><strong>PROXAID</strong><small>OFFLINE FIELD TERMINAL</small></span>
+      </a>
+      <div class="top-actions">
+        <label class="language-control"><span class="sr-only">Nyelv</span><select id="languageSelect" aria-label="Nyelv"><option value="hu">HU</option><option value="en">EN</option></select></label>
+        <button id="ttsButton" class="audio-button" type="button" aria-pressed="true">🔊 HANG BE</button>
+        <button id="themeButton" class="icon-button" type="button" aria-label="Téma váltása">◐</button>
+        <span id="networkBadge" class="status-badge" role="status">ELLENŐRZÉS…</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="emergency-strip" aria-label="Vészhelyzeti műveletek">
+        <div>
+          <p class="eyebrow">AZONNALI ÉLETVESZÉLY</p>
+          <h1>Hívd a helyi segélyhívót, majd kövesd a segélyirányító utasításait.</h1>
+        </div>
+        <div class="emergency-actions">
+          <a id="emergencyCall" class="sos-button" href="tel:112">HÍVÁS <strong>112</strong></a>
+          <button id="callOptionsButton" class="secondary-button" type="button">MÁS HÍVÁSI MÓD</button>
+        </div>
+      </section>
+
+      <section class="command-panel" aria-labelledby="searchTitle">
+        <div class="section-heading">
+          <div><p class="eyebrow">HELYI KERESÉS + ELSŐSEGÉLY</p><h2 id="searchTitle">Mi történt, vagy mit keresel?</h2></div>
+          <button id="locateButton" class="secondary-button" type="button">⌖ HELYZETEM</button>
+        </div>
+        <div class="search-row">
+          <button id="micButton" class="mic-button" type="button">MIC ON</button>
+          <label class="search-field" for="searchInput">
+            <span aria-hidden="true">⌕</span>
+            <input id="searchInput" type="search" autocomplete="off" autocapitalize="sentences" enterkeyhint="search" inputmode="search" placeholder="Pl. félrenyelt, vérzés, AED, gyógyszertár, WC…" />
+            <button id="clearSearch" type="button" aria-label="Keresés törlése">×</button>
+          </label>
+        </div>
+        <div id="firstAidSuggestion" class="first-aid-suggestion" hidden aria-live="polite"></div>
+        <div id="categoryFilters" class="filter-row" aria-label="Kategóriaszűrők"></div>
+      </section>
+
+      <section class="cpr-panel" aria-labelledby="cprTitle">
+        <div class="section-heading">
+          <div><p class="eyebrow">FELNŐTT ÚJRAÉLESZTÉS</p><h2 id="cprTitle">Válaszd a megfelelő módot</h2></div>
+          <span class="tempo-badge">110 / PERC</span>
+        </div>
+        <div class="cpr-mode-grid">
+          <button id="handsOnlyButton" class="cpr-mode" type="button" data-mode="hands_only"><strong>CSAK MELLKASI NYOMÁS</strong><span>Folyamatos kompresszió</span></button>
+          <button id="breathsButton" class="cpr-mode" type="button" data-mode="compressions_breaths"><strong>30 NYOMÁS + 2 BEFÚVÁS</strong><span>Képzett és kész segélynyújtónak</span></button>
+        </div>
+        <div id="cprNow" class="cpr-now" hidden>
+          <p id="cprCounter" class="cpr-counter">KÉSZ</p>
+          <div id="cprSteps" class="cpr-steps"></div>
+          <div class="action-row">
+            <button id="cprStartButton" class="primary-button" type="button">ÜTEM INDÍTÁSA</button>
+            <button id="cprStopButton" class="danger-button" type="button">LEÁLLÍTÁS</button>
+            <button id="narratedAudioButton" class="secondary-button" type="button" hidden>MAGYAR NARRÁCIÓ</button>
+            <a id="cprOnlineLink" class="secondary-link" target="_blank" rel="noopener noreferrer" hidden>ONLINE ÚTMUTATÓ ↗</a>
+          </div>
+          <p id="cprSource" class="source-note"></p>
+          <p id="cprOfflineWarning" class="offline-warning" hidden>*Ez az online tartalom offline nem érhető el. Elnézésed kérjük!</p>
+          <audio id="cprAudio" preload="metadata" src="./assets/audio/cpr_hands_only_hu.mp3"></audio>
+        </div>
+      </section>
+
+      <section class="workspace">
+        <div class="map-panel">
+          <div class="panel-toolbar">
+            <div><p class="eyebrow">OFFLINE UTCATÉRKÉP</p><p id="mapStatus" class="muted" role="status">Dél-Zala térkép betöltése…</p></div>
+            <div class="map-controls" aria-label="Térképvezérlők">
+              <button id="zoomOut" type="button" aria-label="Kicsinyítés">−</button><button id="resetMap" type="button" aria-label="Alapnézet">◎</button><button id="zoomIn" type="button" aria-label="Nagyítás">+</button>
+            </div>
+          </div>
+          <div id="mapFrame" class="map-frame"><div id="streetMap" role="application" aria-label="Offline Dél-Zala utcatérkép és helyi pontok"></div><div class="map-legend"><span></span> helyi rekord <i></i> saját helyzet</div></div>
+          <p class="map-note">A Dél-Zala csomag helyi utcákat és gyalogutakat mutat. Az útvonaltervezés külön funkció.</p>
+        </div>
+
+        <aside id="dataPanel" class="data-panel" aria-labelledby="dataTitle">
+          <div class="section-heading compact"><div><p class="eyebrow">OFFLINE KÉSZENLÉT</p><h2 id="dataTitle">Letöltött elemek</h2></div><span id="readyScore" class="score">—</span></div>
+          <ul class="readiness-list">
+            <li><span>Alkalmazás</span><strong id="shellState">ELLENŐRZÉS</strong></li>
+            <li><span>Utcatérkép</span><strong id="mapState">ELLENŐRZÉS</strong></li>
+            <li><span>Helyi pontok</span><strong id="recordState">ELLENŐRZÉS</strong></li>
+            <li><span>Elsősegély és hang</span><strong id="guideState">ELLENŐRZÉS</strong></li>
+          </ul>
+          <dl class="data-stats"><div><dt>Helyi rekord</dt><dd id="recordCount">0</dd></div><div><dt>Utolsó frissítés</dt><dd id="lastSync">még nem történt</dd></div></dl>
+          <div id="storageWarning" class="storage-warning" hidden><strong>Kevés tárhely – beavatkozás szükséges</strong><button id="storageHelpButton" class="secondary-button" type="button">TÁRHELY BEÁLLÍTÁSAI</button></div>
+          <div class="button-stack">
+            <button id="syncButton" class="primary-button" type="button">↻ FRISSÍTÉS MOST</button>
+            <button id="packButton" class="secondary-button" type="button">＋ ADATCSOMAG IMPORTÁLÁSA</button><input id="packInput" type="file" accept="application/json,.json" hidden />
+            <button id="installButton" class="secondary-button" type="button" hidden>⇩ TELEPÍTÉS</button>
+          </div>
+          <p id="syncMessage" class="inline-message" role="status"></p>
+        </aside>
+      </section>
+
+      <section class="device-panel" aria-labelledby="deviceTitle">
+        <div class="section-heading"><div><p class="eyebrow">KÖZELI ADATCSERE</p><h2 id="deviceTitle">NFC és MESH</h2></div></div>
+        <div class="device-actions"><button id="nfcButton" class="secondary-button" type="button">NFC OLVASÁS / ÍRÁS</button><button id="meshButton" class="secondary-button" type="button">MESH SEGÉLYCSOMAG</button><button id="shareLocationButton" class="secondary-button" type="button">HELYZET MEGOSZTÁSA</button></div>
+        <p id="deviceMessage" class="inline-message" role="status"></p>
+      </section>
+
+      <section id="results" class="results-panel" aria-labelledby="resultsTitle">
+        <div class="section-heading"><div><p class="eyebrow">BETÖLTÖTT REKORDOK</p><h2 id="resultsTitle">Legközelebbi helyi pontok</h2></div><span id="resultCount" class="muted">0 találat</span></div>
+        <div id="resultsList" class="results-list" aria-live="polite"></div>
+      </section>
+
+      <section class="trust-grid" aria-label="Biztonsági és működési információk">
+        <article><span>01</span><h3>Offline-first</h3><p>Az alkalmazás, a letöltött térképek és a telepített rekordok hálózat nélkül is használhatók. A készülék telefonos és keresési lehetőségei külön érhetők el.</p></article>
+        <article><span>02</span><h3>Ellenőrizhető forrás</h3><p>Minden helyi rekord megmutatja az adat forrását és frissítési idejét; a hozzáférés aktuális állapotát indulás előtt ellenőrizd.</p></article>
+        <article><span>03</span><h3>Helyi adatkezelés</h3><p>A helyzeted és a megadott adataid az eszközön maradnak. Nincs analitika, reklámkövetés vagy külső térképcsempe.</p></article>
+      </section>
+    </main>
+
+    <footer><p>PROXAID v1.0 // offline készenléti réteg</p><p>Adatok: <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a></p></footer>
+
+    <dialog id="guideDialog" class="fullscreen-dialog" aria-labelledby="guideTitle">
+      <div class="dialog-head"><h2 id="guideTitle">Elsősegély</h2><button class="dialog-close" data-close="guideDialog" type="button" aria-label="Bezárás">×</button></div>
+      <p id="guideSummary" class="guide-summary"></p><ol id="guideSteps" class="guide-steps"></ol><div id="guideCprModes" class="cpr-mode-grid"></div><div id="guideSources" class="guide-sources"></div>
+      <p id="guideOfflineWarning" class="offline-warning" hidden>*Ez a forrás offline nem érhető el. Elnézésed kérjük!</p><button id="guideSpeakButton" class="primary-button" type="button">FELOLVASÁS</button>
+    </dialog>
+
+    <dialog id="callDialog" aria-labelledby="callDialogTitle"><div class="dialog-head"><h2 id="callDialogTitle">Hívási lehetőségek</h2><button class="dialog-close" data-close="callDialog" type="button" aria-label="Bezárás">×</button></div><div id="callOptions" class="button-stack"></div><p class="muted">A működőként megjelölt lehetőség legközelebb előre kerül.</p></dialog>
+    <dialog id="storageDialog" aria-labelledby="storageDialogTitle"><div class="dialog-head"><h2 id="storageDialogTitle">Tárhely felszabadítása</h2><button class="dialog-close" data-close="storageDialog" type="button" aria-label="Bezárás">×</button></div><div id="storageInstructions"></div></dialog>
+    <dialog id="nfcDialog" aria-labelledby="nfcDialogTitle">
+      <div class="dialog-head"><h2 id="nfcDialogTitle">NFC vészkártya</h2><button class="dialog-close" data-close="nfcDialog" type="button" aria-label="Bezárás">×</button></div>
+      <textarea id="nfcPayload" rows="6" aria-label="NFC-adat">PROXAID v1.0 — vészkártya</textarea>
+      <div class="action-row"><button id="nfcReadButton" class="secondary-button" type="button">OLVASÁS</button><button id="nfcWriteButton" class="primary-button" type="button">ÍRÁS</button><button id="nfcShareButton" class="secondary-button" type="button">MEGOSZTÁS</button></div><p id="nfcMessage" class="inline-message" role="status"></p>
+    </dialog>
+    <dialog id="installDialog" aria-labelledby="installDialogTitle"><div class="dialog-head"><h2 id="installDialogTitle">Telepítés</h2><button class="dialog-close" data-close="installDialog" type="button" aria-label="Bezárás">×</button></div><div id="installInstructions"></div></dialog>
+
+    <noscript><p class="noscript">A PROXAID működéséhez JavaScript szükséges. Vészhelyzetben hívd a helyi segélyhívót.</p></noscript>
+    <script src="./assets/vendor/leaflet.js"></script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

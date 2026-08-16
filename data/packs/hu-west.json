@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "packId": "hu-west",
+  "version": "2026.08.15",
+  "generatedAt": "2026-08-15T00:00:00Z",
+  "license": "Source-linked seed records; not a substitute for the official care directory",
+  "records": [
+    {
+      "id": "hu-nagykanizsa-kdk-sbo",
+      "name": "Nagykanizsai Kanizsai Dorottya Kórház",
+      "category": "hospital_emergency",
+      "kind": "place",
+      "description": "Kórházi sürgősségi ellátóhely. Az aktuális belépési pontot és elérhetőséget indulás előtt ellenőrizd.",
+      "locality": "Nagykanizsa",
+      "region": "Zala",
+      "country": "HU",
+      "phone": "+3693502000",
+      "website": "https://www.nkkorhaz.hu",
+      "coordinates": { "lat": 46.4595, "lon": 16.9892 },
+      "openingHours": null,
+      "verification": "source_linked",
+      "source": {
+        "name": "Országos Kórházi Főigazgatóság intézményjegyzéke",
+        "url": "https://okfo.gov.hu/egeszsegugyi-intezmenyek/Egeszsegugyi_intezmenyek/nagykanizsai-kanizsai-dorottya-korhaz",
+        "retrievedAt": "2026-08-14"
+      }
+    },
+    {
+      "id": "hu-zalaegerszeg-szent-rafael",
+      "name": "Zala Vármegyei Szent Rafael Kórház",
+      "category": "hospital_emergency",
+      "kind": "place",
+      "description": "Vármegyei kórház sürgősségi és traumatológiai ellátással. Ellenőrizd az aktuális betegirányítást.",
+      "locality": "Zalaegerszeg",
+      "region": "Zala",
+      "country": "HU",
+      "phone": "+3692507500",
+      "website": "https://www.zmkorhaz.hu",
+      "coordinates": { "lat": 46.8467, "lon": 16.8421 },
+      "openingHours": null,
+      "verification": "source_linked",
+      "source": {
+        "name": "Zala Vármegyei Szent Rafael Kórház",
+        "url": "https://www.zmkorhaz.hu/betegellatas/fekvobeteg-ellatas/surgossegi-osztaly/",
+        "retrievedAt": "2026-08-14"
+      }
+    },
+    {
+      "id": "hu-nagykanizsa-police",
+      "name": "Nagykanizsai Rendőrkapitányság",
+      "category": "police",
+      "kind": "place",
+      "description": "Helyi rendőri szerv. Azonnali veszély esetén a 112-t hívd.",
+      "locality": "Nagykanizsa",
+      "region": "Zala",
+      "country": "HU",
+      "phone": "+3693312190",
+      "website": "https://www.police.hu",
+      "coordinates": { "lat": 46.45525324, "lon": 16.98718927 },
+      "openingHours": null,
+      "verification": "source_linked",
+      "source": {
+        "name": "police.hu",
+        "url": "https://www.police.hu/hu/ugyintezes/szerv/orszagos-rendor-fokapitanysag/zala-varmegyei-rendor-fokapitanysag/nagykanizsai",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "hu-nagykanizsa-police-aed",
+      "name": "AED — Nagykanizsai Rendőrkapitányság",
+      "category": "aed",
+      "kind": "place",
+      "description": "A rendőrkapitányságon elhelyezett defibrillátor. Hozzáférésért fordulj a személyzethez.",
+      "locality": "Nagykanizsa",
+      "region": "Zala",
+      "country": "HU",
+      "phone": "+3693312190",
+      "website": "https://www.police.hu/hu/hirek-es-informaciok/legfrissebb-hireink/kozrendvedelem/elesben-hasznaltak-a-defibrillatort",
+      "coordinates": { "lat": 46.45525324, "lon": 16.98718927 },
+      "openingHours": null,
+      "access": "staff_assisted",
+      "verification": "official_directory",
+      "source": {
+        "name": "police.hu — Élesben használták a defibrillátort",
+        "url": "https://www.police.hu/hu/hirek-es-informaciok/legfrissebb-hireink/kozrendvedelem/elesben-hasznaltak-a-defibrillatort",
+        "retrievedAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "hu-szepetnek-rendelo",
+      "name": "Szepetneki háziorvosi rendelő",
+      "category": "doctor",
+      "kind": "place",
+      "description": "Települési alapellátási pont. A rendelési idő és elérhetőség változhat.",
+      "locality": "Szepetnek",
+      "region": "Zala",
+      "country": "HU",
+      "phone": "+36309293500",
+      "website": "https://www.sormas.hu/informaciok/",
+      "coordinates": { "lat": 46.4337, "lon": 16.8992 },
+      "openingHours": null,
+      "verification": "source_linked",
+      "source": {
+        "name": "Sormás Község — körzeti háziorvosi információ",
+        "url": "https://www.sormas.hu/informaciok/",
+        "retrievedAt": "2026-08-14"
+      }
+    }
+  ]
+}
