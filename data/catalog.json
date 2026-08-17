@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-16T00:00:00Z",
+  "generatedAt": "2026-08-17T04:21:11.879Z",
   "minimumRefreshHours": 720,
   "movementRefreshKm": 80,
   "globalDiscovery": {
@@ -8,11 +8,32 @@
     "provider": "OpenStreetMap Overpass API",
     "radiusMeters": 15000,
     "refreshHours": 720,
-    "fields": ["coordinates", "address", "landmark", "phone", "mobile", "fax", "email", "website", "socialContacts", "openingHours", "access", "wheelchair", "source", "checkedAt"],
+    "fields": [
+      "coordinates",
+      "address",
+      "landmark",
+      "phone",
+      "mobile",
+      "fax",
+      "email",
+      "website",
+      "socialContacts",
+      "openingHours",
+      "access",
+      "wheelchair",
+      "source",
+      "checkedAt"
+    ],
     "offlineMap": {
       "radiusMeters": 12000,
       "refreshHours": 720,
-      "layers": ["places", "roads", "paths", "water", "rail"]
+      "layers": [
+        "places",
+        "roads",
+        "paths",
+        "water",
+        "rail"
+      ]
     }
   },
   "packs": [
@@ -24,7 +45,12 @@
       "required": true,
       "autoInstall": true,
       "estimatedBytes": 5959,
-      "bbox": [-180, -90, 180, 90]
+      "bbox": [
+        -180,
+        -90,
+        180,
+        90
+      ]
     },
     {
       "id": "hu-west",
@@ -35,7 +61,12 @@
       "defaultInstall": true,
       "autoInstall": false,
       "estimatedBytes": 4786,
-      "bbox": [15.8, 45.6, 18.5, 47.4]
+      "bbox": [
+        15.8,
+        45.6,
+        18.5,
+        47.4
+      ]
     },
     {
       "id": "hu-west-osm",
@@ -46,18 +77,28 @@
       "defaultInstall": true,
       "autoInstall": true,
       "estimatedBytes": 121020,
-      "bbox": [16.78, 46.34, 17.15, 46.58]
+      "bbox": [
+        16.78,
+        46.34,
+        17.15,
+        46.58
+      ]
     },
     {
       "id": "hu-west-osm-events",
       "name": "Bundled temporary reference points",
       "url": "./data/packs/hu-west-osm-events.json",
-      "version": "2026.08.16",
+      "version": "2026.08.17",
       "required": false,
       "defaultInstall": true,
       "autoInstall": true,
-      "estimatedBytes": 241,
-      "bbox": [16.78, 46.34, 17.15, 46.58]
+      "estimatedBytes": 245,
+      "bbox": [
+        16.78,
+        46.34,
+        17.15,
+        46.58
+      ]
     }
   ],
   "maps": [
@@ -68,7 +109,12 @@
       "version": "2026.08.15",
       "defaultInstall": true,
       "estimatedBytes": 1685953,
-      "bbox": [16.78, 46.34, 17.15, 46.58],
+      "bbox": [
+        16.78,
+        46.34,
+        17.15,
+        46.58
+      ],
       "source": "OpenStreetMap contributors",
       "license": "ODbL 1.0"
     }
