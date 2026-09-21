@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-14T09:13:22.193Z",
+  "generatedAt": "2026-09-21T09:15:15.908Z",
   "minimumRefreshHours": 720,
   "movementRefreshKm": 80,
   "globalDiscovery": {
@@ -88,7 +88,7 @@
       "id": "hu-west-osm-events",
       "name": "Bundled temporary reference points",
       "url": "./data/packs/hu-west-osm-events.json",
-      "version": "2026.09.14",
+      "version": "2026.09.21",
       "required": false,
       "defaultInstall": true,
       "autoInstall": true,
