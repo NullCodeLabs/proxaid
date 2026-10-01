@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T10:07:06.575Z",
+  "generatedAt": "2026-10-01T10:12:41.901Z",
   "minimumRefreshHours": 720,
   "movementRefreshKm": 80,
   "globalDiscovery": {
@@ -72,11 +72,11 @@
       "id": "hu-west-osm",
       "name": "Bundled community reference points",
       "url": "./data/packs/hu-west-osm.json",
-      "version": "2026.08.16.2",
+      "version": "2026.10.01",
       "required": false,
       "defaultInstall": true,
       "autoInstall": true,
-      "estimatedBytes": 121020,
+      "estimatedBytes": 309498,
       "bbox": [
         16.78,
         46.34,
@@ -106,9 +106,9 @@
       "id": "hu-zala-south-map",
       "name": "Bundled offline reference street map",
       "url": "./data/maps/hu-zala-south.geojson",
-      "version": "2026.08.15",
+      "version": "2026.10.01",
       "defaultInstall": true,
-      "estimatedBytes": 1685953,
+      "estimatedBytes": 2097047,
       "bbox": [
         16.78,
         46.34,
