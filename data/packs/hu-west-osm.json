@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "packId": "hu-west-osm",
-  "version": "2026.10.01",
-  "generatedAt": "2026-10-01T10:12:49.575Z",
+  "version": "2026.11.01",
+  "generatedAt": "2026-11-01T10:32:48.847Z",
   "license": "OpenStreetMap ODbL 1.0; community source, not an official operational registry",
   "records": [
     {
@@ -49,7 +49,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/1367925259",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -98,7 +98,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/1377915110",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -143,7 +143,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/1380883583",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -190,7 +190,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2096176993",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -237,7 +237,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2271890043",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -284,7 +284,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2271890133",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -331,7 +331,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2278075702",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -380,7 +380,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2279290638",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -427,7 +427,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2306678480",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -474,7 +474,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2306688892",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -521,7 +521,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2366239536",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -570,7 +570,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2366239539",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -617,7 +617,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2366239658",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -664,7 +664,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2366239695",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -713,7 +713,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2366239698",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -763,7 +763,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2366239760",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -810,7 +810,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2449822891",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -860,7 +860,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2456429640",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -907,7 +907,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2456429641",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -954,7 +954,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2457010694",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -999,7 +999,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2493951084",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -1048,7 +1048,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2496790448",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -1097,7 +1097,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2496790510",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -1144,7 +1144,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2497651745",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -1191,7 +1191,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2497808665",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -1240,7 +1240,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2500553860",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -1287,7 +1287,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2502986514",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -1334,7 +1334,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2503282847",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -1383,7 +1383,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2503761575",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -1432,7 +1432,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2504096652",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -1479,7 +1479,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2504310482",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -1526,7 +1526,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2504310487",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -1573,7 +1573,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2504386826",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -1622,7 +1622,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2505142814",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -1671,7 +1671,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2505143349",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -1718,7 +1718,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2506153818",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -1765,7 +1765,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2508600785",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -1812,7 +1812,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2508600807",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -1861,7 +1861,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2508600839",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -1910,7 +1910,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2525486242",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -1957,7 +1957,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2536755723",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -2004,7 +2004,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2543349174",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -2052,7 +2052,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2545770507",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -2100,7 +2100,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2545770508",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -2147,7 +2147,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2607975910",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -2194,7 +2194,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2618622970",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -2243,7 +2243,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2624815098",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -2290,7 +2290,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2624842666",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -2337,7 +2337,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2945506693",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -2384,7 +2384,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/2945506694",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -2431,7 +2431,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/3115430078",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -2478,7 +2478,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/3370497964",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -2525,7 +2525,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/3423392765",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -2572,7 +2572,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/3423392782",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -2619,54 +2619,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/3456438414",
-        "retrievedAt": "2026-10-01"
-      }
-    },
-    {
-      "id": "osm-node-3456438422",
-      "name": "Ivóvíz",
-      "category": "drinking_water",
-      "categories": [
-        "water"
-      ],
-      "kind": "place",
-      "description": "Ivóvíz — OpenStreetMap közösségi forrásból; az aktuális hozzáférést ellenőrizd.",
-      "address": null,
-      "landmark": null,
-      "locality": null,
-      "region": "Zala",
-      "country": "HU",
-      "phone": null,
-      "email": null,
-      "website": "http://turistautak.hu/poi.php?id=163899",
-      "contacts": {
-        "mobile": null,
-        "fax": null,
-        "facebook": null,
-        "instagram": null,
-        "linkedin": null,
-        "twitter": null,
-        "mastodon": null,
-        "youtube": null,
-        "telegram": null,
-        "whatsapp": null
-      },
-      "coordinates": {
-        "lat": 46.3742831,
-        "lon": 16.9054098
-      },
-      "openingHours": null,
-      "access": null,
-      "wheelchair": null,
-      "verification": "community_source",
-      "confidence": "medium",
-      "validFrom": null,
-      "validTo": null,
-      "tags": [],
-      "source": {
-        "name": "OpenStreetMap contributors",
-        "url": "https://www.openstreetmap.org/node/3456438422",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -2713,7 +2666,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/3456438436",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -2760,7 +2713,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/3456438467",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -2807,7 +2760,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/3456438478",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -2856,7 +2809,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/3456438479",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -2903,7 +2856,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/3456439098",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -2950,7 +2903,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/3456439164",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -2997,7 +2950,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/3465218042",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -3044,7 +2997,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/3465219362",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -3091,7 +3044,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/3465219635",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -3138,7 +3091,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/3465219636",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -3185,7 +3138,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/3465219643",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -3232,7 +3185,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/3465219644",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -3279,7 +3232,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/3563989029",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -3324,7 +3277,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/3711082425",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -3369,7 +3322,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/3711082593",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -3416,7 +3369,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/4343249281",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -3463,7 +3416,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/4343448106",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -3512,7 +3465,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/4586619001",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -3559,7 +3512,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/4987216237",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -3606,7 +3559,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/4987216238",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -3653,7 +3606,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/5053672786",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -3700,7 +3653,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/5174080728",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -3747,7 +3700,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/5715927280",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -3794,7 +3747,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/5715927281",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -3841,7 +3794,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/5715967840",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -3890,7 +3843,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/5758834909",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -3937,7 +3890,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/5773094764",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -3982,7 +3935,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/5773094789",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -4027,7 +3980,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/5782309570",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -4072,7 +4025,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/5782309575",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -4117,7 +4070,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/5782309576",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -4164,7 +4117,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/5833527057",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -4211,7 +4164,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/5864963373",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -4258,7 +4211,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/5961500196",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -4305,7 +4258,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/6002601630",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -4352,7 +4305,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/6018781158",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -4399,7 +4352,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/6050459488",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -4446,7 +4399,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/6159246791",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -4493,7 +4446,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/6162544074",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -4540,7 +4493,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/6162544075",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -4588,7 +4541,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/6162544385",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -4636,7 +4589,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/6162544386",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -4683,7 +4636,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/6418379622",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -4730,7 +4683,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/6537018755",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -4777,7 +4730,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/6551583702",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -4824,7 +4777,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/6653407906",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -4871,7 +4824,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/6765277287",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -4918,7 +4871,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/6765277292",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -4963,7 +4916,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/7088741822",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -5010,7 +4963,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/7088741850",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -5057,7 +5010,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/7684765238",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -5104,7 +5057,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/7714662001",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -5151,7 +5104,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/7716323633",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -5198,7 +5151,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/7716380190",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -5245,7 +5198,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/7750479024",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -5293,7 +5246,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/7796797901",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -5340,7 +5293,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/7884438216",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -5387,7 +5340,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/7884438223",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -5396,10 +5349,10 @@
       "category": "charging",
       "categories": [],
       "kind": "place",
-      "description": "MOL",
-      "address": null,
+      "description": "MOL Nyrt.",
+      "address": "8800 Nagykanizsa Garay utca 17",
       "landmark": null,
-      "locality": null,
+      "locality": "Nagykanizsa",
       "region": "Zala",
       "country": "HU",
       "phone": "+3619989888",
@@ -5429,13 +5382,13 @@
       "validFrom": null,
       "validTo": null,
       "tags": [
-        "MOL Plugee",
-        "MOL"
+        "MOL",
+        "MOL Nyrt."
       ],
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/7972580437",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -5482,7 +5435,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/7978862004",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -5529,7 +5482,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/7982313250",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -5576,7 +5529,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/7982336651",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -5623,7 +5576,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/8099989547",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -5670,7 +5623,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/8099989548",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -5718,7 +5671,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/8099989550",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -5765,7 +5718,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/8319650699",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -5812,7 +5765,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/8522358607",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -5862,7 +5815,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/8610131262",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -5909,7 +5862,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/8872374957",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -5954,7 +5907,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/9072173432",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -6002,7 +5955,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/9078938659",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -6049,7 +6002,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/9219758990",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -6096,7 +6049,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/9219758993",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -6143,7 +6096,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/9242920559",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -6188,7 +6141,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/9408527817",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -6233,7 +6186,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/9634129874",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -6281,7 +6234,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/9698282948",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -6329,7 +6282,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/9698282949",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -6376,7 +6329,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/9866310267",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -6423,7 +6376,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/9902604117",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -6472,7 +6425,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/9910555550",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -6519,7 +6472,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/10719822014",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -6564,7 +6517,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/10744150174",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -6609,7 +6562,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/10744150175",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -6656,7 +6609,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/10744150239",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -6703,7 +6656,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/10747076091",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -6750,7 +6703,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/10875293857",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -6797,7 +6750,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/11049890299",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -6844,7 +6797,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/11054646005",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -6889,7 +6842,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/11121335785",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -6936,7 +6889,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/11158704522",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -6983,7 +6936,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/11158760972",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -7030,7 +6983,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/11215326945",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -7077,7 +7030,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/11249193445",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -7124,7 +7077,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/11276769640",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -7171,7 +7124,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/11323207269",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -7218,7 +7171,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/11375451008",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -7265,7 +7218,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/11401281566",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -7314,7 +7267,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/11759135221",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -7361,7 +7314,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/11759135256",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -7408,7 +7361,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/11762188104",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -7455,7 +7408,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/11765577684",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -7502,7 +7455,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/11765577685",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -7550,7 +7503,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/12462861763",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -7598,7 +7551,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/12589131571",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -7646,7 +7599,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/12589131572",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -7694,7 +7647,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/12589131581",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -7742,7 +7695,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/12589131583",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -7790,7 +7743,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/12589131600",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -7838,7 +7791,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/12589368501",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -7886,7 +7839,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/12589619709",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -7931,7 +7884,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/12660962576",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -7978,7 +7931,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/12856271485",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -8027,7 +7980,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/12952081885",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -8075,7 +8028,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/12966690914",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -8122,7 +8075,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/13060728716",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -8167,7 +8120,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/13060728720",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -8214,7 +8167,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/13105348944",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -8261,7 +8214,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/13125219290",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -8308,7 +8261,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/13198496015",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -8355,7 +8308,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/13265961331",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -8402,7 +8355,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/13400861619",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -8450,7 +8403,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/13423610085",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -8495,7 +8448,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/13536084276",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -8540,7 +8493,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/13785101588",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -8585,7 +8538,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/13785101595",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -8630,7 +8583,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/13785101596",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -8675,7 +8628,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/13791285618",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -8720,7 +8673,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/13807050467",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -8765,7 +8718,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/13807050469",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -8810,7 +8763,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/13807050470",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -8857,7 +8810,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/13910329962",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -8904,7 +8857,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/13910329964",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -8951,7 +8904,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/13974450436",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -8998,7 +8951,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/14021860338",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -9045,7 +8998,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/14082223990",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -9069,7 +9022,7 @@
         "mobile": "+36704692800",
         "fax": null,
         "facebook": "https://rossmann.hu/",
-        "instagram": "https://rossmann_hu/",
+        "instagram": "https://rossmannhungary/",
         "linkedin": null,
         "twitter": null,
         "mastodon": null,
@@ -9095,7 +9048,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/node/14189119069",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -9145,7 +9098,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/123000679",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -9192,7 +9145,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/123000684",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -9239,7 +9192,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/199635311",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -9287,7 +9240,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/199635323",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -9335,7 +9288,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/227999911",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -9382,7 +9335,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/237140065",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -9429,7 +9382,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/237268920",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -9477,7 +9430,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/242993457",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -9525,7 +9478,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/251784837",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -9572,7 +9525,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/255064132",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -9619,7 +9572,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/351226594",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -9629,7 +9582,7 @@
       "categories": [],
       "kind": "place",
       "description": "MOL Nyrt.",
-      "address": "8800 Nagykanizsa Garay utca 15",
+      "address": "8800 Nagykanizsa Gábor Áron utca 15",
       "landmark": null,
       "locality": "Nagykanizsa",
       "region": "Zala",
@@ -9640,8 +9593,8 @@
       "contacts": {
         "mobile": null,
         "fax": null,
-        "facebook": "https://www.facebook.com/mol.magyarorszag/",
-        "instagram": "https://www.instagram.com/mol.magyarorszag/",
+        "facebook": "https://mol.magyarorszag/",
+        "instagram": "https://mol.magyarorszag/",
         "linkedin": null,
         "twitter": null,
         "mastodon": null,
@@ -9667,7 +9620,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/551313122",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -9712,7 +9665,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/666299483",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -9759,7 +9712,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/666302129",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -9806,7 +9759,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/672029062",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -9853,7 +9806,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/721039540",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -9900,7 +9853,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/897732842",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -9947,7 +9900,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/957091648",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -9994,7 +9947,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/976037132",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -10044,7 +9997,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/976215852",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -10091,7 +10044,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/976313934",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -10112,8 +10065,8 @@
       "contacts": {
         "mobile": null,
         "fax": null,
-        "facebook": "https://www.facebook.com/mol.magyarorszag/",
-        "instagram": "https://www.instagram.com/mol.magyarorszag/",
+        "facebook": "https://mol.magyarorszag/",
+        "instagram": "https://mol.magyarorszag/",
         "linkedin": null,
         "twitter": null,
         "mastodon": null,
@@ -10139,7 +10092,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/976399269",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -10186,7 +10139,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/976664229",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -10233,7 +10186,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/976664234",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -10281,7 +10234,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/977011600",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -10328,7 +10281,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/978522490",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -10378,7 +10331,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/978522491",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -10425,7 +10378,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/979359179",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -10472,7 +10425,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/980697729",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -10519,7 +10472,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/980697734",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -10564,7 +10517,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/980938249",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -10611,7 +10564,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/980951569",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -10659,7 +10612,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/981347790",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -10706,7 +10659,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/1043431218",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -10753,7 +10706,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/1161695257",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -10800,7 +10753,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/1208432059",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -10847,7 +10800,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/1211712147",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -10894,7 +10847,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/1211712156",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -10939,7 +10892,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/1211957062",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -10987,7 +10940,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/1266101883",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -11034,7 +10987,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/1308545174",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -11081,7 +11034,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/1365630493",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -11128,7 +11081,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/1414387000",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -11175,7 +11128,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/1414387006",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -11220,7 +11173,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/1444617153",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -11267,7 +11220,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/1445210697",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -11314,7 +11267,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/1445210698",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -11362,7 +11315,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/1462667009",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -11410,7 +11363,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/1462667010",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -11458,7 +11411,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/1462667011",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -11506,7 +11459,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/1463446685",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -11554,7 +11507,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/1539831828",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     },
     {
@@ -11601,7 +11554,7 @@
       "source": {
         "name": "OpenStreetMap contributors",
         "url": "https://www.openstreetmap.org/way/1556410872",
-        "retrievedAt": "2026-10-01"
+        "retrievedAt": "2026-11-01"
       }
     }
   ]
